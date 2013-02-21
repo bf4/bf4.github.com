@@ -1,0 +1,77 @@
+---
+comments: false
+date: 2012-06-25 17:24:16
+layout: post
+slug: todays-link-dump-2012-06-25-2
+title: Today's Link Dump 2012-06-25
+wordpress_id: 613
+categories:
+- linkdump
+tags:
+- css
+- curl
+- python
+- ruby
+- vim
+---
+
+[Facebook Changed Everyone’s Email to @Facebook.com; Here’s How to Fix Yours](http://lifehacker.com/5921095/facebook-just-changed-your-email-without-permission-heres-how-to-get-it-back)
+
+vim
+
+
+
+	
+  * [learn to speak vim](http://yanpritzker.com/2011/12/16/learn-to-speak-vim-verbs-nouns-and-modifiers/)
+
+	
+  * https://github.com/skwp/dotfiles
+
+
+Online learning
+
+- [http://speckyboy.com/2012/06/23/learn-programming-without-paying-a-penny/](http://speckyboy.com/2012/06/23/learn-programming-without-paying-a-penny/)
+
+- [http://eloquentjavascript.net/](http://eloquentjavascript.net/)
+
+- [http://rubymonk.com/](http://rubymonk.com/)
+
+- [http://code.google.com/p/crunchy/](http://code.google.com/p/crunchy/)
+
+- [http://css3please.com/](http://css3please.com/)
+
+- [http://sqlzoo.net/](http://sqlzoo.net/)
+
+- [http://www.udacity.com/](http://www.udacity.com/)
+
+- [http://www.edxonline.org/index.html](http://www.edxonline.org/index.html)
+
+- [https://www.coursera.org/](https://www.coursera.org/)
+
+[Common errors made by CSS beginners](http://speckyboy.com/2012/06/24/perfecting-the-stylesheet-common-errors-made-by-css-beginners/)
+
+[Five Leadership Mistakes Of The Galactic Empire](http://www.forbes.com/sites/alexknapp/2012/02/13/five-leadership-mistakes-of-the-galactic-empire/print/)
+
+
+
+[Business Cliches http://www.forbes.com/sites/ericjackson/2012/06/19/89-business-cliches-that-will-get-any-mba-promoted-to-middle-management-and-make-them-totally-useless/print/](http://www.forbes.com/sites/ericjackson/2012/06/19/89-business-cliches-that-will-get-any-mba-promoted-to-middle-management-and-make-them-totally-useless/print/)
+
+[Bin Laden realized that terrorism doesn't work](http://www.baltimoresun.com/news/opinion/oped/bs-ed-terrorism-20120521,0,3263130.story)
+
+[RESTful requests with cURL](http://blogs.plexibus.com/2009/01/15/rest-esting-with-curl/)
+
+Me trying to find the Turing Google doodle
+
+
+
+	
+  * https://github.com/Yuhao93/Turing
+
+	
+  * https://github.com/taliesinb/tmachine
+
+	
+  * http://mathworld.wolfram.com/RabbitSequence.html
+
+
+[Winamp's woes http://arstechnica.com/business/2012/06/winamp-how-greatest-mp3-player-undid-itself/](http://arstechnica.com/business/2012/06/winamp-how-greatest-mp3-player-undid-itself/)

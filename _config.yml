@@ -1,0 +1,17 @@
+markdown: rdiscount
+pygments: true
+lsi: false
+safe: true
+permalink: /posts/:title
+auto: true
+rdiscount:
+  extensions: [smart]
+
+name: Benjamin Fleischer
+url: http://benjaminfleischer.com
+description: My space
+twitter: hazula
+github: bf4
+gravatar_url: http://en.gravatar.com/userimage/455248/5fa647438e683b85d7fdf03ed74220da.jpeg
+resume_link: http://www.linkedin.com/in/benjaminfleischer
+resume_link_text: LinkedIn Resume

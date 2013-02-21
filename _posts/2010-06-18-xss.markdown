@@ -1,0 +1,20 @@
+---
+comments: true
+date: 2010-06-18 14:22:52
+layout: post
+slug: xss
+title: XSS
+wordpress_id: 366
+categories:
+- Code
+- tech
+tags:
+- f-secure
+- xss
+---
+
+F-Secure Antivirus Research Weblog
+
+via [XSS](http://www.f-secure.com/weblog/archives/00001972.html).
+
+How small mistakes can create big problems.
