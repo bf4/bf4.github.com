@@ -25,6 +25,6 @@ Links:  Murray Hill Inc. is launching the campaign with a [website](http://www
 
 Paypal Images:
 
-[caption id="attachment_348" align="alignnone" width="300" caption="Murray Hill Inc PayPal"][![Murray Hill Inc PayPal](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.45.35-PM-300x280.png)](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.45.35-PM.png)[/caption]
+[![Murray Hill Inc PayPal](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.45.35-PM-300x280.png)](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.45.35-PM.png)
 
-[caption id="attachment_349" align="alignnone" width="443" caption="Murray Hill Inc, Support Paypal"][![Murray Hill Support Paypal](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.44.31-PM.png)](http://www.murrayhillweb.com/new_day/index.html)[/caption]
+[![Murray Hill Support Paypal](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.44.31-PM.png)](http://www.murrayhillweb.com/new_day/index.html)

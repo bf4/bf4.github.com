@@ -17,4 +17,4 @@ This helps me keep on track with following people on twitter.  Best part: you d
 
 Or, a shortcut is:  http://t4bp.com/[username]  e.g. [http://t4bp.com/ev](http://t4bp.com/ev)
 
-[caption id="attachment_271" align="alignnone" width="300" caption="Twitter For Busy People: EV"][![Twitter For Busy People: EV](/wp-content/uploads/2009/10/t4bp_ev-300x187.png)](http://t4bp.com/ev)[/caption]
+[![Twitter For Busy People: EV](/wp-content/uploads/2009/10/t4bp_ev-300x187.png)](http://t4bp.com/ev)
