@@ -22,28 +22,19 @@ As noted on the androidpolice forum  in the comments, my  Asus Transformer Pri
 I tried to install manually from SD micro card, but nothing happened. I then discovered a post that explained [that my Mac was unzipping the firmware update file twice](http://www.theandroidsoul.com/update-asus-transformer-prime-in-us-to-android-4-1-jelly-bean-officially/). So, I downloaded the firmware, in terminal, unzipped it once, and put that zip file on my SD micro cad, and the update went successfully. Yay!
 
 
-> 
+>
 
-> 
-> 
-	
+>
+>
+
 >   1. If the build number starts with “TW”, your SKU is TW. Similarly, if your build number starts with “US”, you must download the firmware for the US SKU. Similarly for WW, you need to download the WW firmware.
-> 
-	
+>
+
 >   2. Now that you have checked the SKU version of your tablet, download the corresponding stock firmware file from the links below:
 
-	
->     * **[US Firmware](http://dlcdnet.asus.com/pub/ASUS/EeePAD/TF201/US_epad_user_10_4_2_15_UpdateLauncher.zip)**
-> 
-	
->     * [**TW Firmware**](http://dlcdnet.asus.com/pub/ASUS/EeePAD/TF201/TW_epad_user_10_4_2_15_UpdateLauncher.zip)
-> 
-	
->     * **[WW Firmware](http://dlcdnet.asus.com/pub/ASUS/EeePAD/TF201/WW_epad_10_4_2_15_UpdateLauncher.zip)**
-> 
-
-
-> 
+* [US Firmware](http://dlcdnet.asus.com/pub/ASUS/EeePAD/TF201/US_epad_user_10_4_2_15_UpdateLauncher.zip)
+* [TW Firmware](http://dlcdnet.asus.com/pub/ASUS/EeePAD/TF201/TW_epad_user_10_4_2_15_UpdateLauncher.zip)
+* [WW Firmware](http://dlcdnet.asus.com/pub/ASUS/EeePAD/TF201/WW_epad_10_4_2_15_UpdateLauncher.zip)
 
 
 
