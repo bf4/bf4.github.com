@@ -37,6 +37,33 @@ Privacy experts and [some Facebook users](http://www.facebook.com/pages/Faceboo
 
 Again, [click here for Facebook custom privacy settings](https://www.facebook.com/settings/?tab=privacy&section=custom).  Follow the pictures below as direct links don't work.  I also put up shots on how to see [what personal data applications have accessed](https://www.facebook.com/settings/?tab=applications).  You'll be surprised how much, for example, bejeweled accesses.
 
-[gallery]
+<table border="0">
+  <tbody>
+    <tr>
+      <td>
+        <img src="/wp-content/uploads/2011/06/fb-apps-access-button-300x113.png" />
+      </td>
+      <td>
+        <img src="/wp-content/uploads/2011/06/fb-apps-access-log-300x154.png" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/wp-content/uploads/2011/06/fb-privacy-apps-300x300.png" />
+      </td>
+      <td>
+        <img src="/wp-content/uploads/2011/06/fb-privacy-custom-300x146.png" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/wp-content/uploads/2011/06/fb-privacy-suggest-photos-300x100.png" />
+      </td>
+      <td>
+        <img src="/wp-content/uploads/2011/06/fb-privacy-suggest-photos-button-300x46.png" />
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 

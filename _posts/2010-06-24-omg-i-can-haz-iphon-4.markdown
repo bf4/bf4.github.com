@@ -20,7 +20,26 @@ My office is behind the iPhone store on Michigan, so I always know when Apple be
 
 This morning, the line was zigzaging back an forth so much, I really have no concept of how big it was or where it ends, but clearly, something important has arrived.
 
-[gallery columns="2"]
+<table border="0">
+  <tbody>
+    <tr>
+      <td>
+        <img src="/wp-content/uploads/2010/06/ios4-2010-06-24a-150x150.jpg" />
+      </td>
+      <td>
+        <img src="/wp-content/uploads/2010/06/ios4-2010-06-24b-150x150.jpg" />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/wp-content/uploads/2010/06/ios4-2010-06-24c-150x150.jpg" />
+      </td>
+      <td>
+        <img src="/wp-content/uploads/2010/06/ios4-2010-06-24d-150x150.jpg" />
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Some other articles:
 
