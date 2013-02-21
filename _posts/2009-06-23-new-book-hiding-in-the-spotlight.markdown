@@ -21,4 +21,3 @@ Zhanna, a young Jewish girl from Ukraine, also happens to be a gifted piano prod
 
 To see Zhanna and hear her music, please go to the website: [http://www.hidinginthespotlight.com](http://www.hidinginthespotlight.com)
 
-[iframe http://rcm.amazon.com/e/cm?t=hazujewi-20&amp;o=1&amp;p=8&amp;l=as1&amp;asins=1605980455&amp;fc1=000000&amp;IS2=1&amp;lt1=_blank&amp;m=amazon&amp;lc1=0000FF&amp;bc1=000000&amp;bg1=FFFFFF&amp;f=ifr 120 240]

@@ -27,6 +27,6 @@ Not to worry, though, because we use the very bestest security measures to prote
 So just to recap: Your information is extremely valuable to us. Our business model would totally collapse without it. No IPO, no stock options; all those 80-hour weeks and bupkis to show for it. So we’ll do our very best to use it in as many potentially profitable ways as we can conjure, over and over, while attempting to convince you there’s nothing to worry about.
 
 
-via [The first truly honest privacy policy](http://www.itworld.com/print/129778). (h/t [Bruce Schneier](http://www.schneier.com/blog/archives/2010/12/an_honest_priva.html) [amazon_link id="0470395354" target="_blank" ]Schneier on Security[/amazon_link] )
+via [The first truly honest privacy policy](http://www.itworld.com/print/129778). (h/t [Bruce Schneier](http://www.schneier.com/blog/archives/2010/12/an_honest_priva.html) `Schneier on Security` )
 
 Well, that certainly is a bit more readable and transparent. At the very least, if more people read this version perhaps they'll better understand what many sites really do.

@@ -21,6 +21,6 @@ via [Pentago » Games](http://pentago.com/games/).
 
 [Thanks, Chris](http://chrisjpowers.com/).  Pentago is quick to learn, quick to play, and requires a whole lot of strategy.
 
-[amazon_link id="B000GYZ3IO" target="_blank" ]Pentago[/amazon_link]
+`Pentago`
 
-[amazon_carousel widget_type="ASINList"  width="600"  height="200"  title="Pentago"  market_place="US"  shuffle_products="False" show_border="False" asin="B000GYZ3IO, B000YAM0JA, B003A1DC2E, B002XLEOFQ" /]
+`
