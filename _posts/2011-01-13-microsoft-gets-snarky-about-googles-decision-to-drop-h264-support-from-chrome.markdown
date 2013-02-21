@@ -17,7 +17,7 @@ tags:
 - webm
 ---
 
-> [![Esperanto and webm forever](http://benjaminfleischer.com/wp-content/uploads/2011/01/1108.esperandm_37DFA219.png)](http://blog.chromium.org/2011/01/html-video-codec-support-in-chrome.html)The world’s ability to communicate with one another is a key factor in its rapid evolution and economic growth. The [Esperanto language ](http://www.webmproject.org/)was invented last century as a politically neutral language that would foster peace and international understanding. Since the launch, we’ve seen first-hand the benefits of a constructed language:
+> [![Esperanto and webm forever](/wp-content/uploads/2011/01/1108.esperandm_37DFA219.png)](http://blog.chromium.org/2011/01/html-video-codec-support-in-chrome.html)The world’s ability to communicate with one another is a key factor in its rapid evolution and economic growth. The [Esperanto language ](http://www.webmproject.org/)was invented last century as a politically neutral language that would foster peace and international understanding. Since the launch, we’ve seen first-hand the benefits of a constructed language:
 
 > 
 > 

@@ -19,6 +19,6 @@ But Greenberg goes beyond just documenting bias in what research was referenced 
 via [How myths are made – Bad Science](http://www.badscience.net/2009/08/how-myths-are-made/).
 
 A post related to this one:
-[Published Scientific Articles Not Written By Scientists](http://benjaminfleischer.com/2009/08/05/published-scientific-articles-not-written-by-scientists/) and referencing the study [How citation distortions create unfounded authority: analysis of a citation network](http://www.bmj.com/cgi/content/abstract/339/jul20_3/b2680).
+[Published Scientific Articles Not Written By Scientists](/2009/08/05/published-scientific-articles-not-written-by-scientists/) and referencing the study [How citation distortions create unfounded authority: analysis of a citation network](http://www.bmj.com/cgi/content/abstract/339/jul20_3/b2680).
 
 I knew that the proper methodology is not to rely on review articles, except maybe to find references, but I had not realized how much influence they seem to have. This is astonishing and hopefully will encourage a more cautious approach to using review articles.

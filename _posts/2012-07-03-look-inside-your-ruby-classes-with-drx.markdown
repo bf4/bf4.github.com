@@ -35,9 +35,9 @@ I had some trouble getting it to work, so I'll include my steps here:
 
 
 
-[caption id="attachment_627" align="alignnone" width="300"][![DrX console for ActiveRecord::Base](http://benjaminfleischer.com/wp-content/uploads/2012/07/activerecord_base_drx1-300x181.png)](http://benjaminfleischer.com/2012/07/03/look-inside-your-ruby-classes-with-drx/activerecord_base_drx-2/) DrX console for ActiveRecord::Base[/caption]
+[caption id="attachment_627" align="alignnone" width="300"][![DrX console for ActiveRecord::Base](/wp-content/uploads/2012/07/activerecord_base_drx1-300x181.png)](/2012/07/03/look-inside-your-ruby-classes-with-drx/activerecord_base_drx-2/) DrX console for ActiveRecord::Base[/caption]
 
-[caption id="attachment_626" align="alignnone" width="150"][![Full DrX diagram of ActiveRecord::Base, you'll need to zoom in](http://benjaminfleischer.com/wp-content/uploads/2012/07/activerecord_base-150x150.gif)](http://benjaminfleischer.com/2012/07/03/look-inside-your-ruby-classes-with-drx/activerecord_base/) Full DrX diagram of ActiveRecord::Base, you'll need to zoom in[/caption]
+[caption id="attachment_626" align="alignnone" width="150"][![Full DrX diagram of ActiveRecord::Base, you'll need to zoom in](/wp-content/uploads/2012/07/activerecord_base-150x150.gif)](/2012/07/03/look-inside-your-ruby-classes-with-drx/activerecord_base/) Full DrX diagram of ActiveRecord::Base, you'll need to zoom in[/caption]
 
 Other introspection-type libraries I'm aware of (I'll update this)
 

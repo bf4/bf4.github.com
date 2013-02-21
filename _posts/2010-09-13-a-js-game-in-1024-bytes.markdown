@@ -37,4 +37,4 @@ h);A(G);i%3?0:T<w?(A(G,33,T-15,10),fc(31,T-7,4,9)):(A(7,25,$,9),A(G,25,$,5),fc(2
 
 via [Bouncing Beholder [JS1k entry]](http://marijn.haverbeke.nl/js1k.html).
 
-[Just the game](http://benjaminfleischer.com/wp-content/uploads/2010/09/bouncinggame.html)
+[Just the game](/wp-content/uploads/2010/09/bouncinggame.html)

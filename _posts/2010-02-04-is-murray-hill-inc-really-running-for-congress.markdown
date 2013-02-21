@@ -21,10 +21,10 @@ It's too obviously satirical, and yet [Murray Hill Inc.](http://www.murrayhillwe
 
 Links:  Murray Hill Inc. is launching the campaign with a [website](http://www.murrayhillweb.com/new_day/index.html), [Facebook](http://www.facebook.com/pages/Murray-Hill-Inc-for-Congress/314963396608?ref=search&sid=1142349892.780307729..1) page and [YouTube video](http://www.youtube.com/user/murrayhillcongress), [products](http://www.cafepress.com/MHIncCongress).
 
-[![Murray Hill Inc For Congress Poster](http://benjaminfleischer.com/wp-content/uploads/2010/02/corporationsarepeopletoo.jpg)](http://www.cafepress.com/MHIncCongress)
+[![Murray Hill Inc For Congress Poster](/wp-content/uploads/2010/02/corporationsarepeopletoo.jpg)](http://www.cafepress.com/MHIncCongress)
 
 Paypal Images:
 
-[caption id="attachment_348" align="alignnone" width="300" caption="Murray Hill Inc PayPal"][![Murray Hill Inc PayPal](http://benjaminfleischer.com/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.45.35-PM-300x280.png)](http://benjaminfleischer.com/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.45.35-PM.png)[/caption]
+[caption id="attachment_348" align="alignnone" width="300" caption="Murray Hill Inc PayPal"][![Murray Hill Inc PayPal](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.45.35-PM-300x280.png)](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.45.35-PM.png)[/caption]
 
-[caption id="attachment_349" align="alignnone" width="443" caption="Murray Hill Inc, Support Paypal"][![Murray Hill Support Paypal](http://benjaminfleischer.com/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.44.31-PM.png)](http://www.murrayhillweb.com/new_day/index.html)[/caption]
+[caption id="attachment_349" align="alignnone" width="443" caption="Murray Hill Inc, Support Paypal"][![Murray Hill Support Paypal](/wp-content/uploads/2010/02/Screen-shot-2010-02-12-at-2.44.31-PM.png)](http://www.murrayhillweb.com/new_day/index.html)[/caption]

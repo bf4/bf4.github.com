@@ -28,7 +28,7 @@ A lot of people like [KeePass](http://keepass.info/) ([portable](http://portable
 ](http://www.nytimes.com/2010/01/21/technology/21password.html#secondParagraph)
 
 > 
-> [![](http://benjaminfleischer.com/wp-content/uploads/2010/01/nytimespasswords-150x300.jpg)](http://benjaminfleischer.com/wp-content/uploads/2010/01/nytimespasswords.jpg)
+> [![](/wp-content/uploads/2010/01/nytimespasswords-150x300.jpg)](/wp-content/uploads/2010/01/nytimespasswords.jpg)
 > 
 > 
 
