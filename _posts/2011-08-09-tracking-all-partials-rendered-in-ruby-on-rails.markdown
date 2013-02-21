@@ -12,7 +12,7 @@ categories:
 
 Put this little snippet in a file in your load path, e.g. [cci]config/initializers/render_watcher.rb[/cci] and tail and grep your log to see all the rendered partials:
 
-[ccw_ruby tab_size="4"]
+`
 class ActionView::PartialTemplate
 
   alias_method :original_initialize, :initialize
@@ -21,11 +21,11 @@ class ActionView::PartialTemplate
     original_initialize(view, partial_path, object, locals)
   end
 end
-[/ccw_ruby]
+`
 
 And heres code for just the higher level action calls (doesnt include every partial, but can still be useful).
 
-[ccw_ruby tab_size="4"]
+`
 class ActionController::Base
   alias_method :original_render, :render
 
@@ -39,7 +39,7 @@ class ActionController::Base
     original_render(options, extra_options, block)
   end
 end
-[/ccw_ruby]
+`
 
 The tail command is below. Just load a local page.
 `tail -f log/development.log | grep RENDER`

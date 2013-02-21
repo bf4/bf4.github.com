@@ -22,22 +22,22 @@ In my `$HOME/.bash_profile` I add and source
 
 `export APP_GEMS_DIR=$HOME/workspace/gemsdev`
 
-(I also set it in my config/setup_load_paths.rb file that I use for passenger: [ccwi_bash]ENV["APP_GEMS_DIR"] = File.expand_path("../../../", __FILE__)[/ccwi_bash])
+(I also set it in my config/setup_load_paths.rb file that I use for passenger: `ENV["APP_GEMS_DIR"] = File.expand_path("../../../", __FILE__)`)
 
 **Second:**
 
 In my Gemfile I add
 
-[ccw_ruby tab_size="4"]
+`
 if ENV['APP_GEMS_DIR']
   # for local gem development, use local gem directory so gem changes don't need to be pushed to test
   gem 'my_gem', :path => "#{ENV['APP_GEMS_DIR']}/my_gem", :require => "namespace/my_gem"
 else
   gem 'my_gem', :require => "namespace/my_gem", :git => path_to_git_repo, :tag => tagname
 end
-[/ccw_ruby]
+`
 
-As to why in the else clause I specified the repo and the tag, that is to allow parallel gem development. I could also set it to [ccwi_ruby tab_size="4"]:branch => branchname[/ccwi_ruby], or [ccwi_ruby]:ref => ref_hash[/ccwi_ruby] for using a consistant gem branch for release development or to freeze the gem at a know good revision. In fact, with this technique, you could, if you wanted, never bump the gem version again!
+As to why in the else clause I specified the repo and the tag, that is to allow parallel gem development. I could also set it to `:branch => branchname`, or `:ref => ref_hash` for using a consistant gem branch for release development or to freeze the gem at a know good revision. In fact, with this technique, you could, if you wanted, never bump the gem version again!
 
 On benefit of this technique, is that when using the local gem, after you bundle install, you don't have to keep do it again while you continue developing the gem.
 
