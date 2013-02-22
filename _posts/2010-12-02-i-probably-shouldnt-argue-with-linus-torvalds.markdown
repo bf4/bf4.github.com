@@ -14,7 +14,7 @@ tags:
 - scm
 ---
 
->> Umm. Rebasing often makes things much _worse_.
+> Umm. Rebasing often makes things much _worse_.
 >
 >The real problem is that maintainers often pick random - and not at all stable - points for their development to begin with. They just pick some random "this is where Linus -git tree is today", and do their development on top of that. THAT is the problem - they are unaware that there's some nasty bug in that version.
 >
