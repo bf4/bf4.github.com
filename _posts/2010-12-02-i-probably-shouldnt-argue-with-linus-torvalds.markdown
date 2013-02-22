@@ -14,23 +14,23 @@ tags:
 - scm
 ---
 
-> Umm. Rebasing often makes things much _worse_.
-
-The real problem is that maintainers often pick random - and not at all stable - points for their development to begin with. They just pick some random "this is where Linus -git tree is today", and do their development on top of that. THAT is the problem - they are unaware that there's some nasty bug in that version.
-
-It's actually made worse by rebasing. A lot of people end up rebasing on top of such a random kernel (again, just because it's the 'most recent'). It's very annoying.
-
-Not to mention that rebasing easily results in bugs of its own, when you do hit merge conflicts or double-apply something that already got applied (and wasn't seen as a duplicate and merged away automatically, because the code had been further modified since). We had that in the DVB pull request just yesterday.
-
-> So in short this is a call for, possibly, cleaner History in main Kernel.
-> Please remind me why re-writing history is a bad thing.
-
-Rebasing doesn't result in cleaner history. It just results in _incorrect_ history that looks simpler.
-
-To get cleaner history, people should try to keep their tree clean.
-Not add random patches to random branches, and not start random branches at random points in time that aren't necessarily stable.
-
-Linus
+>> Umm. Rebasing often makes things much _worse_.
+>
+>The real problem is that maintainers often pick random - and not at all stable - points for their development to begin with. They just pick some random "this is where Linus -git tree is today", and do their development on top of that. THAT is the problem - they are unaware that there's some nasty bug in that version.
+>
+>It's actually made worse by rebasing. A lot of people end up rebasing on top of such a random kernel (again, just because it's the 'most recent'). It's very annoying.
+>
+>Not to mention that rebasing easily results in bugs of its own, when you do hit merge conflicts or double-apply something that already got applied (and wasn't seen as a duplicate and merged away automatically, because the code had been further modified since). We had that in the DVB pull request just yesterday.
+>
+>> So in short this is a call for, possibly, cleaner History in main Kernel.
+>> Please remind me why re-writing history is a bad thing.
+>
+>Rebasing doesn't result in cleaner history. It just results in _incorrect_ history that looks simpler.
+>
+>To get cleaner history, people should try to keep their tree clean.
+>Not add random patches to random branches, and not start random branches at random points in time that aren't necessarily stable.
+>
+>Linus
 
 
 via [LKML: Linus Torvalds: Re: {painfully BISECTED} Please revert f25c80a4b2: arch/um/drivers: remove duplicate structure field initialization](http://lkml.org/lkml/2010/9/28/362).
