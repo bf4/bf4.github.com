@@ -5,7 +5,7 @@ safe: true
 permalink: /:year/:month/:day/:title
 auto: true
 rdiscount:
-  extensions: [smart autolink]
+  extensions: [smart]
 
 name: Benjamin Fleischer
 url: http://benjaminfleischer.com
