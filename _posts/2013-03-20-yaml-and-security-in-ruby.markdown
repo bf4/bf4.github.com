@@ -27,22 +27,22 @@ There are relevant differences in the Syck and Psych implementations I will late
 
 ## Recommended Reading
 
-* http://tenderlovemaking.com/2013/02/06/yaml-f7u12.html
-* http://blog.codeclimate.com/blog/2013/01/10/rails-remote-code-execution-vulnerability-explained/
-* http://www.insinuator.net/2013/01/rails-yaml/
-* http://www.reddit.com/r/netsec/comments/167c11/serious_vulnerability_in_ruby_on_rails_allowing/
-* https://news.ycombinator.com/item?id=5028270
+* [http://tenderlovemaking.com/2013/02/06/yaml-f7u12.html](http://tenderlovemaking.com/2013/02/06/yaml-f7u12.html)
+* [http://blog.codeclimate.com/blog/2013/01/10/rails-remote-code-execution-vulnerability-explained](http://blog.codeclimate.com/blog/2013/01/10/rails-remote-code-execution-vulnerability-explained)/
+* [http://www.insinuator.net/2013/01/rails-yaml](http://www.insinuator.net/2013/01/rails-yaml)/
+* [http://www.reddit.com/r/netsec/comments/167c11/serious_vulnerability_in_ruby_on_rails_allowing](http://www.reddit.com/r/netsec/comments/167c11/serious_vulnerability_in_ruby_on_rails_allowing)/
+* [https://news.ycombinator.com/item?id=5028270](https://news.ycombinator.com/item?id=5028270)
 
 ## Supplemental Reading
 
-* https://github.com/tenderlove/psych/issues/119#issuecomment-12875715
-* http://weblog.rubyonrails.org/2013/2/11/SEC-ANN-Rails-3-2-12-3-1-11-and-2-3-17-have-been-released/
-* https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/61bkgvnSGTQ
-* http://ronin-ruby.github.com/blog/2013/01/09/rails-pocs.html
-* https://github.com/ronin-ruby/ronin-ruby.github.com/blob/rails-pocs/blog/_posts/2013-01-09-rails-pocs.md
-* https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/http/rails_xml_yaml_scanner.rb
-* https://community.rapid7.com/community/metasploit/blog/2013/01/09/serialization-mischief-in-ruby-land-cve-2013-0156
-* https://community.rapid7.com/community/metasploit/blog/2013/01/10/exploiting-ruby-on-rails-with-metasploit-cve-2013-0156
+* [https://github.com/tenderlove/psych/issues/119#issuecomment-12875715](https://github.com/tenderlove/psych/issues/119#issuecomment-12875715)
+* [http://weblog.rubyonrails.org/2013/2/11/SEC-ANN-Rails-3-2-12-3-1-11-and-2-3-17-have-been-released](http://weblog.rubyonrails.org/2013/2/11/SEC-ANN-Rails-3-2-12-3-1-11-and-2-3-17-have-been-released)/
+* [https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/61bkgvnSGTQ](https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/61bkgvnSGTQ)
+* [http://ronin-ruby.github.com/blog/2013/01/09/rails-pocs.html](http://ronin-ruby.github.com/blog/2013/01/09/rails-pocs.html)
+* [https://github.com/ronin-ruby/ronin-ruby.github.com/blob/rails-pocs/blog/_posts/2013-01-09-rails-pocs.md](https://github.com/ronin-ruby/ronin-ruby.github.com/blob/rails-pocs/blog/_posts/2013-01-09-rails-pocs.md)
+* [https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/http/rails_xml_yaml_scanner.rb](https://github.com/rapid7/metasploit-framework/blob/master/modules/auxiliary/scanner/http/rails_xml_yaml_scanner.rb)
+* [https://community.rapid7.com/community/metasploit/blog/2013/01/09/serialization-mischief-in-ruby-land-cve-2013-0156](https://community.rapid7.com/community/metasploit/blog/2013/01/09/serialization-mischief-in-ruby-land-cve-2013-0156)
+* [https://community.rapid7.com/community/metasploit/blog/2013/01/10/exploiting-ruby-on-rails-with-metasploit-cve-2013-0156](https://community.rapid7.com/community/metasploit/blog/2013/01/10/exploiting-ruby-on-rails-with-metasploit-cve-2013-0156)
 
 ## Workarounds
 
