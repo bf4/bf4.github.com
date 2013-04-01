@@ -1,29 +1,49 @@
-<section class="content">
-  <h1>
-    <a href="{{ page.production_url }}">{{ page.title }}</a>
-  </h1>
+<div class="page-header">
+  <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
+</div>
 
-  <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }}
-  </section>
+<div class="row-fluid post-full">
+  <div class="span12">
+    <div class="date">
+      <span>{{ page.date | date_to_long_string }}</strong>
+    </div>
+    <div class="content">
+      {{ content }}
+    </div>
 
-  {{ content }}
+  {% unless page.categories == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-folder-open"></i></li>
+      {% assign categories_list = page.categories %}
+      {% include JB/categories_list %}
+    </ul>
+  {% endunless %}
 
-  <!-- TODO: bio here -->
-  <section class="meta">
-    <h3>Discussion, links, and tweets</h3>
-    <section class="copy">
-      <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">
-        <img src="{{ site.author.gravatar_url }}?s=142" height="50" width="50" />
-      </a>
+  {% unless page.tags == empty %}
+    <ul class="tag_box inline">
+      <li><i class="icon-tags"></i></li>
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+    </ul>
+  {% endunless %}
 
-      <p>
-        <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank">Follow me on Twitter</a>
-      </p>
-
-      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.author.twitter }}">Tweet</a>
-      <a href="http://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.author.twitter }}</a>
-      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-    </section>
-  </section>
-</section>
+    <hr>
+    <div class="pagination">
+      <ul>
+      {% if page.previous %}
+        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+      {% else %}
+        <li class="prev disabled"><a>&larr; Previous</a></li>
+      {% endif %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+      {% if page.next %}
+        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+      {% else %}
+        <li class="next disabled"><a>Next &rarr;</a>
+      {% endif %}
+      </ul>
+    </div>
+    <hr>
+    {% include JB/comments %}
+  </div>
+</div>
