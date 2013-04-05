@@ -44,3 +44,6 @@ I've also included some lessons learned for setting up subdomains
 in Rails.
 
 <script src="https://gist.github.com/bf4/5320631.js"></script>
+
+An alternative to using the Rails router would be to use
+Rack Middleware.  Here's an [example middleware redirector](https://github.com/rubygems/rubygems.org/blob/4c8d57f8ba5c248a6cbc030e6493cdf6c38e5892/app/middleware/redirector.rb) and [how it is inserted into the middleware stack for rubygems.org](https://github.com/rubygems/rubygems.org/blob/5edbc44beb0ba99f9212b48d2a1efe307b613c27/config/application.rb#L27)
