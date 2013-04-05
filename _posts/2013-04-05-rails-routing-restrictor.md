@@ -15,18 +15,18 @@ Here's a gist [where I demonstrate how you can create routes
 that are only available within whitelisted ip ranges or
 subdomains, in addition to redirects.](https://gist.github.com/bf4/5320631)
 
-The use case for this is that we have a multiple servers for
+The use case for this is that we have multiple servers for
 our site, but we want certain things to only happen on one of
-them.  This server servers up our 'admin' subdomain.  Because
+them.  This server serves up our 'admin' subdomain.  Because
 of certain things that this server can do, all in-house users
 are redirected to the 'admin' subdomain if they are not already
-on it.
+on it. It just makes things simpler.
 
 We can also specify certain routes that are only available to
 users on the admin subdomain (which may be irrelevant
 given the automatic redirect, but nonetheless).
 
-Besides users, we can have routes that only local services
+We can have routes that only local services
 can hit, e.g. to prime the app (on JRuby) or check its 
 health, etc.
 
