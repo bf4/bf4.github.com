@@ -25,7 +25,7 @@ vim
   * [learn to speak vim](http://yanpritzker.com/2011/12/16/learn-to-speak-vim-verbs-nouns-and-modifiers/)
 
 	
-  * https://github.com/skwp/dotfiles
+  * [https://github.com/skwp/dotfiles](https://github.com/skwp/dotfiles)
 
 
 Online learning
@@ -65,13 +65,13 @@ Me trying to find the Turing Google doodle
 
 
 	
-  * https://github.com/Yuhao93/Turing
+  * [https://github.com/Yuhao93/Turing](https://github.com/Yuhao93/Turing)
 
 	
-  * https://github.com/taliesinb/tmachine
+  * [https://github.com/taliesinb/tmachine](https://github.com/taliesinb/tmachine)
 
 	
-  * http://mathworld.wolfram.com/RabbitSequence.html
+  * [http://mathworld.wolfram.com/RabbitSequence.html](http://mathworld.wolfram.com/RabbitSequence.html)
 
 
 [Winamp's woes http://arstechnica.com/business/2012/06/winamp-how-greatest-mp3-player-undid-itself/](http://arstechnica.com/business/2012/06/winamp-how-greatest-mp3-player-undid-itself/)

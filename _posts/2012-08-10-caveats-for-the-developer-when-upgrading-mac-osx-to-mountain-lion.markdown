@@ -79,18 +79,18 @@ To use homebrew, you'll have to fix some references:
 Other links
 
 	
-  * http://osxdaily.com/2012/02/20/uninstall-xcode/
+  * [http://osxdaily.com/2012/02/20/uninstall-xcode/](http://osxdaily.com/2012/02/20/uninstall-xcode/)
 
 	
-  * http://robots.thoughtbot.com/post/27985816073/the-hitchhikers-guide-to-riding-a-mountain-lion
+  * [http://robots.thoughtbot.com/post/27985816073/the-hitchhikers-guide-to-riding-a-mountain-lion](http://robots.thoughtbot.com/post/27985816073/the-hitchhikers-guide-to-riding-a-mountain-lion)
 
 	
-  * http://apple.stackexchange.com/questions/48099/gcc-not-found-but-xcode-is-installed
+  * [http://apple.stackexchange.com/questions/48099/gcc-not-found-but-xcode-is-installed](http://apple.stackexchange.com/questions/48099/gcc-not-found-but-xcode-is-installed)
 
 	
-  * http://coderwall.com/p/dtbuqg
+  * [http://coderwall.com/p/dtbuqg](http://coderwall.com/p/dtbuqg)
 
 	
-  * http://stackoverflow.com/questions/9353444/how-to-use-install-gcc-on-mac-os-x-10-8-xcode-4-4
+  * [http://stackoverflow.com/questions/9353444/how-to-use-install-gcc-on-mac-os-x-10-8-xcode-4-4](http://stackoverflow.com/questions/9353444/how-to-use-install-gcc-on-mac-os-x-10-8-xcode-4-4)
 
 

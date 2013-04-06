@@ -8,9 +8,9 @@ title: Drupal 6.x Community and Dating
 wordpress_id: 242
 ---
 
-* ubercart selling items and custom forms http://drupal.org/node/333138
+* ubercart selling items and custom forms [http://drupal.org/node/333138](http://drupal.org/node/333138)
 
-* http://drupal.org/node/466960
+* [http://drupal.org/node/466960](http://drupal.org/node/466960)
 * drupal media streaming mp3
 * open conference project for limmud chicago
 
@@ -39,7 +39,7 @@ http://drupal.org/node/101723
 or use profile fields
 http://drupal.org/handbook/modules/profile
 http://drupal.org/project/nodeprofile (5.x only)
-use civicrm to extend profiles and groups http://drupal.org/node/39236
+use civicrm to extend profiles and groups [http://drupal.org/node/39236](http://drupal.org/node/39236)
 http://drupal.org/project/modules?text=gallery2
 http://drupal.org/project/gallery
 http://drupal.org/project/google_analytics
@@ -48,11 +48,11 @@ http://drupal.org/project/iframe
 http://drupal.org/project/docapi
 http://drupal.org/project/cck_gmapaddress
 http://drupal.org/project/activity
-not 6.x yet http://drupal.org/project/listhandler
+not 6.x yet [http://drupal.org/project/listhandler](http://drupal.org/project/listhandler)
 Directory
 
 
-Links package: http://drupal.org/node/24719
+Links package: [http://drupal.org/node/24719](http://drupal.org/node/24719)
 Links Package
 Picasa
 
@@ -64,7 +64,7 @@ Daily
 
 
 , usernode, CRE (COntent Reccomendation Engine), buddylist, private messaging module, CCK, views, and the core profile module. incorporate a custom profile page and you have a drupal dating site.
-I am making a tutorial on how to set up a full feature dating/community website on http://dorax.naturalp.org/?q=node/6
+I am making a tutorial on how to set up a full feature dating/community website on [http://dorax.naturalp.org/?q=node/6](http://dorax.naturalp.org/?q=node/6)
 Facebook
 Drupal for Facebook,
 http://drupal.org/project/fb
@@ -222,43 +222,43 @@ Key modules we will be discussing will be blog, imagecache, nodequeue, Content C
 
 They have created a customized distribution of Drupal called Acquia Drupal that bolsters Drupal’s ability to become a community website.
 
-* perhaps community tasks for ppl to volunteer to bring things http://drupal.org/project/community_tasks
-* I should look at panels at some point http://drupal.org/project/panels
+* perhaps community tasks for ppl to volunteer to bring things [http://drupal.org/project/community_tasks](http://drupal.org/project/community_tasks)
+* I should look at panels at some point [http://drupal.org/project/panels](http://drupal.org/project/panels)
 
 
-job search http://drupal.org/project/jobsearch
-classifieds http://drupal.org/project/ed_classified
+job search [http://drupal.org/project/jobsearch](http://drupal.org/project/jobsearch)
+classifieds [http://drupal.org/project/ed_classified](http://drupal.org/project/ed_classified)
 
-userwall http://drupal.org/project/user_wall
-attach taxonomy terms to a field http://drupal.org/project/field_taxonomy
+userwall [http://drupal.org/project/user_wall](http://drupal.org/project/user_wall)
+attach taxonomy terms to a field [http://drupal.org/project/field_taxonomy](http://drupal.org/project/field_taxonomy)
 
-branding drupal page http://www.trellon.com/services/website_development/anatomy
-civicrm http://drupal.org/project/civicrm
+branding drupal page [http://www.trellon.com/services/website_development/anatomy](http://www.trellon.com/services/website_development/anatomy)
+civicrm [http://drupal.org/project/civicrm](http://drupal.org/project/civicrm)
 http://drupal.org/project/activism (also may allow volunteering)
 
 ell a friend
 http://drupal.org/project/send
 http://drupal.org/project/tellafriend_node
 
-transaction? http://drupal.org/project/transaction
+transaction? [http://drupal.org/project/transaction](http://drupal.org/project/transaction)
 
-hides all troll postings http://drupal.org/project/cave *
+hides all troll postings [http://drupal.org/project/cave](http://drupal.org/project/cave) *
 
-community building http://drupal.org/node/206724
-actions http://drupal.org/node/298476
-potluck? webform http://drupal.org/handbook/modules/webform
-uc node checkout instructions http://drupaleasy.com/blogs/ultimike/2009/03/event-registration-ubercart
+community building [http://drupal.org/node/206724](http://drupal.org/node/206724)
+actions [http://drupal.org/node/298476](http://drupal.org/node/298476)
+potluck? webform [http://drupal.org/handbook/modules/webform](http://drupal.org/handbook/modules/webform)
+uc node checkout instructions [http://drupaleasy.com/blogs/ultimike/2009/03/event-registration-ubercart](http://drupaleasy.com/blogs/ultimike/2009/03/event-registration-ubercart)
 
-open inviter http://openinviter.com/article.php?service=drupal
+open inviter [http://openinviter.com/article.php?service=drupal](http://openinviter.com/article.php?service=drupal)
 http://drupal.org/node/483570 facebookstream
 
 use: jewishmeetup for keeping track of friends birthdays, looking for events in chicago, finding people based on age/sex, looking for groups chicago based people are in. what else? blogging? w moderators and extra fields that can be added and search criteria and phone numbers and address and public/private information for user-defined fields
 
 http://drupal.org/project/check_heavy_ui
 
-honeypot http://drupal.org/project/httpbl
-spam http://drupal.org/project/mollom
-bad behavior http://drupal.org/project/badbehavior
+honeypot [http://drupal.org/project/httpbl](http://drupal.org/project/httpbl)
+spam [http://drupal.org/project/mollom](http://drupal.org/project/mollom)
+bad behavior [http://drupal.org/project/badbehavior](http://drupal.org/project/badbehavior)
 
 contentprofile
 webform

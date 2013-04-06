@@ -44,15 +44,15 @@ Other introspection-type libraries I'm aware of (I'll update this)
 
 
 	
-  * rubydeps: https://github.com/dcadenas/rubydeps
+  * rubydeps: [https://github.com/dcadenas/rubydeps](https://github.com/dcadenas/rubydeps)
 
 	
-  * railroady: https://github.com/preston/railroady (fork of the older railroad https://github.com/tobias/RailRoad )
+  * railroady: [https://github.com/preston/railroady](https://github.com/preston/railroady) (fork of the older railroad [https://github.com/tobias/RailRoad](https://github.com/tobias/RailRoad) )
 
 	
-  * pelusa: https://github.com/codegram/pelusa
+  * pelusa: [https://github.com/codegram/pelusa](https://github.com/codegram/pelusa)
 
 	
-  * laser: https://github.com/michaeledgar/laser
+  * laser: [https://github.com/michaeledgar/laser](https://github.com/michaeledgar/laser)
 
 
