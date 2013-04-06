@@ -10,9 +10,9 @@ I really enjoyed reading John Barker's [Letter to myself as as junior developer]
 
 I would include 'find a mentor' or 'find a community'.
 
-I would also add, be aware of fads and trends for languages, software, and techniques.   Some ideas that are all the rage now will cause you pain if you try to apply them 'just because everyone is now saying you're doing it wrong'.  I often this of this [Pragmatic Programmer Magazine article on Shu-ha-ri](http://pivotallabs.com/letter-to-myself-as-a-junior-developer/).
+I would also add, be aware of fads and trends for languages, software, and techniques.   Some ideas that are all the rage now will cause you pain if you try to apply them 'just because everyone is now saying you're doing it wrong'.  I often think of this [Pragmatic Programmer Magazine article on Shu-ha-ri](http://pivotallabs.com/letter-to-myself-as-a-junior-developer/).
 
-Don't over-engineer. Don't problems you don't have.  e.g. Maybe this app will need a SOA in 6 months, but right now it will work fine as a vanilla Rails app.  [Start with the golden/happy path, and move outwards](http://evan.tiggerpalace.com/articles/2012/11/21/use-rails-until-it-hurts/). Of course, be open to extension.
+Don't over-engineer. Don't solve problems you don't have.  e.g. Maybe this app will need a SOA in 6 months, but right now it will work fine as a vanilla Rails app.  [Start with the golden/happy path, and move outwards](http://evan.tiggerpalace.com/articles/2012/11/21/use-rails-until-it-hurts/). Of course, be open to extension.
 
 Don't use DRY (Don't repeat yourself) as a verb.  DRY means that each concept should live in one place.  Kind of like the single responsibility concept. [It does not mean avoid text duplication in your code at the cost of ease of comprehension](https://groups.google.com/forum/#!topic/software_craftsmanship/XdgkE31HGI0).  And yes, keep related ideas together and distinct concepts separate.  But, don't separate into new objects until you feel pain or discomfort with the current arrangement.  Constantly ask yourself if this class or method really needs to know about another class, or other domain concepts.
 
