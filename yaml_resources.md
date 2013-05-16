@@ -10,7 +10,7 @@ title: "YAML Resources"
 
 * Symbols
 * Classes
-* JSON subset
+* JSON superset
 
 ## YAML Ruby Library Code
 
