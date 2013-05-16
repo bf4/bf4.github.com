@@ -6,17 +6,17 @@ title: "YAML Resources"
 
 <section class="content">
 
+## YAML Spec and Terminology
+
+* Symbols
+* Classes
+* JSON subset
+
 ## YAML Ruby Library Code
 
 * [YAML MRI 2.0.0](https://github.com/ruby/ruby/blob/v2_0_0_0/lib/yaml.rb)
 * [YAML MRI 1.9.3](https://github.com/ruby/ruby/blob/v1_9_3_392/lib/yaml.rb)
 * [YAML MRI 1.8.7](https://github.com/ruby/ruby/blob/v1_8_7_371/lib/yaml.rb)
-
-## Usage and Terminology
-
-* Symbols
-* Classes
-* JSON subset
 
 ## Gotchas
 
