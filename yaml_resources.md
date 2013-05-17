@@ -6,6 +6,17 @@ title: "YAML Resources"
 
 <section class="content">
 
+## YAML, what is it good for?
+
+YAML (YAML Ain't Markup Language)  has been a structured data format frequently used in of Ruby development for some time.  It has many useful features that often go unnoticed.  Its ability to store serialized objects has recently made much news in the form of very serious vulnerabilities in the Rails framework. 
+
+Let's explore ways of using YAML beyond a simple store of arrays and hashes of data, as well as the risks and benefits of doing so.  
+
+We will discuss YAML databases, configuration files, conversion into and from Ruby objects, incompatibilities between parsers (Syck and Psych) and the reasons for them, and some gotchas.   
+
+Some reference will be made to YAML libraries in Ruby and other languages.  http://www.yaml.org/
+
+
 ## YAML Spec and Terminology
 
 * [YAML Ain’t Markup Language (YAML™) Version 1.2](http://yaml.org/spec/1.2/spec.html)
