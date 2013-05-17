@@ -189,6 +189,7 @@ production:
 * [Removing Syck from ruby](http://www.ruby-forum.com/topic/204389)
 * [VCR: Request/Response data is saved to disk as YAML by default](https://www.relishapp.com/vcr/vcr/v/2-0-0-beta2/docs/cassettes/cassette-format#request/response-data-is-saved-to-disk-as-yaml-by-default)
   * [YAML issues in VCR](http://myronmars.to/n/dev-blog/2011/11/cassettes-in-vcr-2-0)
+  * [hiding vcr recorded api credentials](https://github.com/mislav/movieapp/blob/28897b1afe56bea40c05e418ddaf3aad1deaf2ca/spec/support/vcr.rb#L134-L136)
 * [Parsing YAML 1.1 with Ruby](http://www.opinionatedprogrammer.com/2011/04/parsing-yaml-1-1-with-ruby/)
 * [Shaving A YAML Yak](http://blog.rubygems.org/2011/08/31/shaving-the-yaml-yak.html)
 * [Force YAML to use syck rather than psych. Eventually delayed_job should be made compatible with both.](https://github.com/collectiveidea/delayed_job/commit/cbb4060)
