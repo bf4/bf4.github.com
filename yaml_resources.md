@@ -16,6 +16,7 @@ We will discuss YAML databases, configuration files, conversion into and from Ru
 
 Some reference will be made to YAML libraries in Ruby and other languages.  http://www.yaml.org/
 
+In progress notes on the topic follow
 
 ## YAML Spec and Terminology
 
