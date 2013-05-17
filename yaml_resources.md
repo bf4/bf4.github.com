@@ -8,9 +8,75 @@ title: "YAML Resources"
 
 ## YAML Spec and Terminology
 
+* [YAML Ain’t Markup Language (YAML™) Version 1.2](http://yaml.org/spec/1.2/spec.html)
+
+{% highlight yaml %}
+%YAML 1.2
+---
+YAML: YAML Ain't Markup Language
+
+What It Is: YAML is a human friendly data serialization
+  standard for all programming languages.
+{% endhighlight %}
+
 * Symbols
 * Classes
-* JSON superset
+* [JSON superset](http://yaml.org/spec/1.2/spec.html#id2759572)
+
+<span style="font-size: 0.5em;">
+The primary objective of this revision is to bring YAML into compliance with JSON as an official subset. YAML 1.2 is compatible with 1.1 for most practical applications - this is a minor revision. An expected source of incompatibility with prior versions of YAML, especially the syck implementation, is the change in implicit typing rules. We have removed unique implicit typing rules and have updated these rules to align them with JSON's productions. In this version of YAML, boolean values may be serialized as “true” or “false”; the empty scalar as “null”. Unquoted numeric values are a superset of JSON's numeric production. Other changes in the specification were the removal of the Unicode line breaks and production bug fixes. We also define 3 built-in implicit typing rule sets: untyped, strict JSON, and a more flexible YAML rule set that extends JSON typing.
+</span>
+
+###  Terms
+
+<div style="font-size: 0.5em;">
+
+    Collections
+      Sequence
+      Mapping
+
+      Mapping-in-Sequence Shortcut
+      Sequence-in-Mapping Shortcut
+
+      Merge key
+
+    Basic Types
+      Strings
+      Indicators in Strings
+      Plain scalars
+      Null
+      Boolean
+      Integers
+      Integers as Map Keys
+      Floats
+      Time
+      Date
+      Blocks
+      Single ending newline
+      The '+' indicator
+      Three trailing newlines in literals
+      Extra trailing newlines with spaces
+      Folded Block in a Sequence
+
+    Aliases and Anchors
+
+    Documents
+    Trailing Document Separator
+    Leading Document Separator
+    YAML Header
+
+    YAML For Ruby
+    Symbols
+    Ranges
+    Regexps
+    Perl Regexps
+    Struct class
+    Nested Structs
+    Objects
+    Extending Kernel::Array
+    Extending Kernel::Hash
+
+</div>
 
 ## YAML Ruby Library Code
 
@@ -18,7 +84,27 @@ title: "YAML Resources"
 * [YAML MRI 1.9.3](https://github.com/ruby/ruby/blob/v1_9_3_392/lib/yaml.rb)
 * [YAML MRI 1.8.7](https://github.com/ruby/ruby/blob/v1_8_7_371/lib/yaml.rb)
 
+### Psych and Syck
+
+* [Psych isn't Syck](http://blog.tddium.com/2011/12/01/psych-isnt-syck/)
+* [Psych vs. Syck](http://docs.tddium.com/troubleshooting/step-by-step-troubleshooting-guide/psych-vs-syck-yaml-parsing/)
+
+## Guides
+
+* [YAML homepage](http://yaml.org/)
+* [Complete idiot's guide to YAML (config.yml)](http://dev.bukkit.org/server-mods/craftirc/pages/complete-idiots-guide-to-yaml-config-yml/)
+* [YAML Tutorial](http://rhnh.net/2011/01/31/yaml-tutorial) [2](http://ess.khhq.net/wiki/YAML_Tutorial)
+* [YAML Cookbook](http://yaml.org/YAML_for_ruby.html)
+
 ## Gotchas
+
+* [Yaml, Psych and Ruby 1.9.2-p180 – Here there be dragons](http://pivotallabs.com/yaml-psych-and-ruby-1-9-2-p180-here-there-be-dragons/)
+
+Ruby
+
+* 1.8 : uses Syck
+* 1.9 YAML == Psych, but can YAML::ENGINE.yamler = 'syck'
+* 2.0 YAML == Psych, Syck removed from stlibi
 
 ## Tricks
 
@@ -75,5 +161,30 @@ production:
 ## Interesting
 
 * [YAML Support and Hash Representer In representable-1.2.7!](http://nicksda.apotomo.de/2012/10/yaml-support-and-hash-representer-in-representable-1-2-7/)
+* [Putting YAML at the top of a Markdown file with Metadown](http://rubydoc.info/github/steveklabnik/metadown/master/file/README.md)
+
+## Misc dump for now
+
+* [Rails Allow to_xml and from_xml to work with AR models that have serialized fields](http://web.archive.org/web/20071218105822/http://dev.rubyonrails.org/ticket/7502)
+* [Psych: Strings that look like dates should be treated as strings and not dates.](https://github.com/ruby/ruby/commit/9f688d53c2b5af5960d1e8d8fb09b26aa9d8b5f9)
+* [Fun with Syck and Psych on Heroku. This is one of those posts that's inspired by a desire never to have to investigate the same bug again.](http://effectif.com/ruby-on-rails/syck-and-psych-yaml-parsers-on-heroku)
+* [Psych-based yaml in Ruby 1.9.3 too slow](https://github.com/tenderlove/psych/issues/84)
+* [Psych can't parse YML in RefineryCMS that syck can](https://github.com/tenderlove/psych/issues/10)
+* [Delayed job 3.0.1 not working, breaks on to_yaml](https://github.com/collectiveidea/delayed_job/issues/350)
+* [Convert Syck to Psych YAML format](http://darwinweb.net/articles/convert-syck-to-psych-yaml-format)
+* [[Bug #3112] require "yaml" doesn't use psych as default](http://www.ruby-forum.com/topic/207565)
+* [[ruby-trunk - Feature #6163][Open] Remove syck YAML extension](http://www.ruby-forum.com/topic/3869916)
+* [Removing Syck from ruby](http://www.ruby-forum.com/topic/204389)
+* [VCR: Request/Response data is saved to disk as YAML by default](https://www.relishapp.com/vcr/vcr/v/2-0-0-beta2/docs/cassettes/cassette-format#request/response-data-is-saved-to-disk-as-yaml-by-default)
+  * [YAML issues in VCR](http://myronmars.to/n/dev-blog/2011/11/cassettes-in-vcr-2-0)
+* [Parsing YAML 1.1 with Ruby](http://www.opinionatedprogrammer.com/2011/04/parsing-yaml-1-1-with-ruby/)
+* [Shaving A YAML Yak](http://blog.rubygems.org/2011/08/31/shaving-the-yaml-yak.html)
+* [Force YAML to use syck rather than psych. Eventually delayed_job should be made compatible with both.](https://github.com/collectiveidea/delayed_job/commit/cbb4060)
+* [work around the syck/psych confusion yaml brings to ruby 1.9.2 by trying to load psych before yaml](https://github.com/ahoward/systemu/pull/7)
+* [SafeYAML: Support for custom deserializer?](https://github.com/dtao/safe_yaml/issues/21)
+* [JRuby 1.9 problem with Syck](https://github.com/padrino/padrino-framework/issues/649)
+* Q&A
+  * [Why the difference in behavior of YAML parsers (syck and psych)?](http://stackoverflow.com/questions/8763498/why-the-difference-in-behavior-of-yaml-parsers-syck-and-psych)
+  * [rails error, couldn't parse YAML](http://stackoverflow.com/questions/4980877/rails-error-couldnt-parse-yaml)
 
 </section>
