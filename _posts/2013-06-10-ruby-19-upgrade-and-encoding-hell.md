@@ -31,6 +31,8 @@ We first tried changing the encoding of our files, but caused exceptions on app 
 
 For whatever reason, trying to recode the files with `iconv` or `recode` didn't do anything.
 
+We added the [Rack UTF8 Sanitizer middleware](http://whitequark.org/blog/2013/03/05/rack-utf8sanitizer/), but that didn't help
+
 So, we added magic comments to all our relevant files
 
     prepend() {
@@ -68,3 +70,10 @@ And then realized in `config/environments/production.rb` we had set the cache st
 
 The errors were coming from ascii files in the file system cache.  We cleared the cache and everything worked.
 That took 3 hours. I hope this saved you some time.
+
+Links
+
+* [Joel Spolsky: The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](http://www.joelonsoftware.com/articles/Unicode.html)
+* [Ruby 1.9.1 - invalid multibyte escape: // (RegexpError)](http://www.ruby-forum.com/topic/183413) [2](http://stackoverflow.com/a/3588872/879854)
+* [Working with Encodings in Ruby 1.9](http://nuclearsquid.com/writings/ruby-1-9-encodings/)
+* [Understanding M17n](http://web.archive.org/web/20120805034228/http://blog.grayproductions.net/articles/understanding_m17n)
