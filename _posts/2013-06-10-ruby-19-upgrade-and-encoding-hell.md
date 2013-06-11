@@ -48,10 +48,13 @@ The fix for multibyte escape error seemed pretty ugly, but worked easily enough
 
     # help out copy and pasting errors of good-looking email addresses
     # by stripping out non-ASCII characters
-    -    pattern = /[\x80-\xff]/
-    +    # avoids invalid multi-byte escape error
-    +    # see http://www.ruby-forum.com/topic/183413
-    +    pattern = Regexp.new('[\x80-\xff]', nil, 'n')
+    def clean_ascii_text(text)
+      # avoids invalid multi-byte escape error
+      ascii_text = text.encode( 'ASCII', invalid: :replace, undef: :replace, replace: '' )
+      # see http://www.ruby-forum.com/topic/183413
+      pattern = Regexp.new('[\x80-\xff]', nil, 'n')
+      ascii_text.gsub(pattern, '')
+    end
 
 We ensured our rails config set the encoding to utf8, that our database adapter was utf8, that our database tables
 were collated as utf8. No dice.
@@ -77,3 +80,5 @@ Links
 * [Ruby 1.9.1 - invalid multibyte escape: // (RegexpError)](http://www.ruby-forum.com/topic/183413) [2](http://stackoverflow.com/a/3588872/879854)
 * [Working with Encodings in Ruby 1.9](http://nuclearsquid.com/writings/ruby-1-9-encodings/)
 * [Understanding M17n](http://web.archive.org/web/20120805034228/http://blog.grayproductions.net/articles/understanding_m17n)
+* [Stripping Invalid UTF-8](http://www.spacevatican.org/2012/7/7/stripping-invalid-utf-8/) [2](http://www.ruby-forum.com/topic/208730)
+* [Ruby 1.9 Encodings: A Primer and the Solution for Rails](http://yehudakatz.com/2010/05/05/ruby-1-9-encodings-a-primer-and-the-solution-for-rails/)
