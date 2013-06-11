@@ -48,7 +48,7 @@ The fix for multibyte escape error seemed pretty ugly, but worked easily enough
 
     # help out copy and pasting errors of good-looking email addresses
     # by stripping out non-ASCII characters
-    -    pattern = %r([\\x80-\\xff])
+    -    pattern = /[\x80-\xff]/
     +    # avoids invalid multi-byte escape error
     +    # see http://www.ruby-forum.com/topic/183413
     +    pattern = Regexp.new('[\x80-\xff]', nil, 'n')
