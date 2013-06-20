@@ -12,7 +12,7 @@ title: Pair
 
 The [#pairwithme hashtag](https://twitter.com/search?q=%23pairwithme) and [PairProgramWith.me](http://www.pairprogramwith.me/) are some shortcuts for offering to pair program.  Email me <img src="/images/email_pair.png" title="email pair address" alt="email pair address"> <a href="https://twitter.com/intent/tweet?text=%23pairwithme%20%40{{ site.author.twitter }}" target="_blank"> or tweet me with contact info</a>
 
-I've have experience pairing with vim, wemux, ssh, and skype/google voice.
+I have have experience pairing with vim, wemux, ssh, and skype/google voice.
 
 ## Pair and tell
 
