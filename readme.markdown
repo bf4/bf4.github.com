@@ -18,6 +18,17 @@ words.
 
 You should have a server up and running locally at <http://localhost:4000>.
 
+## [Jekyll YAML frontmatter reference](http://jekyllrb.com/docs/frontmatter/)
+
+## Using
+
+```rake
+rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
+rake page name="about.html"
+# You can also specify a sub-directory path.
+# If you don't specify a file extention we create an index.html at the path specified
+```
+
 ## Customization
 
 Next you'll want to change a few things. Most of them can be changed directly in
