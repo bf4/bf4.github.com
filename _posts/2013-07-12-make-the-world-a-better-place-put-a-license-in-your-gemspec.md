@@ -3,7 +3,7 @@ layout: post
 title: "Make the world a better place; put a license in your gemspec"
 slug:  'put-a-license-in-your-gemspec'
 description: "Be a good ruby citizen, put a license in your gemspec"
-categories: ['code', 'ruby']
+category:
 tags: ['ruby','rubygems','command-line']
 published: true
 comments: false
