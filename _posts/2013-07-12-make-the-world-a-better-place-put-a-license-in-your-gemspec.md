@@ -5,6 +5,7 @@ slug:  'put-a-license-in-your-gemspec'
 description: "Be a good ruby citizen, put a license in your gemspec"
 categories: 
   - Code
+  - Ruby
 tags: 
   - ruby
   - rubygems
