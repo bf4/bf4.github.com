@@ -57,9 +57,10 @@ good and people seemed thankful. It felt good.
 As I iterated on this, I added more text to the issues I was creating to answer, in advance, why have a license in the spec,
 how to add it, and how I found them.  Since I now reference the [rubygems.org issue about surfacing gem licenses on the site](https://github.com/rubygems/rubygems.org/issues/363#issuecomment-5079786)
 in my issue, you can [go there](https://github.com/rubygems/rubygems.org/issues/363#issuecomment-5079786) to see a list of all the issues
-I've created and their status.
+I've since created and their status.
 
-I'm pretty happy about this, and  have [gotten some nice positive feedback](https://groups.google.com/d/topic/license-finder/1h319JFT8bo/discussion).
+I'm pretty happy about this, and  have [gotten some](https://groups.google.com/d/topic/license-finder/1h319JFT8bo/discussion)
+[nice](https://github.com/warwickshire/remote_partial/issues/1) [positive feedback](https://github.com/rsslldnphy/either/issues/1).
 
 Of the [92 issues I've created in the last day-and-a-half](https://gist.github.com/bf4/5952053#file-license_issues-txt),
  37 have closed the issue and added a license. 
