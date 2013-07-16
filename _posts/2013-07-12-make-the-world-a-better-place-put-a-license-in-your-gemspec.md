@@ -3,10 +3,10 @@ layout: post
 title: "Make the world a better place; put a license in your gemspec"
 slug:  'put-a-license-in-your-gemspec'
 description: "Be a good ruby citizen, put a license in your gemspec"
-categories: 
+categories:
   - Code
   - Ruby
-tags: 
+tags:
   - ruby
   - rubygems
 published: true
@@ -70,3 +70,11 @@ I'm pretty happy about this, and  have [gotten some](https://groups.google.com/d
 * 2013-07-12: Of the [92 issues I've created in the last day-and-a-half](https://gist.github.com/bf4/5952053#file-license_issues-txt),
  37 have closed the issue and added a license.
 * 2013-07-15: 96 closed issues out of 240
+
+## Appendix
+
+* [Github is now helping users ensure their projects have a license.](https://www.infoworld.com/d/open-source-software/github-finally-takes-open-source-licenses-seriously-222708) by providing
+  a [license picker](http://choosealicense.com/) when a user creates a new repository. ![Github License Picker]("{{ BASE_PATH }}/images/github-license-picker.jpg" 'Github License Picker'
+  According to copyright law, not having an OSI-approved open source license means
+  you have no rights to use the code for any purpose -- in other words, ["all rights reserved."](https://www.infoworld.com/d/open-source-software/github-needs-take-open-source-seriously-208046).
+
