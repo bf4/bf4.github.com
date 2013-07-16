@@ -57,7 +57,7 @@ Giles also notes [that the rails controller does an awful job at separation of c
       * decorators when
         * The additional behavior only runs sometimes -- for example only posting to Facebook for users who signed up with Facebook Connect.
         * The additional behavior makes the objects harder to test. The smell here is that you need to stub out the callback or disable the decorator in wholly unrelated test cases.
-      * callbacks if the behavior runs all the time and is simple enough to never feel the urge to stub it. I generally don't use observers, because they don't fit in well to that ruleset.
+      * callbacks if the behavior runs all the time and is simple enough to never feel the urge to stub it. Observers don't fit in well to that ruleset.
     * see [review of decorator facilities in ruby](http://robots.thoughtbot.com/post/14825364877/evaluating-alternative-decorator-implementations-in)
   * FormObject/ViewModel/Presenter e.g. Signup.new(company_name, user_email, user_name).save to signup a user and add to a company, and also determines
     whether to show specific content and present notification
