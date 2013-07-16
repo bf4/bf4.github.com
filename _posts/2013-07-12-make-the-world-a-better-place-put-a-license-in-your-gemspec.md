@@ -67,5 +67,6 @@ I've since created and their status.
 I'm pretty happy about this, and  have [gotten some](https://groups.google.com/d/topic/license-finder/1h319JFT8bo/discussion)
 [nice](https://github.com/warwickshire/remote_partial/issues/1) [positive feedback](https://github.com/rsslldnphy/either/issues/1).
 
-Of the [92 issues I've created in the last day-and-a-half](https://gist.github.com/bf4/5952053#file-license_issues-txt),
+* 2013-07-12: Of the [92 issues I've created in the last day-and-a-half](https://gist.github.com/bf4/5952053#file-license_issues-txt),
  37 have closed the issue and added a license.
+* 2013-07-15: 96 closed issues out of 240
