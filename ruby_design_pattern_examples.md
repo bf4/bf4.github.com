@@ -3,6 +3,7 @@ layout: page
 title: "Ruby Domain / Design Pattern Examples"
 description: "Practical examples of some design patterns in Ruby"
 comments: false
+date: 2013-07-16
 ---
 {% include JB/setup %}
 
