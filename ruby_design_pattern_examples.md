@@ -43,17 +43,17 @@ Giles also notes [that the rails controller does an awful job at separation of c
 
 ## Common Objects Patterns in web apps
 
-* ValueObject e.g. Rating, PhoneNumber, that can be used as a hash key (requires implementing :hash, :eql?)
-* FormObject/ViewModel/Presenter for your rails view/template
 * Move constraints such as authorization to your router
 * Use active support hooks e.g. ActiveSupport.on_load, 
 * Make your own validations with ActiveModel::EachValidator
-* It's better to use instance methods than class methods ([which resist refactoring](https://gist.github.com/bf4/5594532#file-callbacks-rb))
-* [modularize domain roles](https://gist.github.com/bf4/5594532#file-callbacks-rb)
+* It's better to use instance methods than class methods ([which resist refactoring](http://blog.codeclimate.com/blog/2012/11/14/why-ruby-class-methods-resist-refactoring/))
+* [Domain object that often appear](http://blog.codeclimate.com/blog/2012/10/17/7-ways-to-decompose-fat-activerecord-models/)
+  * ValueObject e.g. Rating, PhoneNumber, that can be used as a hash key (requires implementing :hash, :eql?)
   * Service object, e.g. UserAuthenticator.new(user).authenticate(*args) to write data
   * Query object e.g. AbandonedTrialQuery.new(Account.scoped).find_each(&block) to read from db/sql
   * Policy object e.g. ActiveUserPolicy.new(user).active? to read state from objects in memory
   * Decorator e.g. FacebookCommentNotifier.new(comment).save to separate concerns
+  * FormObject/ViewModel/Presenter e.g. Signup.new(company_name, user_email, user_name).save to signup a user and add to a company, for your rails view/template
   * View object e.g. DonutChart.new(snapshot) that respond to #cache_key
 * a Cache managing object
 * Method Object: takes in args and has a method that does the work
