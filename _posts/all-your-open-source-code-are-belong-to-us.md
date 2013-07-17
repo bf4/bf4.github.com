@@ -7,3 +7,6 @@ tags: []
 published: false
 ---
 {% include JB/setup %}
+
+* stillmaintained.com
+* http://www.element84.com/github-pull-requests-made-easy.html
