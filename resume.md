@@ -2,14 +2,6 @@
 layout: mark-reid.page
 ---
 {% include JB/setup %}
-<html>
-<head>
-   <title>Benjamin Fleischer's Resume</title>
-   <link href="/css/resume.css" media="screen" rel="stylesheet" type="text/css" />
-</head>
-<body>
-<div id="resume">
-
     Benjamin Fleischer
       Chicago, IL, United States
       hello at this domain
@@ -186,8 +178,3 @@ layout: mark-reid.page
 *   PADI Scuba Diver Certified, 2011
 *   Black-Belt Recommended in ATA Songham Taekwondo
 *   Director on Condominium Board (2009-Present, Secretary 2009-2011) of 3150 N Lake Shore Drive Condominium.  Manage web site and Community Relations &amp; Communications Committee.
-
-
- </div>
-</body>
-</html>
