@@ -91,11 +91,11 @@ other refs
 
 So, to boil it all down, our consensus recommendations:
 
-  1. When writing code that only uses _rails)
+  1. When writing code that only uses _rails_
     * use **autoload** :ClassName, relative_path
     * this is okay since rails makes autoload not broken, and lazy loading is good.
     * otherwise, autoload isn't threadsafe and should not be used
-  2. _Else,
+  2. _Else_
     1. in a gem or library that is in the load path, (e.g. lib)
       * use vanilla** :require** since in all rubies the argument will searched for via the load paths. e.g. require 'foo/bar' in lib/foo.rb and in lib/foo/bar.rb use require 'bar/baz' to require 'lib/foo/bar/baz.rb'
         * to achieve lazy loading, put the require statement in a method or block to be evaluated when needed
