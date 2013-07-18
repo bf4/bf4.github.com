@@ -15,82 +15,78 @@ published: false
 
 ## Message to Ruby Rogues maling list
 
-TL;DR autoload looks great and is used all over rails, but it's not threadsafe and Matz said not to use it, prefer require or require_relative.  What should is true; is somebody wrong on the internet?
+TL;DR autoload looks great and is used all over rails, but it's not threadsafe and Matz said not to use it, prefer require or require_relative.  What should is true; is somebody wrong on the internet?
 
 Content-Encoding: links, quotes and discussion
 Content-Disposition: confused
 
-Some time ago I got in the habit of always calling require with an absolute path
+Some time ago [I got in the habit](http://devblog.avdi.org/2009/10/22/double-load-guards-in-ruby/) of always calling require with an absolute path
 
-    require File.expand_path('../foo', __FILE__)
+> require File.expand_path('../foo', __FILE__)
 
-to ensure that all require arguments are full-paths and hence the same file is never loaded twice by a require statement.  I also do this when loading files, but there's no benefit I'm aware of.
+to ensure that all require arguments are full-paths and hence the same file is never loaded twice by a require statement.  I also do this when loading files, but there's no benefit I'm aware of.
 
 In reading Jose Valim's Crafting Rails Applications (awesome!) I notice he uses autoload a lot, which I thought was frowned upon due to race-conditions or something.. but then all over the rails code base, I see
 
-    autoload :Foo, 'relative/path/to/foo'
+> autoload :Foo, 'relative/path/to/foo'
 
-Since it always uses relative paths, as long as my code has a single entry point, such as in a gem, shouldn't this be a really a really common technique? I mean, unless I want to load a file that doesn't have a class in it, I should always use it, and then we don't need something like [https://github.com/rspec/rspec-core/blob/master/lib/rspec/core.rb#L1](https://github.com/rspec/rspec-core/blob/master/lib/rspec/core.rb#L1)
-
-
-    require_rspec = if defined?(require_relative)
-    
-      lambda do |path|
-    
-        require_relative path
-      end
-    
-    else
-      lambda do |path|
-    
-        require "rspec/#{path}"
-    
-      end
-    end
-
-which is basically how rails autoloads files in [https://github.com/rails/rails/blob/b025fca0c5/activesupport/lib/active_support/dependencies/autoload.rb](https://github.com/rails/rails/blob/b025fca0c5/activesupport/lib/active_support/dependencies/autoload.rb)  where it just tries to guess the autoload path if not given
+Since it always uses relative paths, as long as my code has a single entry point, such as in a gem, shouldn't this be a really a really common technique? I mean, unless I want to load a file that doesn't have a class in it, I should always use it, and then we don't need something like [https://github.com/rspec/rspec-core/blob/master/lib/rspec/core.rb#L1](https://github.com/rspec/rspec-core/blob/master/lib/rspec/core.rb#L1)
 
 
-    # This module allows you to define autoloads based on
+> require_rspec = if defined?(require_relative)
+>   lambda do |path|
+>     require_relative path
+>   end
+> else
+>   lambda do |path|
+>     require "rspec/#{path}"
+>   end
+> end
 
-    # Rails conventions (i.e. no need to define the path
 
-    # it is automatically guessed based on the filename)
-    #
-    #   module MyLib
+which is basically how rails autoloads files in [https://github.com/rails/rails/blob/b025fca0c5/activesupport/lib/active_support/dependencies/autoload.rb](https://github.com/rails/rails/blob/b025fca0c5/activesupport/lib/active_support/dependencies/autoload.rb)  where it just tries to guess the autoload path if not given
 
-    #     extend ActiveSupport::Autoload
-    #
 
-    #     autoload :Model
+  # This module allows you to define autoloads based on
+  # Rails conventions (i.e. no need to define the path
+  # it is automatically guessed based on the filename)
+
+  #
+  # module MyLib
+  # extend ActiveSupport::Autoload
+  #
+  # autoload :Model
+
+
 
 so, autoload is great.. but wait, the old discussions are fairly serious that autoload isn't threadsafe and shouldn't be used
 
-* [http://bugs.ruby-lang.org/issues/show/921](http://bugs.ruby-lang.org/issues/show/921) and [https://www.ruby-forum.com/topic/172385](https://www.ruby-forum.com/topic/172385) in 2008 where Charles Nutter wrote
+* [http://bugs.ruby-lang.org/issues/show/921](http://bugs.ruby-lang.org/issues/show/921) and [https://www.ruby-forum.com/topic/172385](https://www.ruby-forum.com/topic/172385) in 2008 where Charles Nutter wrote
 
-    Currently autoload is not safe to use in a multi-threaded application. To put it more bluntly, it's broken.
-    
-    The current logic for autoload is as follows:
-    
-    1. A special object is inserted into the target constant table, used as a marker for autoloading
-    2. When that constant is looked up, the marker is found and triggers autoloading
-    3. The marker is first removed, so the constant now appears to be undefined if retrieved concurrently
-    4. The associated autoload resource is required, and presumably redefines the constant in question
-    5. The constant lookup, upon completion of autoload, looks up the constant again and either returns its new value or proceeds with normal constant resolution
-    
-    The problem arises when two or more threads try to access the constant. Because autoload is stateful and unsynchronized, the second thread may encounter the constant table in any number of states:
-    
-    1. It may see the autoload has not yet fired, if the first thread has encountered the marker but not yet removed it. It would then proceed along the same autoload path, requiring the same file a second time.
-    2. It may not find an autoload marker, and assume the constant does not exist.
-    3. It may see the eventual constant the autoload was intended to define.
-    
-    Of these combinations, (3) is obviously the desired behavior. (1) can only happen on native-threaded implementations that do not have a global interpreter lock, since it requires concurrency during autoload's internal logic. (2) can happen on any implementation, since while the required file is processing the original autoload constant appears to be undefined.
-* [https://www.ruby-forum.com/topic/3036681](https://www.ruby-forum.com/topic/3036681) where Matz said in 2011 'autoload will be dead, I strongly discourage the use of autoload in any standard libraries'
+<pre>Currently autoload is not safe to use in a multi-threaded application. To put it more bluntly, it's broken.
+
+The current logic for autoload is as follows:
+
+1. A special object is inserted into the target constant table, used as a marker for autoloading
+2. When that constant is looked up, the marker is found and triggers autoloading
+3. The marker is first removed, so the constant now appears to be undefined if retrieved concurrently
+4. The associated autoload resource is required, and presumably redefines the constant in question
+5. The constant lookup, upon completion of autoload, looks up the constant again and either returns its new value or proceeds with normal constant resolution
+
+The problem arises when two or more threads try to access the constant. Because autoload is stateful and unsynchronized, the second thread may encounter the constant table in any number of states:
+
+1. It may see the autoload has not yet fired, if the first thread has encountered the marker but not yet removed it. It would then proceed along the same autoload path, requiring the same file a second time.
+2. It may not find an autoload marker, and assume the constant does not exist.
+3. It may see the eventual constant the autoload was intended to define.
+
+Of these combinations, (3) is obviously the desired behavior. (1) can only happen on native-threaded implementations that do not have a global interpreter lock, since it requires concurrency during autoload's internal logic. (2) can happen on any implementation, since while the required file is processing the original autoload constant appears to be undefined.</pre>
+
+* [https://www.ruby-forum.com/topic/3036681](https://www.ruby-forum.com/topic/3036681) where Matz said in 2011 'autoload will be dead, I strongly discourage the use of autoload in any standard libraries'
 
 other refs
-* [https://practicingruby.com/articles/shared/tmxmprhfrpwq](https://practicingruby.com/articles/shared/tmxmprhfrpwq)
-* [http://www.rubyinside.com/ruby-techniques-revealed-autoload-1652.html](http://www.rubyinside.com/ruby-techniques-revealed-autoload-1652.html)
-* [https://www.ruby-forum.com/topic/1940423](https://www.ruby-forum.com/topic/1940423)
+* [https://practicingruby.com/articles/shared/tmxmprhfrpwq](https://practicingruby.com/articles/shared/tmxmprhfrpwq)
+* [http://www.rubyinside.com/ruby-techniques-revealed-autoload-1652.html](http://www.rubyinside.com/ruby-techniques-revealed-autoload-1652.html)
+* [https://www.ruby-forum.com/topic/1940423](https://www.ruby-forum.com/topic/1940423)
 
 
 ## Summary of discussion on the Ruby Rogues mailing list
