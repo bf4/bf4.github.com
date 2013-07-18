@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2013-07-18 10:00:00Z
 title: "Ruby requires confusion"
 description: "How should you load code: require, require_relative, or autoload?"
 categories:
@@ -9,7 +10,7 @@ tags:
   - ruby
   - rubygems
 comments: false
-published: false
+published: true
 ---
 {% include JB/setup %}
 
@@ -121,3 +122,5 @@ Appendix:
 ## Other comments from the discussion
 
 * [http://myronmars.to/n/dev-blog/2012/12/5-reasons-to-avoid-bundler-require](http://myronmars.to/n/dev-blog/2012/12/5-reasons-to-avoid-bundler-require)
+
+Updates coming...
