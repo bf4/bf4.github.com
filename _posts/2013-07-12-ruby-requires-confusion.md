@@ -93,31 +93,30 @@ other refs
 
 So, to boil it all down, our consensus recommendations:
 
-1. When writing code that only uses rails
-  * use autoload :ClassName, relative_path
-  * this is okay since rails makes autoload not broken, and lazy loading is good.
-  * otherwise, autoload isn't threadsafe and should not be used
+1. When writing code that only uses <span style="text-decoration: underline;">rails</span>
+  * use **autoload** :ClassName, relative_path
+  * this is okay since rails makes autoload not broken, and lazy loading is good.
+  * otherwise, autoload isn't threadsafe and should not be used
 
-2. Else,
-  1. in a gem or library that is in the load path, (e.g. lib)
-     * use vanilla :require since in all rubies the argument will searched for via the load paths. e.g. require 'foo/bar' in lib/foo.rb and in lib/foo/bar.rb use require 'bar/baz' to require 'lib/foo/bar/baz.rb'
-       * to achieve lazy loading, put the require statement in a method or block to be evaluated when needed
-     * using :require_relative can speed up require time as it essentially uses the absolute path (equivalent to File.expand_path("../#{argument}", __FILE__)
-       * some prefer that library authors not use require_relative since it makes it impossible to mock/override the require in the test environment by manipulating the load path order. e.g. $:.unshift '.'; require 'foo_gem'
-         * avoid using require File.expand_path('../foo', __FILE__) for the above reason
-       * others prefer :require_relative whenever possible as it is faster [https://rubyforge.org/pipermail/rspec-users/2011-November/020760.html](https://rubyforge.org/pipermail/rspec-users/2011-November/020760.html)
-  2. in your own codebase e.g. your web app
-    * :require_relative is usually the better route, even in rails.
-    * beware that it doesn't work for evaluated (e.g. rack) apps [https://gist.github.com/tjsingleton/5957780](https://gist.github.com/tjsingleton/5957780)
+2. <span style="text-decoration: underline;">Else</span>,
+  1. in a gem or library that is in the load path, (e.g. lib)
+     * use vanilla** :require** since in all rubies the argument will searched for via the load paths. e.g. require 'foo/bar' in lib/foo.rb and in lib/foo/bar.rb use require 'bar/baz' to require 'lib/foo/bar/baz.rb'
+       * to achieve lazy loading, put the require statement in a method or block to be evaluated when needed
+     * using** :require_relative** can speed up require time as it essentially uses the absolute path (equivalent to File.expand_path("../#{argument}", __FILE__)
+       * <span style="text-decoration: underline;">some prefer</span> that library authors not use require_relative since it makes it impossible to mock/override the require in the test environment by manipulating the load path order. e.g. $:.unshift '.'; require 'foo_gem'
+         * avoid using require File.expand_path('../foo', __FILE__) for the above reason
+       * <span style="text-decoration: underline;">others prefer</span> :require_relative whenever possible as it is faster [https://rubyforge.org/pipermail/rspec-users/2011-November/020760.html](https://rubyforge.org/pipermail/rspec-users/2011-November/020760.html)
+  2. in your own codebase e.g. your web app
+    * :**require_relative** is usually the better route, even in rails.
+    * beware that it doesn't work for evaluated (e.g. rack) apps [https://gist.github.com/tjsingleton/5957780](https://gist.github.com/tjsingleton/5957780)
 
 Appendix:
-  * never use Bundler or require 'rubygems' or anything like that in your gem (unless you are pry?)
-  * you can also optimize load time by using Bundler.setup instead of Bundler.require in your project at the cost of having to require every library explicitly. Bundler.setup will add all your libraries to the load path, but won't actually require them. [http://myronmars.to/n/dev-blog/2012/12/5-reasons-to-avoid-bundler-require](http://myronmars.to/n/dev-blog/2012/12/5-reasons-to-avoid-bundler-require)
-  * never use :autoload except as above [https://practicingruby.com/articles/shared/tmxmprhfrpwq](https://practicingruby.com/articles/shared/tmxmprhfrpwq) [https://www.ruby-forum.com/topic/3036681](https://www.ruby-forum.com/topic/3036681)  [http://bugs.ruby-lang.org/issues/show/921](http://bugs.ruby-lang.org/issues/show/921)
-  * never manipulate the $LOAD_PATH in your library code. in test code it is okay. [http://yehudakatz.com/2009/07/24/rubygems-good-practice](http://yehudakatz.com/2009/07/24/rubygems-good-practice)/
-  * worrying about double-loading via :require is legacy 1.8 [http://devblog.avdi.org/2009/10/22/double-load-guards-in-ruby](http://devblog.avdi.org/2009/10/22/double-load-guards-in-ruby)/
-  * when using :load, do whatever you want?
-
+  * **never** use Bundler or require 'rubygems' or anything like that in your gem (unless you are pry?)
+  * you can also optimize load time by using **Bundler.setup** instead of Bundler.require in your project at the cost of having to require every library explicitly. Bundler.setup will add all your libraries to the load path, but won't actually require them. [http://myronmars.to/n/dev-blog/2012/12/5-reasons-to-avoid-bundler-require](http://myronmars.to/n/dev-blog/2012/12/5-reasons-to-avoid-bundler-require)
+  * **never** use :autoload except as above [https://practicingruby.com/articles/shared/tmxmprhfrpwq](https://practicingruby.com/articles/shared/tmxmprhfrpwq) [https://www.ruby-forum.com/topic/3036681](https://www.ruby-forum.com/topic/3036681)  [http://bugs.ruby-lang.org/issues/show/921](http://bugs.ruby-lang.org/issues/show/921)
+  * **never** manipulate the $LOAD_PATH in your library code. in test code it is okay. [http://yehudakatz.com/2009/07/24/rubygems-good-practice/](http://yehudakatz.com/2009/07/24/rubygems-good-practice/)
+  * worrying about **double-loading via :require is legacy 1.8** [http://devblog.avdi.org/2009/10/22/double-load-guards-in-ruby/](http://devblog.avdi.org/2009/10/22/double-load-guards-in-ruby/)
+  * when using **:load**, do whatever you want?
 
 ## Other comments from the discussion
 
