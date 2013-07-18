@@ -61,24 +61,25 @@ so, autoload is great.. but wait, the old discussions are fairly serious that au
 * [http://bugs.ruby-lang.org/issues/show/921](http://bugs.ruby-lang.org/issues/show/921) and [https://www.ruby-forum.com/topic/172385](https://www.ruby-forum.com/topic/172385) in 2008 where Charles Nutter wrote
 
 > Currently autoload is not safe to use in a multi-threaded application. To put it more bluntly, it's broken.
-> 
+>
 > The current logic for autoload is as follows:
-> 
+>
 > 1. A special object is inserted into the target constant table, used as a marker for autoloading
 > 2. When that constant is looked up, the marker is found and triggers autoloading
 > 3. The marker is first removed, so the constant now appears to be undefined if retrieved concurrently
 > 4. The associated autoload resource is required, and presumably redefines the constant in question
 > 5. The constant lookup, upon completion of autoload, looks up the constant again and either returns its new value or proceeds with normal constant resolution
-> 
+>
 > The problem arises when two or more threads try to access the constant. Because autoload is stateful and unsynchronized, the second thread may encounter the constant table in any number of states:
-> 
+>
 > 1. It may see the autoload has not yet fired, if the first thread has encountered the marker but not yet removed it. It would then proceed along the same autoload path, requiring the same file a second time.
 > 2. It may not find an autoload marker, and assume the constant does not exist.
 > 3. It may see the eventual constant the autoload was intended to define.
-> 
+>
 > Of these combinations, (3) is obviously the desired behavior. (1) can only happen on native-threaded implementations that do not have a global interpreter lock, since it requires concurrency during autoload's internal logic. (2) can happen on any implementation, since while the required file is processing the original autoload constant appears to be undefined.
 
-* [https://www.ruby-forum.com/topic/3036681](https://www.ruby-forum.com/topic/3036681) where Matz said in 2011 'autoload will be dead, I strongly discourage the use of autoload in any standard libraries'
+* [https://www.ruby-forum.com/topic/3036681](https://www.ruby-forum.com/topic/3036681) where Matz said in 2011
+  > 'autoload will be dead, I strongly discourage the use of autoload in any standard libraries'
 
 other refs
 
@@ -96,16 +97,16 @@ So, to boil it all down, our consensus recommendations:
     * this is okay since rails makes autoload not broken, and lazy loading is good.
     * otherwise, autoload isn't threadsafe and should not be used
   2. _Else_
-    1. in a gem or library that is in the load path, (e.g. lib)
-      * use vanilla** :require** since in all rubies the argument will searched for via the load paths. e.g. require 'foo/bar' in lib/foo.rb and in lib/foo/bar.rb use require 'bar/baz' to require 'lib/foo/bar/baz.rb'
-        * to achieve lazy loading, put the require statement in a method or block to be evaluated when needed
-      * using** :require_relative** can speed up require time as it essentially uses the absolute path (equivalent to File.expand_path("../#{argument}", __FILE__)
-        * _some prefer_ library authors not use require_relative since it makes it impossible to mock/override the require in the test environment by manipulating the load path order. e.g. $:.unshift '.'; require 'foo_gem'
-          * avoid using require File.expand_path('../foo', __FILE__) for the above reason
-        * _others prefer_ :require_relative whenever possible as it is faster [https://rubyforge.org/pipermail/rspec-users/2011-November/020760.html](https://rubyforge.org/pipermail/rspec-users/2011-November/020760.html)
-    2. in your own codebase e.g. your web app
-      * :**require_relative** is usually the better route, even in rails.
-      * beware that it doesn't work for evaluated (e.g. rack) apps [https://gist.github.com/tjsingleton/5957780](https://gist.github.com/tjsingleton/5957780)
+     1. in a gem or library that is in the load path, (e.g. lib)
+        * use vanilla **:require** since in all rubies the argument will searched for via the load paths. e.g. `require 'foo/bar'` in lib/foo.rb and in lib/foo/bar.rb use `require 'bar/baz'` to `require 'lib/foo/bar/baz.rb'`
+          * to achieve lazy loading, put the require statement in a method or block to be evaluated when needed
+        * using **:require_relative** can speed up require time as it essentially uses the absolute path (equivalent to `File.expand_path("../#{argument}", __FILE__)`
+          * _some prefer_ library authors not use require_relative since it makes it impossible to mock/override the require in the test environment by manipulating the load path order. e.g. `$:.unshift '.'; require 'foo_gem'`
+            * avoid using `require File.expand_path('../foo', __FILE__)` for the above reason
+          * _others prefer_ :require_relative whenever possible as it is faster [https://rubyforge.org/pipermail/rspec-users/2011-November/020760.html](https://rubyforge.org/pipermail/rspec-users/2011-November/020760.html)
+     2. in your own codebase e.g. your web app
+        * **:require_relative** is usually the better route, even in rails.
+        * beware that it doesn't work for evaluated (e.g. rack) apps [https://gist.github.com/tjsingleton/5957780](https://gist.github.com/tjsingleton/5957780)
 
 Appendix:
 
