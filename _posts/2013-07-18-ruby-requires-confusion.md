@@ -16,7 +16,7 @@ published: true
 
 ## Message to Ruby Rogues mailing list
 
-TL;DR autoload looks great and is used all over rails, but it's not threadsafe and Matz said not to use it, prefer require or require_relative.  What should is true; is somebody wrong on the internet?
+TL;DR autoload looks great and is used all over rails, but it's not threadsafe and Matz said not to use it, prefer require or require_relative.  Which one is true; is somebody wrong on the internet?
 
     Content-Encoding: links, quotes and discussion
     Content-Disposition: confused
