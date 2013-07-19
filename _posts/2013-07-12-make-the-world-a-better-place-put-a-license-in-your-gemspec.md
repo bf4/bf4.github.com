@@ -39,7 +39,7 @@ for helping to determine which gems are worth looking at.  ([Yes, ruby-toolbox c
 
 I was spurred into action when getting a number of issues for [metric_fu](https://github.com/metricfu/metric_fu) that turned out to be related to
 old releases or even [metrical (which is no longer necessary)](https://github.com/metricfu/metric_fu/blob/master/HISTORY.md#metricfu-300--2013-02-07).
-I realized I could look at gem download statistics to determine the extend of the usage of old releases of metric_fu.  I also realized I have published
+I realized I could look at gem download statistics to determine the extent of the usage of old releases of metric_fu.  I also realized I have published
 and abandoned forks of gems on some occassions that people really should not be using.  I could see if that is a problem
 as well.
 
