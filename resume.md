@@ -72,7 +72,7 @@ title:
 *   [Churn](https://github.com/danmayer/churn/commits?author=bf4)
 *   [Parser](https://github.com/whitequark/parser/issues/21)
 *   [Project to get more licenses specified in gemspecs](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
-*   [Ppwm-Matcher](https://github.com/rubyrogues/ppwm-matcher/
+*   [Ppwm-Matcher](https://github.com/rubyrogues/ppwm-matcher/)
 
 ### Public Speaking
 
