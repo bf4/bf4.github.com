@@ -37,3 +37,5 @@ Don't blog without adding an issue. Be nice to community
 * Document what it's for, how it's used
 * Document how to contribute
 * [Still Maintained badge](http://stillmaintained.com)
+* [Semantic Versioning: Major / Minor / Patch](http://semver.org), Breaking changes, new functionality, bug fix. And see [pessimistic versioning](http://joncairns.com/2013/07/using-the-pessimistic-version-constraint-operator-with-ruby-gem-versions/)
+* [Include a license in your repo and in your gemspec](https://github.com/bf4/gemproject/issues/1)
