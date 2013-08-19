@@ -2,9 +2,11 @@
 layout: post
 title: "All Your Open Source Code Are Belong To Us"
 description: "All Your Open Source Code Are Belong To Us"
-category:
-tags: []
-published: false
+category: community
+tags: 
+- open source software
+- github
+published: true
 ---
 {% include JB/setup %}
 
@@ -16,6 +18,8 @@ published: false
 
 ### Using OSS Code
 
+_Disclaimer: This post is still in progress, but has sat in Draft long-enough_
+
 Have you ever had trouble using a gem?
 
 * "It doesn't work in some way" or
@@ -26,8 +30,8 @@ What can you do about it?
 
 Customarily:  Give up, complain, write ugly hack, blog about it
 
-I used to give up, then one day, I made a monkey patch.  I submitted it, but without tests, and it took mea bout a year
-to pair with Anyd Lindman and fix it. It was a great experience. Time passed.
+I used to give up, then one day, I made a monkey patch.  I submitted it as a pull request, but without tests, and it took me about a year
+to pair with Andy Lindman and fix it. It was a great experience. Time passed.
 
 I added more and more issues, made hacks, and forked repos for personal use, until one day, a light went on in my head.
 
@@ -43,6 +47,8 @@ I added more and more issues, made hacks, and forked repos for personal use, unt
 
 Share the problem, share the solution
 
+#### Ways to Contribute to Open Source Code
+
 * Create an issue
  * Good bug report: why doesn't work
  * New feature
@@ -56,7 +62,7 @@ Share the problem, share the solution
    - feel good
    - learn
 
-Don't blog without adding an issue. Be nice to community
+*Don't blog without adding an issue. Be nice to community*
 
 ### Maintaining OSS Code
 
@@ -95,8 +101,10 @@ report it!
 * [Github patterns](http://blog.quickpeople.co.uk/2013/07/10/useful-github-patterns/)
 * [Git and Github secrets](http://zachholman.com/talk/more-git-and-github-secrets/)
 
-Help me with
+I maintain some of the following projects if you want a place to jump in.
 
-* metric_fu
-* rubyfriends
-* ppwm-matcher
+* [metric_fu](https://github.com/metricfu/metric_fu)
+* [rubyfriends](https://github.com/rubyrogues/rubyfriends)
+* [pair program with me](https://github.com/avdi/ppwm) and [ppwm-matcher](https://github.com/rubyrogues/ppwm-matcher/)
+* [Saikuro](https://github.com/metricfu/Saikuro)
+* [YUI-rails](https://github.com/nextmat/yui-rails)
