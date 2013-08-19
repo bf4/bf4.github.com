@@ -89,6 +89,7 @@ title:
 
 *   Stackoverflow: [user879854/bf4](http://stackoverflow.com/users/879854/bf4)
 *   Twitter: [@hazula](https://twitter.com/#!/hazula)
+*   [Open Source Report Card](http://osrc.dfm.io/bf4)
 
 ## EDUCATION:
 
