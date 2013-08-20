@@ -177,6 +177,12 @@ production:
 
 ## Misc dump for now
 
+* [YAML is terrible and should be driven from the face of the Earth.](https://github.com/markbates/configatron/issues/48#issuecomment-21877344)
+* Psych 2.0
+  * [Psych.safe_lod commit](https://github.com/tenderlove/psych/commit/2c644e184192975b261a81f486a04defa3172b3f)
+  * [Whitelistied types](https://github.com/tenderlove/psych/blob/2cd98a2f/lib/psych.rb#L248-L282)
+* Rails 4 uses [Josh Peek's sprockets-rails 2](https://github.com/rails/rails/pull/7964/files#L5L154) manifest files are now json, not yaml. In communication: JSON has better support in non-Ruby languages. 
+* [How RubyGems.org patched Psych/Syck following the 2013 January attacks](https://github.com/rubygems/rubygems.org/issues/579)
 * [Rails Allow to_xml and from_xml to work with AR models that have serialized fields](http://web.archive.org/web/20071218105822/http://dev.rubyonrails.org/ticket/7502)
 * [Psych: Strings that look like dates should be treated as strings and not dates.](https://github.com/ruby/ruby/commit/9f688d53c2b5af5960d1e8d8fb09b26aa9d8b5f9)
 * [Fun with Syck and Psych on Heroku. This is one of those posts that's inspired by a desire never to have to investigate the same bug again.](http://effectif.com/ruby-on-rails/syck-and-psych-yaml-parsers-on-heroku)
