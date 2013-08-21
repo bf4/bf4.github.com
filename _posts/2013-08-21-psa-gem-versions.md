@@ -6,6 +6,7 @@ category: community
 tags: 
 - ruby
 - rubygems
+published: true
 ---
 {% include JB/setup %}
 
