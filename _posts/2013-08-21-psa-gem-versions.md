@@ -25,3 +25,4 @@ Relevant background reading:
 
 - [Semantic Versioning: Major / Minor / Patch](http://semver.org/) Breaking changes, new functionality, bug fix.
 - [Pessimistic Versioning](http://joncairns.com/2013/07/using-the-pessimistic-version-constraint-operator-with-ruby-gem-versions/)
+- Rubygems discussion on what to call the ~> operator [1](https://github.com/rubygems/rubygems/pull/123), [2](https://github.com/rubygems/rubygems/pull/124)
