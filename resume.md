@@ -70,7 +70,7 @@ title:
 *   [Saikuro](https://github.com/metricfu/Saikuro)
 *   [Roodi, while it was not being maintained](https://github.com/metricfu/roodi)
 
-#### Contributions
+#### Contributor
 
 *   [Project to get more licenses specified in gemspecs](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
 *   [Kaminari](https://github.com/amatsuda/kaminari/commits?author=bf4)
