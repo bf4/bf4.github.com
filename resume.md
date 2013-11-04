@@ -12,7 +12,7 @@ title:
 
 # SUMMARY:
 
-*   Active ([Top 1% for Ruby on Github](http://osrc.dfm.io/bf4)) Open-Source Software Maintainer and Contributor. Maintains eight projects, including MetricFu and CodeMetrics.  Have contributed to tens of others, including Rails, Kaminari, Homebrew, and Passenger.
+*   Active ([Top 1% for Ruby on GitHub](http://osrc.dfm.io/bf4)) Open-Source Software Maintainer and Contributor. Maintains eight projects, including MetricFu and CodeMetrics.  Have contributed to tens of others, including Rails, Kaminari, Homebrew, and Passenger.
 *   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/), for matching people to pair-program.
 *   [Making the world a better place](http://ruby5.envylabs.com/episodes/424-episode-388-july-23rd-2013/stories/3437-license-your-gems) by creating issues to ensure RubyGems [specify a license in their gemspec](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
 *   I love solving problems and sharing my solutions, which is how I got into open-source contributions. e.g. [All your open-source code are belong to us](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/)
@@ -41,7 +41,7 @@ title:
 
 #### Ruby on Rails Contractor -- Zavteq -- Chicago, IL, 2011
 
-*   Build jQuery Mobile Ruby on Rails 3 site with devise and RSpec.
+*   Build jQuery Mobile Ruby on Rails 3 site with RSpec and custom Devise authentication adapter.
 
 #### Volunteer Web Developer -- Chicago Festival of Israeli Cinema, March 2010-Current
 
@@ -102,7 +102,7 @@ title:
 
 *   Stackoverflow: [user879854/bf4](http://stackoverflow.com/users/879854/bf4)
 *   Twitter: [@hazula](https://twitter.com/#!/hazula)
-*   [Open Source Report Card](http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on Github.
+*   [Open Source Report Card](http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on GithHb.
 
 ## EDUCATION:
 
