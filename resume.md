@@ -24,8 +24,8 @@ title:
 ##### Adult Entertainment movie site mentioned in 'Knocked Up'
 
 *   Work on Rails 3 apps and PHP apps. Upgraded from Rails 3.0 to 3.2, and Ruby 1.8.7p72 to 1.9.3.
-*   Re-architected our models for email addresses, passwords, and bounce-processing.
-*   Introduced testing (including TDD), CI, design patterns, and some agile practices.
+*   Re-architect our models for email addresses, passwords, and bounce-processing.
+*   Introduce testing (including TDD), CI, design patterns, and some agile practices.
 *   MrSkin.com is NSFW (not safe for work).
 
 #### Web Development Software Engineer -- Metromix / Gannett -- Chicago, IL, July 2010-June 2012
@@ -36,12 +36,12 @@ title:
 *   I love learning, and sharing, and working with others.  I began and run Metromix's weekly tech lunch.
 *   Offers minimum viable solutions as a first step to getting desired functionality coded and used as a spike for subsequent work.
 *   Enjoys text-processing, including using regular expressions and XML/HTML parsers such as Nokogiri.
-*   Wrote a Net::HTTP wrapper for our deals importer to increase timeouts and provide better error-handling.
+*   Write a Net::HTTP wrapper for our deals importer to increase timeouts and provide better error-handling.
 *   Often uses math to solve complex problems.  A former developer, once said "wow, we'd been wanting to do fuzzy matching for a while."
 
 #### Ruby on Rails Contractor -- Zavteq -- Chicago, IL, 2011
 
-*   Built jQuery Mobile Ruby on Rails 3 site with devise and RSpec.
+*   Build jQuery Mobile Ruby on Rails 3 site with devise and RSpec.
 
 #### Volunteer Web Developer -- Chicago Festival of Israeli Cinema, March 2010-Current
 
@@ -50,7 +50,7 @@ title:
 #### Volunteer Technology Chair -- Limmud Chicago, January 2008-April 2010
 
 *   Manage website, servers, online registration, payment and donation processing
-*   Saved money by using free, open source software such as Wordpress, Drupal and CiviCRM running on Red Hat Linux.
+*   Save money by using free, open source software such as Wordpress, Drupal and CiviCRM running on Red Hat Linux.
 
 #### Data Manager -- Northwestern University, October 2008-June 2010
 
