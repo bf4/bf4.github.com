@@ -43,7 +43,7 @@ title:
 
 *   Build jQuery Mobile Ruby on Rails 3 site with RSpec and custom Devise authentication adapter.
 
-#### Volunteer Web Developer -- Chicago Festival of Israeli Cinema, March 2010-Current
+#### Volunteer Web Developer -- Chicago Festival of Israeli Cinema, March 2010-2012
 
 *   Update and overhaul website from static, inconsistent html pages to a dynamic CMS (Wordpress) featuring online ticket sales, membership purchases, analytics, and social media integration.
 
