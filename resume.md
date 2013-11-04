@@ -85,7 +85,7 @@ title:
 *   [Churn](https://github.com/danmayer/churn/commits?author=bf4)
 *   [Reek](https://github.com/troessner/reek/commits?author=bf4) [Troubleshooting notes](https://github.com/troessner/reek/pull/161) [wiki](https://github.com/troessner/reek/wiki/Troubleshooting)
 *   [sunspot](https://github.com/sunspot/sunspot/commits?author=bf4)
-*   [acts-as-taggable-on](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
+*   [Acts As Taggable On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
 *   [Rubocop](https://github.com/bbatsov/rubocop/commits?author=bf4)
 
 ### Public Speaking
