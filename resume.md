@@ -1,7 +1,7 @@
 ---
 layout: mark-reid.page
 top: Benjamin Fleischer's Resume
-title: 
+title:
 ---
 {% include JB/setup %}
 
@@ -12,9 +12,10 @@ title:
 
 # SUMMARY:
 
-*   Jack-of-all-trades that picks up what needs to be done, often without being asked.
-*   Documents and details work done, share with team.  At Metromix I created developer setup docs used to bootstrap developers and release docs to stabilize the release process.
-*   I'm most likely to say, "enough talk, let's do it."
+*   Active ([Top 1% for Ruby on Github](http://osrc.dfm.io/bf4)) Open-Source Software Maintainer and Contributor. Maintains eight projects, including MetricFu and CodeMetrics.  Have contributed to tens of others, including Rails, Kaminari, Homebrew, and Passenger.
+*   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/), for matching people to pair-program.
+*   [Making a world a better place](http://ruby5.envylabs.com/episodes/424-episode-388-july-23rd-2013/stories/3437-license-your-gems) by creating issues to ensure rubygems [specify a license in their gemspec](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
+*   I love solving problems and sharing my solutions, which is how I got into open-source contributions. i.e. [All your open-source code are belong to us](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/)
 
 ## PROFESSIONAL EXPERIENCE:
 
@@ -22,10 +23,10 @@ title:
 
 ##### Adult Entertainment movie site mentioned in 'Knocked Up'
 
-*   Work on Rails 3 apps and PHP apps
-*   Re-architected our models for email addresses, passwords, and bounce-processing
-*   Introduced testing (including TDD), CI, design patterns, and some agile practices
-*   MrSkin.com is NSFW
+*   Work on Rails 3 apps and PHP apps. Upgraded from Rails 3.0 to 3.2, and Ruby 1.8.7p72 to 1.9.3.
+*   Re-architected our models for email addresses, passwords, and bounce-processing.
+*   Introduced testing (including TDD), CI, design patterns, and some agile practices.
+*   MrSkin.com is NSFW (not safe for work).
 
 #### Web Development Software Engineer -- Metromix / Gannett -- Chicago, IL, July 2010-June 2012
 
@@ -56,39 +57,52 @@ title:
 *   Abstract Data From Patient Records and Input Into Subject Case Report Forms For Clinical Cancer Research; clarify incomplete or conflicting records with Principal Investigators
 *   Assist in installing software and troubleshooting computer issues; give feedback and advice on general office and IT support Standard Operating Procedures (SOPs)
 
-### OPEN SOURCE CONTRIBUTIONS
+### OPEN-SOURCE SOFTWARE ACTIVITY
+
+#### Maintainer
 
 *   [metric_fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
-*   [yui-rails](https://github.com/nextmat/yui-rails/commits?author=bf4)
-*   [bcrypt-ruby](https://github.com/codahale/bcrypt-ruby/commits?author=bf4)
+*   [YUI-Rails](https://github.com/nextmat/yui-rails/commits?author=bf4)
+*   [Ruby Friends](https://github.com/rubyrogues/rubyfriends/commits?author=bf4)
+*   [Pair Program With Me](https://github.com/avdi/ppwm), [Ppwm-Matcher](https://github.com/rubyrogues/ppwm-matcher/)
+*   [Code Metrics](https://github.com/bf4/code_metrics)
+*   [Code Notes](https://github.com/bf4/code_notes)
+*   [Saikuro](https://github.com/metricfu/Saikuro)
+*   [Roodi, while it was not being maintained](https://github.com/metricfu/roodi)
+
+#### Contributions
+
+*   [Project to get more licenses specified in gemspecs](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
+*   [Kaminari](https://github.com/amatsuda/kaminari/commits?author=bf4)
+*   [Rails](https://github.com/rails/rails/issues/created_by/bf4)
+*   [Gems gem](https://github.com/rubygems/gems/pull/11)
+*   [Code Climate Test Reporter](https://github.com/codeclimate/ruby-test-reporter)
+*   [SimpleCov](https://github.com/colszowka/simplecov/pull/245)
+*   [Passenger](https://github.com/phusion/passenger/pull/78)
+*   [Rails Best Practices](https://github.com/railsbp/rails_best_practices/commits?author=bf4), [Code Analyzer](https://github.com/flyerhzm/code_analyzer/issues/created_by/bf4)
+*   [Bcrypt-ruby](https://github.com/codahale/bcrypt-ruby/commits?author=bf4)
 *   [homebrew](https://github.com/mxcl/homebrew/commits?author=bf4)
-*   [rubyfriends](https://github.com/rubyrogues/rubyfriends/commits?author=bf4)
+*   [Churn](https://github.com/danmayer/churn/commits?author=bf4)
+*   [Reek](https://github.com/troessner/reek/commits?author=bf4) [Troubleshooting notes](https://github.com/troessner/reek/pull/161) [wiki](https://github.com/troessner/reek/wiki/Troubleshooting)
 *   [sunspot](https://github.com/sunspot/sunspot/commits?author=bf4)
 *   [acts-as-taggable-on](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
-*   [Reek](https://github.com/troessner/reek/commits?author=bf4) [Troubleshooting notes](https://github.com/troessner/reek/pull/161) [wiki](https://github.com/troessner/reek/wiki/Troubleshooting)
 *   [Rubocop](https://github.com/bbatsov/rubocop/commits?author=bf4)
-*   [Kaminari](https://github.com/amatsuda/kaminari/commits?author=bf4)
-*   [Rails Best Practices](https://github.com/railsbp/rails_best_practices/commits?author=bf4)
-*   [Churn](https://github.com/danmayer/churn/commits?author=bf4)
-*   [Parser](https://github.com/whitequark/parser/issues/21)
-*   [Project to get more licenses specified in gemspecs](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
-*   [Ppwm-Matcher](https://github.com/rubyrogues/ppwm-matcher/)
 
 ### Public Speaking
 
-*   Speaking: [YAML, what is it good for? at RailsIsrael in October, 2013](http://railsisrael2013.events.co.il/presentations/868-yaml-what-is-it-good-for) [Slides](https://speakerdeck.com/bf4/yaml-what-is-it-good-for), Video, [Source code](https://github.com/bf4/yaml_resources)
-*   Lightning Talk: RubyNation, All your OSS code are belong to us
+*   Speaking: [YAML, what is it good for? at RailsIsrael in October, 2013](http://railsisrael2013.events.co.il/presentations/868-yaml-what-is-it-good-for) [Slides](https://speakerdeck.com/bf4/yaml-what-is-it-good-for), Video TBA, [Source code](https://github.com/bf4/yaml_resources)
+*   Lightning Talk: [All your OSS code are belong to us](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/), at RubyNation 2013.
 *   [Lightning Talk:  MetricFu is Back! at RailsConf 2013](http://www.justin.tv/confreaks/c/2245302)
     Includes discussion of MetricFu, Travis-CI, CodeClimate, semantic versioning, gem versioning, rubyfriends, MrMan, MrSkin
-*   [Lightning Talk: at RubyConf 2012, It's About Time](http://vimeo.com/53892354)
-*   [Lightning Talk: at WindyCityRails 2012, It's About Time](http://vimeo.com/51707399)
+*   [Lightning Talk: It's About Time](http://vimeo.com/53892354), at RubyConf 2012.
+*   [Lightning Talk: It's About Time](http://vimeo.com/51707399), at WindyCityRails 2012.
 *   Not public speaking per se, but I think I prompted an interesting discussion of rubyspec; these things are hard to find without direct links.  [Q&A Matz,  RubyConf2012, Asked about ruby spec at 42:57](http://www.youtube.com/watch?v=B7vCuNaqT7k&hd=1&t=42m57s)
 
 ### OTHER ONLINE PRESENCE
 
 *   Stackoverflow: [user879854/bf4](http://stackoverflow.com/users/879854/bf4)
 *   Twitter: [@hazula](https://twitter.com/#!/hazula)
-*   [Open Source Report Card](http://osrc.dfm.io/bf4)
+*   [Open Source Report Card](http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on Github.
 
 ## EDUCATION:
 
