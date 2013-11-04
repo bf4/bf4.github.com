@@ -61,7 +61,7 @@ title:
 
 #### Maintainer
 
-*   [metric_fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
+*   [Metric-Fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
 *   [YUI-Rails](https://github.com/nextmat/yui-rails/commits?author=bf4)
 *   [Ruby Friends](https://github.com/rubyrogues/rubyfriends/commits?author=bf4)
 *   [Pair Program With Me](https://github.com/avdi/ppwm), [Ppwm-Matcher](https://github.com/rubyrogues/ppwm-matcher/)
