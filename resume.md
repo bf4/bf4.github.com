@@ -18,7 +18,7 @@ title:
 
 ## PROFESSIONAL EXPERIENCE:
 
-#### Senior Ruby Web Developer Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-Current
+#### Web Development Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-Current
 
 ##### Adult Entertainment movie site mentioned in 'Knocked Up'
 
@@ -76,14 +76,13 @@ title:
 
 ### Public Speaking
 
-*   [YAML, what is it good for? at RailsIsrael in October, 2013](http://railsisrael2013.events.co.il/presentations/868-yaml-what-is-it-good-for)
-*   [
-      Lightning Talk at RailsConf 2013 - MetricFu is Back!
-    ](http://www.justin.tv/confreaks/c/2245302)
+*   Speaking: [YAML, what is it good for? at RailsIsrael in October, 2013](http://railsisrael2013.events.co.il/presentations/868-yaml-what-is-it-good-for) [Slides](https://speakerdeck.com/bf4/yaml-what-is-it-good-for), Video, [Source code](https://github.com/bf4/yaml_resources)
+*   Lightning Talk: RubyNation, All your OSS code are belong to us
+*   [Lightning Talk:  MetricFu is Back! at RailsConf 2013](http://www.justin.tv/confreaks/c/2245302)
     Includes discussion of MetricFu, Travis-CI, CodeClimate, semantic versioning, gem versioning, rubyfriends, MrMan, MrSkin
-*   [Lightning Talk at RubyConf 2012, It's About Time](http://vimeo.com/53892354)
-*   [Lightning Talk at WindyCityRails 2012, It's About Time](http://vimeo.com/51707399)
-*   Not public speaking per se, but I think I prompted an interesting discussion of rubyspec, these things are hard to find without direct links.  [Q&A Matz,  RubyConf2012, Asked about ruby spec at 42:57](http://www.youtube.com/watch?v=B7vCuNaqT7k&hd=1&t=42m57s)
+*   [Lightning Talk: at RubyConf 2012, It's About Time](http://vimeo.com/53892354)
+*   [Lightning Talk: at WindyCityRails 2012, It's About Time](http://vimeo.com/51707399)
+*   Not public speaking per se, but I think I prompted an interesting discussion of rubyspec; these things are hard to find without direct links.  [Q&A Matz,  RubyConf2012, Asked about ruby spec at 42:57](http://www.youtube.com/watch?v=B7vCuNaqT7k&hd=1&t=42m57s)
 
 ### OTHER ONLINE PRESENCE
 
@@ -117,4 +116,4 @@ title:
 
 *   PADI Scuba Diver Certified, 2011
 *   Black-Belt Recommended in ATA Songham Taekwondo
-*   Director on Condominium Board (2009-Present, Secretary 2009-2011) of 3150 N Lake Shore Drive Condominium.  Manage web site and Community Relations & Communications Committee.
+*   Director on Condominium Board (2009-2013, Secretary 2009-2011) of 3150 N Lake Shore Drive Condominium.  Manage web site and Community Relations & Communications Committee.
