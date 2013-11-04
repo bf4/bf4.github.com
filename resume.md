@@ -92,11 +92,12 @@ title:
 
 *   Speaking: [YAML, what is it good for? at RailsIsrael in October, 2013](http://railsisrael2013.events.co.il/presentations/868-yaml-what-is-it-good-for) [Slides](https://speakerdeck.com/bf4/yaml-what-is-it-good-for), Video TBA, [Source code](https://github.com/bf4/yaml_resources)
 *   Lightning Talk: [All your OSS code are belong to us](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/), at RubyNation 2013.
-*   [Lightning Talk:  MetricFu is Back! at RailsConf 2013](http://www.justin.tv/confreaks/c/2245302)
-    Includes discussion of MetricFu, Travis-CI, CodeClimate, semantic versioning, gem versioning, rubyfriends, MrMan, MrSkin
-*   [Lightning Talk: It's About Time](http://vimeo.com/53892354), at RubyConf 2012.
-*   [Lightning Talk: It's About Time](http://vimeo.com/51707399), at WindyCityRails 2012.
-*   Not public speaking per se, but I think I prompted an interesting discussion of rubyspec; these things are hard to find without direct links.  [Q&A Matz,  RubyConf2012, Asked about ruby spec at 42:57](http://www.youtube.com/watch?v=B7vCuNaqT7k&hd=1&t=42m57s)
+*   Lightning Talk: [MetricFu is Back!](http://www.justin.tv/confreaks/c/2245302) at RailsConf 2013.
+    Includes discussion of MetricFu, Travis-CI, CodeClimate, semantic versioning, gem versioning, RubyFriends, MrMan, MrSkin
+*   Lightning Talk: [It's About Time](http://vimeo.com/53892354), at RubyConf 2012.
+*   Lightning Talk: [It's About Time](http://vimeo.com/51707399), at WindyCityRails 2012.
+*   Q&A: [Ask Matz about RubySpec (at 42:57)](http://www.youtube.com/watch?v=B7vCuNaqT7k&hd=1&t=42m57s) at RubyConf 2012. Not public speaking per se, but I think I prompted an interesting discussion of RubySpec; these things are hard to find without direct links.
+
 
 ### OTHER ONLINE PRESENCE
 
