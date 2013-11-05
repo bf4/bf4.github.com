@@ -15,20 +15,23 @@ title:
 *   Active ([Top 1% for Ruby on GitHub](http://osrc.dfm.io/bf4)) Open-Source Software Maintainer and Contributor.
     - Maintain eight projects, including MetricFu and CodeMetrics.
     - Have contributed to tens of others, including Rails, Kaminari, Homebrew, and Passenger.
-*   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/), for matching people to pair-program.
+*   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/).
 *   [Making the world a better place](http://ruby5.envylabs.com/episodes/424-episode-388-july-23rd-2013/stories/3437-license-your-gems) by creating issues to ensure RubyGems [specify a license in their gemspec](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
-*   I love solving problems and sharing my solutions, which is how I got into open-source contributions. e.g. [All your open-source code are belong to us](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/)
+*   [Advocates contributing to open-source software](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/) by sharing code, submitting bug reports, and editing documentation.
 
 ## PROFESSIONAL EXPERIENCE:
 
 #### Web Development Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-Current
 
-##### Adult Entertainment movie site mentioned in 'Knocked Up'
+##### MrSkin.com, MrMan.com-- Adult Entertainment movie site mentioned in 'Knocked Up'
 
-*   Work on Rails 3 apps and PHP apps. Upgraded from Rails 3.0 to 3.2, and Ruby 1.8.7p72 to 1.9.3.
-*   Re-architect our models for email addresses, passwords, and bounce-processing.
-*   Introduce testing (including TDD), CI, design patterns, and some agile practices.
-*   MrSkin.com is NSFW (not safe for work).
+##### Radio Prep-- GoodPartsMedia.com
+
+*   Introduce testing (including TDD), continuous integration (CI), design patterns, and some agile practices.
+*   Upgrade all Rails apps from Rails 3.0 to 3.2, and Ruby 1.8.7p72 to 1.9.3. Build new Rails app with CRuby backend and JRuby frontend.
+*   Successfully rearchitecct and/or decomplect apps:
+    - Separate email management from User model, normalize addresses, improve Email bounce-processing (Perl).
+    - Standardize deploy scripts, logging, error-handling, LDAP authentication, pooled SMTP, etc.
 
 #### Web Development Software Engineer -- Metromix / Gannett -- Chicago, IL, July 2010-June 2012
 
