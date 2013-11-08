@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to crypytographically sign your RubyGem"
+title: "How to cryptographically sign your RubyGem"
 description: "The steps to generate your gem cert, add it to your gem spec, and distribute your gem"
 category: community
 tags: 
