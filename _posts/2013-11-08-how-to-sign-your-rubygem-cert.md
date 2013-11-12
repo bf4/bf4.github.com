@@ -80,3 +80,9 @@ References:
 - [A Practical Guide to Using Signed Ruby Gems - Part 3: Signing your Own](http://blog.meldium.com/home/2013/3/6/signing-gems-how-to)
 - Alternative: [Rubygems OpenPGP signing](https://web.archive.org/web/20130914152133/http://www.rubygems-openpgp-ca.org/), [gem](https://github.com/grant-olson/rubygems-openpgp)
 - Also: [MetricFu release task that saves a checksum of the built gem](https://github.com/metricfu/metric_fu/blob/9fd4b347f78a922c6cfb79ada5de3cc87dc045de/gem_tasks/build.rake), [h/t Yorick Peterese](https://github.com/YorickPeterse/ruby-lint/blob/master/task/checksum.rake)
+
+## Updates:
+
+- 2013-11-12 Included in [RubyGems guides resources page](http://guides.rubygems.org/resources/) ([PR](https://github.com/rubygems/guides/pull/66#issuecomment-28325386))
+
+
