@@ -122,3 +122,7 @@ Appendix:
   * [http://myronmars.to/n/dev-blog/2012/12/5-reasons-to-avoid-bundler-require](http://myronmars.to/n/dev-blog/2012/12/5-reasons-to-avoid-bundler-require)
 
 Updates coming...
+
+## Updates:
+
+* 2013-10-07: [Tweeted by CodeClimate](https://twitter.com/codeclimate/status/387259547813171200)
