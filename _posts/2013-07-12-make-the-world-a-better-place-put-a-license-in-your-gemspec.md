@@ -70,6 +70,7 @@ I'm pretty happy about this, and  have [gotten some](https://groups.google.com/d
 * 2013-07-12: Of the [92 issues I've created in the last day-and-a-half](https://gist.github.com/bf4/5952053#file-license_issues-txt),
  37 have closed the issue and added a license.
 * 2013-07-15: 96 closed issues out of 240
+* 2013-07-17: Included in [RubyGems guides resources page](http://guides.rubygems.org/resources/) ([Commit](https://github.com/rubygems/guides/commit/fd0af5b7028f9804f71118c33fe7bd423b967451))
 
 ## Appendix
 
