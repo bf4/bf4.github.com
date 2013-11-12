@@ -28,14 +28,14 @@ In my `$HOME/.bash_profile` I add and source
 
 In my Gemfile I add
 
-`
+```ruby
 if ENV['APP_GEMS_DIR']
   # for local gem development, use local gem directory so gem changes don't need to be pushed to test
   gem 'my_gem', :path => "#{ENV['APP_GEMS_DIR']}/my_gem", :require => "namespace/my_gem"
 else
   gem 'my_gem', :require => "namespace/my_gem", :git => path_to_git_repo, :tag => tagname
 end
-`
+```
 
 As to why in the else clause I specified the repo and the tag, that is to allow parallel gem development. I could also set it to `:branch => branchname`, or `:ref => ref_hash` for using a consistant gem branch for release development or to freeze the gem at a know good revision. In fact, with this technique, you could, if you wanted, never bump the gem version again!
 
