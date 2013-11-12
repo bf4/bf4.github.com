@@ -44,3 +44,17 @@ On benefit of this technique, is that when using the local gem, after you bundle
 To go back to non-gem-development mode, remove the lines you added from your bash_profile and setup_load_path.rb and unset $APP_GEMS_DIR
 
 For an alternate way to manage gem development, see [Andy Maleh's post More Productive Rails Engine Development via Symlinking](http://andymaleh.blogspot.com/2011/09/more-productive-rails-engine.html)
+
+## UPDATE 2013-11-12
+
+Rails engine example.  With a folder in your Rails root called 'tweet_engine' that contains a Rails engine:
+
+```ruby
+gem 'tweet_engine', path: 'tweet_engine'
+```
+
+You could even reference an external Gemfile like the [devtools project](https://github.com/rom-rb/devtools/blob/2dc4f3/Gemfile#L7) does.
+
+```ruby
+eval_gemfile 'shared/Gemfile'
+```
