@@ -16,3 +16,5 @@ Notice that there is a `gem contents [gem_name]` command you can use to output t
 I may later evolve this into a 'gem print' command.
 
 <script src="https://gist.github.com/bf4/7531475.js"></script>
+
+And, as long as you're here, I have also adapted a general [Entity-Relationship Diagram generator](https://gist.github.com/bf4/7209165#file-erd-rb) that [Erik Michaels-Ober](https://github.com/sferik/twitter/blob/master/etc/erd.rb) wrote.
