@@ -18,4 +18,38 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
 
 * [2013-06-12 with Robert Jackson on the Pair Program With Me Matcher](https://github.com/rubyrogues/ppwm-matcher/)
 
+<div id="pairing"></div>
+<script>
+(function() {
+  var key = "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE";
+  var url = "https://spreadsheets.google.com/feeds/list/" + key + "/od6/public/values?alt=json";
+  var template = {
+    'appointments' : 'REPLACE',
+    'link' : 'REPLACE',
+    'pair' : 'REPLACE',
+    'description' : 'REPLACE'
+  };
+  var target = $("#pairing");
+  var html = "";
+  var formatOutput = function(entry) {
+    this.html = this.html || '';
+      $.each(template, function(field, formatting) {
+        var output = entry["gsx$" + field]["$t"];
+        html += formatting.replace('REPLACE', output);
+      });
+   };
+
+
+  $.getJSON( url, function( json ) {
+    $.each( json.feed.entry, function(key, val) {
+      formatOutput(val);
+    });
+  })
+  console.log(html);
+  console.log(formatOutput.html);
+  console.log(target);
+  target.innerHTML = html;
+})();
+</script>
+
 </section>
