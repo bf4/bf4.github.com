@@ -22,11 +22,12 @@ and how [I got the tests reliably passing](https://travis-ci.org/metricfu/metric
 
 {% highlight ruby %}
 platforms :rbx do
-  gem 'rubysl', '~> 2.0'   # if using anything in the ruby standard library
-  gem 'psych'              # if using yaml
-  gem 'racc'               # if using gems like ruby_parser or parser
-  gem 'minitest'           # if using minitest
-  gem 'rubinius-coverage'  # if using code coverage
+  gem 'rubysl', '~> 2.0'         # if using anything in the ruby standard library
+  gem 'psych'                    # if using yaml
+  gem 'racc'                     # if using gems like ruby_parser or parser
+  gem 'minitest'                 # if using minitest
+  gem 'rubysl-test-unit'         # if having test-unit problems
+  gem 'rubinius-developer_tools' # if using any of coverage, debugger, profiler
 end
 {% endhighlight %}
 
