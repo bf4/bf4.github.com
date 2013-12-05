@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Testing Rubinius on Travis CI"
+title: "Testing against Rubinius on Travis CI"
 description: "Get your rbx tests to pass on Travis"
 categories: [ 'ruby' ]
 tags: [ 'ruby' , 'docs' , 'hack' ]
