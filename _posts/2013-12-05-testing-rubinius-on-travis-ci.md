@@ -26,7 +26,7 @@ platforms :rbx do
   gem 'psych'                    # if using yaml
   gem 'racc'                     # if using gems like ruby_parser or parser
   gem 'minitest'                 # if using minitest
-  gem 'rubysl-test-unit'         # if having test-unit problems
+  gem 'rubysl-test-unit'         # if using test-unit with minitest 5.x https://github.com/rubysl/rubysl-test-unit/issues/1
   gem 'rubinius-developer_tools' # if using any of coverage, debugger, profiler
 end
 {% endhighlight %}
