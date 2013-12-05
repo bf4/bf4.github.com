@@ -12,9 +12,8 @@ published: true
 
 Fourteen (14) days ago, my [Rubinius builds on Travis CI began erroring](https://travis-ci.org/metricfu/metric_fu/jobs/14269663)
 
-I can't seem to find a write-up on the final state of affairs.
-
-Follows is a summary of what I did, and how [I got the tests reliably passing](https://travis-ci.org/metricfu/metric_fu/jobs/14902745) one (1) day ago.
+Since, I can't seem to find a write-up on the final state of affairs, I've written-up a summary of what I did,
+and how [I got the tests reliably passing](https://travis-ci.org/metricfu/metric_fu/jobs/14902745) one (1) day ago.
 
 ## The Fix:
 
