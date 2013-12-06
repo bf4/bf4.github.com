@@ -45,7 +45,11 @@ rvm:
 matrix:
   allow_failures:
     - rvm: rbx
+cache: bundler
 {% endhighlight %}
+
+Notice the [`cache: bundler`](http://about.travis-ci.org/docs/user/caching/) line?
+Since there are *a lot* of rubysl downloads, you can get a significant speed-up by telling Travis to cache them.
 
 Selected parts of my `Gemfile.travis`
 
