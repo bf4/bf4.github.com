@@ -70,11 +70,6 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
     
 })(jQuery);
 </script>
-  console.log(html);
-  console.log(formatOutput.html);
-  console.log(target);
-  target.innerHTML = html;
-})();
-</script>
+
 
 </section>
