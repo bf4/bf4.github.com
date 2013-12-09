@@ -22,11 +22,16 @@ and how [I got the tests reliably passing](https://travis-ci.org/metricfu/metric
 
 {% highlight ruby %}
 platforms :rbx do
-  gem 'rubysl', '~> 2.0'         # if using anything in the ruby standard library
   gem 'psych'                    # if using yaml
-  gem 'racc'                     # if using gems like ruby_parser or parser
+  gem 'rubysl', '~> 2.0'         # if using anything in the ruby standard library (meta-gem)
+
   gem 'minitest'                 # if using minitest
   gem 'rubysl-test-unit'         # if using test-unit with minitest 5.x https://github.com/rubysl/rubysl-test-unit/issues/1
+
+  gem 'racc'                     # if using gems like ruby_parser or parser
+  gem 'rubinius', '~> 2.0'       # if using any of rubinius-developer_tools and/or rubinius-build_tools
+
+  gem 'rubinius-build_tools'     # if using any ast parsing, processing, or building
   gem 'rubinius-developer_tools' # if using any of coverage, debugger, profiler
 end
 {% endhighlight %}
@@ -78,10 +83,55 @@ rvm --version
 # rvm 1.24.5 (latest-minor) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
 {% endhighlight %}
 
+### Examples of rbx-specific Gemfile entries:
+
+- [parser PR by @brixen](https://github.com/whitequark/parser/pull/118/):
+
+  > I'm submitting a patch to Bundler after discussing with Andre that will
+  > enable Rubinius to designate rubysl as gems that are bundled with the
+  > distribution and Bundler will use that information while resolving.
+  >
+  > This patch is a stop-gap measure and I can submit another PR to remove
+  > this once Bundler with that patch is released.
+
+  {% highlight ruby %}
+  platforms :rbx do
+    gem 'rubysl', '~> 2.0'
+    gem 'rubinius', '~> 2.0'
+  end
+  {% endhighlight %}
+
+- [rubinius](https://github.com/rubinius/rubinius/blob/0a59255/Gemfile#L7):
+
+  {% highlight ruby %}
+  platform :rbx do
+    gem "rubysl-rake", "~> 2.0"
+    gem "rubysl-bundler", "~> 2.0"
+    gem "rubysl-digest", "~> 2.0"
+  end
+  {% endhighlight %}
+
+- [rspec-rails](https://github.com/rspec/rspec-rails/pull/871/)
+
+  {% highlight ruby %}
+  -  require 'test/unit/assertions'
+  +  begin
+  +    require 'test/unit/assertions'
+  +  rescue LoadError
+  +    # work around for Rubinius not having a std std-lib
+  +    require 'rubysl-test-unit' if defined?(RUBY_ENGINE) && RUBY_ENGINE == 'rbx'
+  +    require 'test/unit/assertions'
+  +  end
+  {% endhighlight %}
+
 ## References:
 
 - [Twitter conversation about the failures](https://twitter.com/judofyr/status/404994491998044160)
 - [It appears part of the issue is whether or not the gem spec PLATFORM can/should/does refer to RUBY_ENGINE](https://github.com/rubygems/rubygems/issues/722)
 - [Rubinius Post: Testing Your Project with Rubinius on Travis](http://rubini.us/2013/12/03/testing-with-rbx-on-travis/)
+- Rubinius meta-gems: [rubinius.gemspec](https://github.com/rubinius/rubinius/blob/master/rubinius.gemspec), [rubinius-developer_tools](https://github.com/rubinius/rubinius/blob/master/rubinius-developer_tools.gemspec),
+  [rubinius-build_tools](https://github.com/rubinius/rubinius/blob/master/rubinius-build_tools.gemspec), [ruby-sl](https://github.com/rubysl/rubysl/blob/2.0/rubysl.gemspec),
+  [rubysl-rake](https://github.com/rubysl/rubysl/blob/2.0/rubysl-rake.gemspec), [rubysl-bundler](https://github.com/rubysl/rubysl/blob/2.0/rubysl-bundler.gemspec),
+  [rubysl-rspec](https://github.com/rubysl/rubysl/issues/7)
 
 Original content source: [my comment on travis-ci issue](https://github.com/travis-ci/travis-ci/issues/1641#issuecomment-29773392)
