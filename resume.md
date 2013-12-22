@@ -12,9 +12,9 @@ title:
 
 # SUMMARY:
 
-*   Active ([Top 1% for Ruby on GitHub](http://osrc.dfm.io/bf4)) Open-Source Software Maintainer and Contributor.
-    - Maintain eight projects, including MetricFu and CodeMetrics.
-    - Have contributed to tens of others, including Rails, Kaminari, Homebrew, and Passenger.
+*   Active ([top 1% for Ruby on GitHub](http://osrc.dfm.io/bf4)) open-source software maintainer and contributor.
+    - Maintains eight projects, including MetricFu and CodeMetrics.
+    - Has contributed to tens of others, including Rails, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
 *   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/).
 *   [Making the world a better place](http://ruby5.envylabs.com/episodes/424-episode-388-july-23rd-2013/stories/3437-license-your-gems) by creating issues to ensure RubyGems [specify a license in their gemspec](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
 *   [Advocates contributing to open-source software](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/) by sharing code, submitting bug reports, and editing documentation.
@@ -29,15 +29,15 @@ title:
 
 *   Introduce testing (including TDD), continuous integration (CI), design patterns, and some agile practices.
 *   Upgrade all Rails apps from Rails 3.0 to 3.2, and Ruby 1.8.7p72 to 1.9.3. Build new Rails app with CRuby backend and JRuby frontend.
-*   Successfully rearchitecct and/or decomplect apps:
-    - Separate email management from User model, normalize addresses, improve Email bounce-processing (Perl).
-    - Standardize deploy scripts, logging, error-handling, LDAP authentication, pooled SMTP, etc.
+*   Successfully rearchitect and/or decomplect apps:
+    - Separate email management from User model, normalize addresses, improve email bounce processing (Perl).
+    - Standardize deploy scripts, logging, error handling, LDAP authentication, pooled SMTP, etc.
 
 #### Web Development Software Engineer -- Metromix / Gannett -- Chicago, IL, July 2010-June 2012
 
 ##### A Social Entertainment Site
 
-*   Writes decoupled single-responsibility ruby code, such as a feature module that only requires one of code to work.
+*   Writes decoupled single-responsibility Ruby code, such as a feature module that only requires one line of code to work.
 *   I love learning, and sharing, and working with others.  I began and run Metromix's weekly tech lunch.
 *   Offers minimum viable solutions as a first step to getting desired functionality coded and used as a spike for subsequent work.
 *   Enjoys text-processing, including using regular expressions and XML/HTML parsers such as Nokogiri.
@@ -108,7 +108,7 @@ title:
 
 *   Stackoverflow: [user879854/bf4](http://stackoverflow.com/users/879854/bf4)
 *   Twitter: [@hazula](https://twitter.com/#!/hazula)
-*   [Open Source Report Card](http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on GithHb.
+*   [Open Source Report Card](http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on GitHub.
 
 ## EDUCATION:
 
