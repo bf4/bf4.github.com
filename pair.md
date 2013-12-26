@@ -16,11 +16,18 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
 
 ## Pair and tell
 
-* [2013-06-12 with Robert Jackson on the Pair Program With Me Matcher](https://github.com/rubyrogues/ppwm-matcher/)
-
 <div id="pairing"></div>
+<script id="pairing-template" type="text/x-mustache-template">
+<ul>
+  {{#rows}}
+    <li>
+      <a href="{{link}}">{{appointments}} with {{pair}} on {{description}}</a>
+    </li>
+  {{/rows}} 
+</ul>
+</script>
 <script>
-(function($) {
+var printPairs = (function($) {
     var config = {
         'key' : "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE",
         'fields' : [
@@ -34,50 +41,39 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
 
     config.url = "https://spreadsheets.google.com/feeds/list/" + config.key + "/od6/public/values?alt=json";
 
-    var parse_entry = function(entry, fields, callback) {
+    config.source   = $("#pairing-template").html();
+    config.view = {};
+
+    var parse_entry = function(entry, fields) {
       that = this;
-      that.columns = [];
+      that.row = {};
       $.each(fields, function(index, field) {
         this.field_name = "gsx$" + field;
         this.cell = entry[this.field_name]["$t"];
-        that.columns.push(this.cell);
+        that.row[field] = this.cell;
       });
-      return callback(that.columns);
-    };
-    
-    var parse_entries = function(entries, fields, callback) {
-      that = this;
-      that.html = "";;
-      $.each(entries, function(index, entry) {
-        that.html += parse_entry(entry, fields, callback);
-      });
-      return that.html;
-    }
-
-    var build_table_row = function(columns) {
-      var that = this;
-      that.row = "<tr>";
-      $.each(columns, function(index, column) {
-        that.row += "<td>" + column + "</td>";
-       
-      });
-      that.row += "</tr>";
       return that.row;
     };
     
-    var build_table_html = function(config, entries) {
-      this.html = "<table border='1'>" +
-          build_table_row(config.fields) +
-          parse_entries(entries, config.fields, build_table_row) +
-          "</table>";
-      return this.html;
+    var parse_entries = function(entries, fields) {
+      that = this;
+      that.rows = [];
+      $.each(entries, function(index, entry) {
+        that.rows.push(parse_entry(entry, fields));
+      });
+      return that.rows;
+    }
+
+    var build_rows = function(fields, entries) {
+      this.rows = parse_entries(entries, fields);
+      return this.rows;
     };
-    
-    /* var entries = data.feed.entry; */
+
     var display_html = function(config, entries) {
-      this.html = build_table_html(config, entries);
+      config.view.rows = build_rows(config.fields, entries);
+      this.html    = Mustache.render(config.source, config.view);
       this.target = $(config.target);
-      $(this.target).html(html);
+      $(this.target).html(this.html);
     }
 
     var fetch_data = function(config, callback) {
@@ -89,6 +85,10 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
 
     fetch_data(config, display_html);
     
+  });
+(function($) {
+  var js_url = "http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js";
+  $.getScript(js_url, function() { printPairs($) });
 })(jQuery);
 </script>
 </section>
