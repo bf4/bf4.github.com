@@ -33,43 +33,62 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
     };
 
     config.url = "https://spreadsheets.google.com/feeds/list/" + config.key + "/od6/public/values?alt=json";
-  
 
-    console.log(config);
-      var printer = {
-        'formatOutput' : function(entry) {
-         this.html = this.html || '';
-           $.each(template, function(field, formatting) {
-             var output = entry["gsx$" + field]["$t"];
-             html += formatting.replace('REPLACE', output);
-            });
-         },
-        'target' :  $(config.target),
-        'html' : '',
-     
-          'add_row' : function(row) {
-              console.log(row);
-              // next for each row, extract fields
-              // e.g. ['gsx$description']['$t']
-          }
-      };
-      var client = {          
-        'each_entry' : function(url, add_row) {            
-              $.getJSON( url, function( json ) {
-                  $.each( json.feed.entry, function(key, val) {
-                      if(typeof(key) === 'number') {
-                          add_row(val);
-                      };
-                  });
+    var parse_entry = function(entry, fields, callback) {
+      that = this;
+      that.columns = [];
+      $.each(fields, function(index, field) {
+        this.field_name = "gsx$" + field;
+        this.cell = entry[this.field_name]["$t"];
+        that.columns.push(this.cell);
+      });
+      return callback(that.columns);
+    };
+    
+    var parse_entries = function(entries, fields, callback) {
+      that = this;
+      that.html = "";;
+      $.each(entries, function(index, entry) {
+        that.html += parse_entry(entry, fields, callback);
+      });
+      return that.html;
+    }
 
-              });
+    var build_table_row = function(columns) {
+      var that = this;
+      that.row = "<tr>";
+      $.each(columns, function(index, column) {
+        that.row += "<td>" + column + "</td>";
+       
+      });
+      that.row += "</tr>";
+      return that.row;
+    };
+    
+    var build_table_html = function(config, entries) {
+      this.html = "<table border='1'>" +
+          build_table_row(config.fields) +
+          parse_entries(entries, config.fields, build_table_row) +
+          "</table>";
+      return this.html;
+    };
+    
+    /* var entries = data.feed.entry; */
+    var display_html = function(config, entries) {
+      this.html = build_table_html(config, entries);
+      this.target = $(config.target);
+      $(this.target).html(html);
+    }
 
-            }
-      };
-      client.each_entry(config.url, printer.add_row); 
+    var fetch_data = function(config, callback) {
+      $.getJSON( config.url, function( json ) {
+        this.entries = json.feed.entry;
+        callback(config, this.entries);
+      });
+    };
+
+    fetch_data(config, display_html);
     
 })(jQuery);
 </script>
-
-
 </section>
