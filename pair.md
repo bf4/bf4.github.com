@@ -23,7 +23,7 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
     <li>
       <a href="{{link}}">{{appointments}} with {{pair}} on {{description}}</a>
     </li>
-  {{/rows}} 
+  {{/rows}}
 </ul>
 </script>
 <script>
@@ -54,7 +54,7 @@ var printPairs = (function($) {
       });
       return that.row;
     };
-    
+
     var parse_entries = function(entries, fields) {
       that = this;
       that.rows = [];
@@ -84,10 +84,10 @@ var printPairs = (function($) {
     };
 
     fetch_data(config, display_html);
-    
+
   });
 (function($) {
-  var js_url = "http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.js";
+  var js_url = "/js/mustache.js";
   $.getScript(js_url, function() { printPairs($) });
 })(jQuery);
 </script>

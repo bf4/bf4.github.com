@@ -18,8 +18,19 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/application.js"></script>
+    <script type="text/javascript">
+      (function () {
+        var _jsLoader = _jsLoader || {};
+         
+        _jsLoader.getScript =  (function(src) {
+            var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+            script.src = src;
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+        });
+        _jsLoader.getScript('/js/jquery.min.js');
+        _jsLoader.getScript('/js/application.js');
+      })();
+    </script>
 
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
