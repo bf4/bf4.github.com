@@ -17,6 +17,7 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
 ## Pair and tell
 
 <div id="pairing"></div>
+{% raw %}
 <script id="pairing-template" type="text/x-mustache-template">
 <ul>
   {{#rows}}
@@ -26,6 +27,8 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
   {{/rows}}
 </ul>
 </script>
+
+{% endraw %}
 <script>
 var printPairs = (function($) {
     var config = {
