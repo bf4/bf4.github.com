@@ -16,6 +16,82 @@ I have have experience pairing with vim, wemux, ssh, and skype/google voice.
 
 ## Pair and tell
 
-* [2013-06-12 with Robert Jackson on the Pair Program With Me Matcher](https://github.com/rubyrogues/ppwm-matcher/)
+<div id="pairing"></div>
+{% raw %}
+<script id="pairing-template" type="text/x-mustache-template">
+<ul>
+  {{#rows}}
+    <li>
+      <a href="{{link}}">{{appointments}} with {{pair}} on {{description}}</a>
+    </li>
+  {{/rows}}
+</ul>
+</script>
 
+{% endraw %}
+<script>
+var printPairs = (function($) {
+    var config = {
+        'key' : "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE",
+        'fields' : [
+                'appointments',
+                 'link',
+                 'pair',
+                 'description'
+        ],
+        'target' : '#pairing'
+    };
+
+    config.url = "https://spreadsheets.google.com/feeds/list/" + config.key + "/od6/public/values?alt=json";
+
+    config.source   = $("#pairing-template").html();
+    config.view = {};
+
+    var parse_entry = function(entry, fields) {
+      that = this;
+      that.row = {};
+      $.each(fields, function(index, field) {
+        this.field_name = "gsx$" + field;
+        this.cell = entry[this.field_name]["$t"];
+        that.row[field] = this.cell;
+      });
+      return that.row;
+    };
+
+    var parse_entries = function(entries, fields) {
+      that = this;
+      that.rows = [];
+      $.each(entries, function(index, entry) {
+        that.rows.push(parse_entry(entry, fields));
+      });
+      return that.rows;
+    }
+
+    var build_rows = function(fields, entries) {
+      this.rows = parse_entries(entries, fields);
+      return this.rows;
+    };
+
+    var display_html = function(config, entries) {
+      config.view.rows = build_rows(config.fields, entries);
+      this.html    = Mustache.render(config.source, config.view);
+      this.target = $(config.target);
+      $(this.target).html(this.html);
+    }
+
+    var fetch_data = function(config, callback) {
+      $.getJSON( config.url, function( json ) {
+        this.entries = json.feed.entry;
+        callback(config, this.entries);
+      });
+    };
+
+    fetch_data(config, display_html);
+
+  });
+(function($) {
+  var js_url = "/js/mustache.js";
+  $.getScript(js_url, function() { printPairs($) });
+})(jQuery);
+</script>
 </section>
