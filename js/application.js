@@ -1,12 +1,7 @@
 // load social sharing scripts if the page includes a Twitter "share" button
 var _jsLoader = _jsLoader || {};
 
-_jsLoader.getScript =  (function(src) {
-    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-    script.src = src;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-  });
-
+// callback pattern
 _jsLoader.initTwitter = (function() {
     if (typeof (twttr) != 'undefined') {
       twttr.widgets.load();

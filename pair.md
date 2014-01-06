@@ -88,10 +88,10 @@ var printPairs = (function($) {
 
     fetch_data(config, display_html);
 
-  });
-(function($) {
-  var js_url = "/js/mustache.js";
-  $.getScript(js_url, function() { printPairs($) });
-})(jQuery);
+});
+_jsLoader.initMustache(function() {
+    printPairs(jQuery);
+});
+
 </script>
 </section>
