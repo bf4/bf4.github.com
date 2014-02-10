@@ -15,7 +15,29 @@ Fourteen (14) days ago, my [Rubinius builds on Travis CI began erroring](https:/
 Since, I can't seem to find a write-up on the final state of affairs, I've written-up a summary of what I did,
 and how [I got the tests reliably passing](https://travis-ci.org/metricfu/metric_fu/jobs/14902745) one (1) day ago.
 
-## The Fix:
+## *Update 2014-02-10*
+
+The [Rubinius 2.2.5 release now includes the standard library](https://github.com/rubinius/rubinius/releases/tag/v2.2.5), and so, you [no longer need a special :rbx group, only to specify rbx-2 in your travis.yml](https://github.com/tarcieri/http/pull/79#issuecomment-34628465)
+
+[Changelog](https://github.com/rubinius/rubinius/releases/tag/v2.2.5):
+
+> Standard library gems 'racc', 'minitest', and 'rubysl-test-unit' are now pre-installed, in addition to json and the RubySL gems. (Brian Shirai)
+
+[Brian Shirai](https://github.com/tarcieri/http/pull/79#issuecomment-34628465):
+
+> The 'rbx-2' is to limit testing on Rubinius 2.x since there will be other versions of Rubinius > 2.x soon. This part is unrelated to loading gems.
+
+> I've changed Rubinius code loading to avoid Bundler stripping pre-installed gems. I'll be making a patch to Bundler so it will specifically consider pre-installed gems but in any case, Bundler will no longer prevent eg rubysl-securerandom or whatever from being loaded. I'm writing a Migrating from MRI guide that will cover this.
+
+The now-recommended part of `.travis.yml`
+
+{% highlight yaml %}
+rvm:
+  - rbx-2
+{% endhighlight %}
+
+
+## Original Fix:
 
 1. Update travis.yml to specify `rbx` wherever you had `rbx-whatever`
 2. Add a special travis gemfile or modify your gemfile to have some subset of
