@@ -13,8 +13,9 @@ title:
 # SUMMARY:
 
 *   Active ([top 1% for Ruby on GitHub](http://osrc.dfm.io/bf4)) open-source software maintainer and contributor.
-    - Maintains eight projects, including MetricFu and CodeMetrics.
+    - Maintains nine projects, including MetricFu, ActsAsTaggableOn, CodeNotes, and CodeMetrics.
     - Has contributed to tens of others, including Rails, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
+*   Created the [RubyGems guides security page](http://guides.rubygems.org/security/)
 *   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/).
 *   [Making the world a better place](http://ruby5.envylabs.com/episodes/424-episode-388-july-23rd-2013/stories/3437-license-your-gems) by creating issues to ensure RubyGems [specify a license in their gemspec](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
 *   [Advocates contributing to open-source software](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/) by sharing code, submitting bug reports, and editing documentation.
@@ -73,6 +74,7 @@ title:
 #### Maintainer
 
 *   [Metric-Fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
+*   [Acts-As-Taggable-On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
 *   [YUI-Rails](https://github.com/nextmat/yui-rails/commits?author=bf4)
 *   [Ruby Friends](https://github.com/rubyrogues/rubyfriends/commits?author=bf4)
 *   [Pair Program With Me](https://github.com/avdi/ppwm), [Ppwm-Matcher](https://github.com/rubyrogues/ppwm-matcher/)
