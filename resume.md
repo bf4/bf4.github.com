@@ -21,7 +21,13 @@ title:
 
 ## PROFESSIONAL EXPERIENCE:
 
-#### Web Development Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-Current
+#### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-Current
+
+##### Poll an audience; get instant feedback via web, mobile, text, or tweet.
+
+* Upgrade legacy Rails 2.3 app to Rails 4
+
+#### Web Development Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-December 2013
 
 ##### MrSkin.com, MrMan.com-- Adult Entertainment movie site mentioned in 'Knocked Up'
 
