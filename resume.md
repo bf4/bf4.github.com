@@ -74,10 +74,6 @@ similar_pages:
 
 ### Open-source software activity
 
-* [License missing from gemspec / open](https://github.com/search?o=asc&q=commenter%3Abf4+author%3Abf4+type%3Aissue+state%3Aopen+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
-* [Other open issues](https://github.com/search?o=desc&q=involves%3Abf4++state%3Aopen+NOT+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
-* [Closed pull requests I was involved in](https://github.com/search?q=involves%3Abf4++state%3Aclosed+NOT+%22License+missing+from+gemspec%22+in%3Atitle+type%3Apull&type=Issues&ref=searchresults)
-
 #### Maintainer
 
 *   [Metric-Fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
@@ -107,6 +103,12 @@ similar_pages:
 *   [sunspot](https://github.com/sunspot/sunspot/commits?author=bf4)
 *   [Acts As Taggable On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
 *   [Rubocop](https://github.com/bbatsov/rubocop/commits?author=bf4)
+
+#### Other
+
+* [License missing from gemspec / open](https://github.com/search?o=asc&q=commenter%3Abf4+author%3Abf4+type%3Aissue+state%3Aopen+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
+* [Other open issues](https://github.com/search?o=desc&q=involves%3Abf4++state%3Aopen+NOT+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
+* [Closed pull requests I was involved in](https://github.com/search?q=involves%3Abf4++state%3Aclosed+NOT+%22License+missing+from+gemspec%22+in%3Atitle+type%3Apull&type=Issues&ref=searchresults)
 
 ### Public Speaking
 
