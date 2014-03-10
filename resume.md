@@ -2,6 +2,9 @@
 layout: mark-reid.page
 top: Benjamin Fleischer's Resume
 title:
+similar_pages:
+  - http://careers.stackoverflow.com/benjaminfleischer
+  - https://www.linkedin.com/in/benjaminfleischer
 ---
 {% include JB/setup %}
 
@@ -69,7 +72,11 @@ title:
 *   Abstract Data From Patient Records and Input Into Subject Case Report Forms For Clinical Cancer Research; clarify incomplete or conflicting records with Principal Investigators
 *   Assist in installing software and troubleshooting computer issues; give feedback and advice on general office and IT support Standard Operating Procedures (SOPs)
 
-### OPEN-SOURCE SOFTWARE ACTIVITY
+### Open-source software activity
+
+* [License missing from gemspec / open](https://github.com/search?o=asc&q=commenter%3Abf4+author%3Abf4+type%3Aissue+state%3Aopen+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
+* [Other open issues](https://github.com/search?o=desc&q=involves%3Abf4++state%3Aopen+NOT+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
+* [Closed pull requests I was involved in](https://github.com/search?q=involves%3Abf4++state%3Aclosed+NOT+%22License+missing+from+gemspec%22+in%3Atitle+type%3Apull&type=Issues&ref=searchresults)
 
 #### Maintainer
 
