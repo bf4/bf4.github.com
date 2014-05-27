@@ -23,7 +23,7 @@ similar_pages:
 
 ## Professional experience:
 
-#### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-Current
+##### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-Current
 
 ##### Poll an audience; get instant feedback via web, mobile, text, or tweet.
 
@@ -129,12 +129,12 @@ similar_pages:
 *   Principles of Accounting, 1997
 *   Introduction to Programming C, 1996
 
-### Northwestern University School of Continuing Studies, Chicago, IL, 2007-2010.
+##### Northwestern University School of Continuing Studies, Chicago, IL, 2007-2010.
 
 *   Masters of Science in Computer Information Systems with a concentration in Database and Internet Technologies
 *   Cumulative GPA 3.72
 
-### University of Pennsylvania School of Engineering and Applied Sciences, Philadelphia, PA, 1996-2000.
+##### University of Pennsylvania School of Engineering and Applied Sciences, Philadelphia, PA, 1996-2000.
 
 *   Bachelor's of Applied Science in Biomedical Science and a minor in Chemistry
 *   Cumulative GPA 3.29, Biomedical Science Major GPA 3.67 (9 courses)
