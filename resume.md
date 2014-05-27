@@ -13,7 +13,7 @@ similar_pages:
       hello at this domain
       http://benjaminfleischer.com
 
-# SUMMARY:
+## Summary:
 
 *   Active ([top 1% for Ruby on GitHub](http://osrc.dfm.io/bf4)) open-source software maintainer and contributor.
     - Maintains nine projects, including MetricFu, ActsAsTaggableOn, CodeNotes, and CodeMetrics.
@@ -23,9 +23,9 @@ similar_pages:
 *   [Making the world a better place](http://ruby5.envylabs.com/episodes/424-episode-388-july-23rd-2013/stories/3437-license-your-gems) by creating issues to ensure RubyGems [specify a license in their gemspec](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
 *   [Advocates contributing to open-source software](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/) by sharing code, submitting bug reports, and editing documentation.
 
-## PROFESSIONAL EXPERIENCE:
+## Professional experience:
 
-#### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-Current
+### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-Current
 
 ##### Poll an audience; get instant feedback via web, mobile, text, or tweet.
 
@@ -72,9 +72,9 @@ similar_pages:
 *   Abstract Data From Patient Records and Input Into Subject Case Report Forms For Clinical Cancer Research; clarify incomplete or conflicting records with Principal Investigators
 *   Assist in installing software and troubleshooting computer issues; give feedback and advice on general office and IT support Standard Operating Procedures (SOPs)
 
-### Open-source software activity
+## Open-source software activity:
 
-#### Maintainer
+#### Maintainer:
 
 *   [Metric-Fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
 *   [Acts-As-Taggable-On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
@@ -86,7 +86,7 @@ similar_pages:
 *   [Saikuro](https://github.com/metricfu/Saikuro)
 *   [Roodi, while it was not being maintained](https://github.com/metricfu/roodi)
 
-#### Contributor
+#### Contributor:
 
 *   [Project to get more licenses specified in gemspecs](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
 *   [Kaminari](https://github.com/amatsuda/kaminari/commits?author=bf4)
@@ -104,13 +104,13 @@ similar_pages:
 *   [Acts As Taggable On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
 *   [Rubocop](https://github.com/bbatsov/rubocop/commits?author=bf4)
 
-#### Other
+#### Other:
 
 * [License missing from gemspec / open](https://github.com/search?o=asc&q=commenter%3Abf4+author%3Abf4+type%3Aissue+state%3Aopen+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
 * [Other open issues](https://github.com/search?o=desc&q=involves%3Abf4++state%3Aopen+NOT+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
 * [Closed pull requests I was involved in](https://github.com/search?q=involves%3Abf4++state%3Aclosed+NOT+%22License+missing+from+gemspec%22+in%3Atitle+type%3Apull&type=Issues&ref=searchresults)
 
-### Public Speaking
+## Public speaking:
 
 *   Speaking: [YAML, what is it good for? at RailsIsrael in October, 2013](http://railsisrael2013.events.co.il/presentations/868-yaml-what-is-it-good-for) [Slides](https://speakerdeck.com/bf4/yaml-what-is-it-good-for), Video TBA, [Source code](https://github.com/bf4/yaml_resources)
 *   Lightning Talk: [All your OSS code are belong to us](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/), at RubyNation 2013.
@@ -121,15 +121,15 @@ similar_pages:
 *   Q&A: [Ask Matz about RubySpec (at 42:57)](http://www.youtube.com/watch?v=B7vCuNaqT7k&hd=1&t=42m57s) at RubyConf 2012. Not public speaking per se, but I think I prompted an interesting discussion of RubySpec; these things are hard to find without direct links.
 
 
-### OTHER ONLINE PRESENCE
+## Other online presence:
 
 *   Stackoverflow: [user879854/bf4](http://stackoverflow.com/users/879854/bf4)
 *   Twitter: [@hazula](https://twitter.com/#!/hazula)
 *   [Open Source Report Card](http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on GitHub.
 
-## EDUCATION:
+## Education:
 
-#### Relevant Coursework
+#### Relevant coursework:
 
 *   Object-Oriented Analysis and Design, 2010
 *   Business Requirements Analysis, 2010
@@ -149,7 +149,7 @@ similar_pages:
 *   Bachelor's of Applied Science in Biomedical Science and a minor in Chemistry
 *   Cumulative GPA 3.29, Biomedical Science Major GPA 3.67 (9 courses)
 
-### OTHER EXPERIENCE:
+## Other Experience:
 
 *   PADI Scuba Diver Certified, 2011
 *   Black-Belt Recommended in ATA Songham Taekwondo
