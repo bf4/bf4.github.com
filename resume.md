@@ -23,13 +23,13 @@ similar_pages:
 
 ## Professional experience:
 
-### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-Current
+#### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-Current
 
 ##### Poll an audience; get instant feedback via web, mobile, text, or tweet.
 
 * Upgrade legacy Rails 2.3 app to Rails 3.2.
 
-#### Web Development Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-December 2013
+##### Web Development Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-December 2013
 
 ##### MrSkin.com, MrMan.com-- Adult Entertainment movie site mentioned in 'Knocked Up'
 
@@ -41,7 +41,7 @@ similar_pages:
     - Separate email management from User model, normalize addresses, improve email bounce processing (Perl).
     - Standardize deploy scripts, logging, error handling, LDAP authentication, pooled SMTP, etc.
 
-#### Web Development Software Engineer -- Metromix / Gannett -- Chicago, IL, July 2010-June 2012
+##### Web Development Software Engineer -- Metromix / Gannett -- Chicago, IL, July 2010-June 2012
 
 ##### A Social Entertainment Site
 
@@ -49,22 +49,22 @@ similar_pages:
 *   Wrote a Net::HTTP wrapper for our deals importer to increase timeouts and provide better error-handling.
 *   Often uses math to solve complex problems.  A former developer once said "wow, we'd been wanting to do fuzzy matching for a while."
 
-#### Ruby on Rails Contractor -- Zavteq -- Chicago, IL, 2011
+##### Ruby on Rails Contractor -- Zavteq -- Chicago, IL, 2011
 
 *   Built jQuery Mobile Ruby on Rails 3 site with RSpec and custom Devise authentication adapter.
 
-#### Volunteer Web Developer -- Chicago Festival of Israeli Cinema, March 2010-2012
+##### Volunteer Web Developer -- Chicago Festival of Israeli Cinema, March 2010-2012
 
 *   Update and overhaul website from static, inconsistent HTML pages to a dynamic CMS (WordPress) featuring online ticket sales, membership purchases, analytics, and social media integration.
 
-#### Volunteer Technology Chair -- Limmud Chicago, January 2008-April 2010
+##### Volunteer Technology Chair -- Limmud Chicago, January 2008-April 2010
 
 *   Manage website, servers, online registration, payment and donation processing
 *   Save money by using free, open source software such as Wordpress, Drupal and CiviCRM running on Red Hat Linux.
 
 ## Open-source software activity:
 
-#### Maintainer:
+##### Maintainer:
 
 *   [Metric-Fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
 *   [Acts-As-Taggable-On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
@@ -76,7 +76,7 @@ similar_pages:
 *   [Saikuro](https://github.com/metricfu/Saikuro)
 *   [Roodi, while it was not being maintained](https://github.com/metricfu/roodi)
 
-#### Contributor:
+##### Contributor:
 
 *   [Project to get more licenses specified in gemspecs](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
 *   [Kaminari](https://github.com/amatsuda/kaminari/commits?author=bf4)
@@ -94,7 +94,7 @@ similar_pages:
 *   [Acts As Taggable On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
 *   [Rubocop](https://github.com/bbatsov/rubocop/commits?author=bf4)
 
-#### Other:
+##### Other:
 
 * [License missing from gemspec / open](https://github.com/search?o=asc&q=commenter%3Abf4+author%3Abf4+type%3Aissue+state%3Aopen+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
 * [Other open issues](https://github.com/search?o=desc&q=involves%3Abf4++state%3Aopen+NOT+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
@@ -119,7 +119,7 @@ similar_pages:
 
 ## Education:
 
-#### Relevant coursework:
+##### Relevant coursework:
 
 *   Object-Oriented Analysis and Design, 2010
 *   Business Requirements Analysis, 2010
