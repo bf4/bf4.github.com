@@ -20,8 +20,6 @@ similar_pages:
     - Has contributed to tens of others, including Rails, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
 *   Created the [RubyGems guides security page](http://guides.rubygems.org/security/)
 *   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/).
-*   [Making the world a better place](http://ruby5.envylabs.com/episodes/424-episode-388-july-23rd-2013/stories/3437-license-your-gems) by creating issues to ensure RubyGems [specify a license in their gemspec](http://www.benjaminfleischer.com/2013/07/12/make-the-world-a-better-place-put-a-license-in-your-gemspec/)
-*   [Advocates contributing to open-source software](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/) by sharing code, submitting bug reports, and editing documentation.
 
 ## Professional experience:
 
@@ -29,7 +27,7 @@ similar_pages:
 
 ##### Poll an audience; get instant feedback via web, mobile, text, or tweet.
 
-* Upgrade legacy Rails 2.3 app to Rails 4
+* Upgrade legacy Rails 2.3 app to Rails 3.2.
 
 #### Web Development Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-December 2013
 
@@ -47,30 +45,22 @@ similar_pages:
 
 ##### A Social Entertainment Site
 
-*   Writes decoupled single-responsibility Ruby code, such as a feature module that only requires one line of code to work.
-*   I love learning, and sharing, and working with others.  I began and run Metromix's weekly tech lunch.
-*   Offers minimum viable solutions as a first step to getting desired functionality coded and used as a spike for subsequent work.
-*   Enjoys text-processing, including using regular expressions and XML/HTML parsers such as Nokogiri.
-*   Write a Net::HTTP wrapper for our deals importer to increase timeouts and provide better error-handling.
-*   Often uses math to solve complex problems.  A former developer, once said "wow, we'd been wanting to do fuzzy matching for a while."
+*   I began and ran Metromix's weekly tech lunch.
+*   Wrote a Net::HTTP wrapper for our deals importer to increase timeouts and provide better error-handling.
+*   Often uses math to solve complex problems.  A former developer once said "wow, we'd been wanting to do fuzzy matching for a while."
 
 #### Ruby on Rails Contractor -- Zavteq -- Chicago, IL, 2011
 
-*   Build jQuery Mobile Ruby on Rails 3 site with RSpec and custom Devise authentication adapter.
+*   Built jQuery Mobile Ruby on Rails 3 site with RSpec and custom Devise authentication adapter.
 
 #### Volunteer Web Developer -- Chicago Festival of Israeli Cinema, March 2010-2012
 
-*   Update and overhaul website from static, inconsistent html pages to a dynamic CMS (Wordpress) featuring online ticket sales, membership purchases, analytics, and social media integration.
+*   Update and overhaul website from static, inconsistent HTML pages to a dynamic CMS (WordPress) featuring online ticket sales, membership purchases, analytics, and social media integration.
 
 #### Volunteer Technology Chair -- Limmud Chicago, January 2008-April 2010
 
 *   Manage website, servers, online registration, payment and donation processing
 *   Save money by using free, open source software such as Wordpress, Drupal and CiviCRM running on Red Hat Linux.
-
-#### Data Manager -- Northwestern University, October 2008-June 2010
-
-*   Abstract Data From Patient Records and Input Into Subject Case Report Forms For Clinical Cancer Research; clarify incomplete or conflicting records with Principal Investigators
-*   Assist in installing software and troubleshooting computer issues; give feedback and advice on general office and IT support Standard Operating Procedures (SOPs)
 
 ## Open-source software activity:
 
