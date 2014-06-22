@@ -1,7 +1,6 @@
-pygments: true
+highlighter: pygments
 lsi: false
 safe: true
-auto: true
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 markdown: rdiscount
 rdiscount:
