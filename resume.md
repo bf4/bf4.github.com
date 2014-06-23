@@ -134,12 +134,12 @@ similar_pages:
 
 ### Northwestern University School of Continuing Studies, Chicago, IL, 2007-2010.
 
-*   Masters of Science in Computer Information Systems with a concentration in Database and Internet Technologies.
+*   Master of Science in Computer Information Systems with a concentration in Database and Internet Technologies.
 *   Cumulative GPA 3.72.
 
 ### University of Pennsylvania School of Engineering and Applied Sciences, Philadelphia, PA, 1996-2000.
 
-*   Bachelor's of Applied Science in Biomedical Science and a minor in Chemistry.
+*   Bachelor of Applied Science in Biomedical Science and a minor in Chemistry.
 *   Cumulative GPA 3.29, Biomedical Science Major GPA 3.67 (9 courses).
 
 ## Other Experience:
