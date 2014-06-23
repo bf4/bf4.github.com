@@ -76,7 +76,6 @@ similar_pages:
 *   [Code Notes](https://github.com/bf4/code_notes)
 *   [Saikuro](https://github.com/metricfu/Saikuro)
 *   [Roodi (during a period it was not otherwise maintainted)](https://github.com/metricfu/roodi)
-*   [Acts As Taggable On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
 
 ### Contributor:
 
