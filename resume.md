@@ -115,9 +115,11 @@ similar_pages:
 
 ## Other online presence:
 
+*   GitHub: [bf4](https://github.com/bf4).
 *   StackOverflow: [user879854/bf4](http://stackoverflow.com/users/879854/bf4).
 *   Twitter: [@hazula](https://twitter.com/#!/hazula).
 *   [Open Source Report Card](http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on GitHub.
+*   [Blog: benjaminfleischer.com](http://benjaminfleischer.com).
 
 ## Education:
 
