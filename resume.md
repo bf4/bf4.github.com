@@ -27,7 +27,8 @@ similar_pages:
 
 #### Poll an audience; get instant feedback via web, mobile, text, or tweet.
 
-* Upgrade legacy Rails 2.3 app to Rails 3.2.
+* Upgraded legacy Rails 2.3 app to Rails 3.2, then to 4.1.
+* Reduced SQL queries on serialized columns.
 
 ### Web Development Software Engineer -- SK Intertainment -- Chicago, IL, June 2012-December 2013
 
