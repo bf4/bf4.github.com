@@ -38,7 +38,6 @@ similar_pages:
 
 *   Introduced testing (including TDD), continuous integration (CI), design patterns, and some agile practices.
 *   Upgraded all Rails apps from Rails 3.0 to 3.2, and Ruby 1.8.7p72 to 1.9.3. Build new Rails app with CRuby backend and JRuby frontend.
-* Metrics
 *   Successfully rearchitected and/or decomplected apps:
     - Separated email management from User model, normalize addresses, improve email bounce processing (Perl).
     - Standardized deploy scripts, logging, error handling, LDAP authentication, pooled SMTP, etc.
