@@ -10,7 +10,9 @@
       <a href="http://twitter.com/share" class="screen-only twitter-share-button" data-count="none" data-via="{{ site.author.twitter }}">Tweet</a>
       <a href="http://twitter.com/{{ site.author.twitter }}" class="screen-only twitter-follow-button" data-show-count="false">Follow @{{ site.author.twitter }}</a>
       <script>
-        _jsLoader.initTwitter();
+         _jsLoader.getScript('/js/application.js', function() {
+           setTimeout(_jsLoader.initTwitter, _jsLoader.timeout);
+        });
       </script>
 
     </div>
