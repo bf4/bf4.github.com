@@ -1,11 +1,13 @@
 var _jsLoader = _jsLoader || {};
 _jsLoader.loaded_scripts = [];
 _jsLoader.getScript =  (function(src, callback) {
-    if (Array.prototype.indexOf != "undefined" && _jsLoader.loaded_scripts.indexOf(src) != -1 ) { return; } // do nothing if already requested
-    var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-    script.src = src;
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    _jsLoader.loaded_scripts.push(src);
+    // do nothing if already requested
+    if (Array.prototype.indexOf === "undefined" || _jsLoader.loaded_scripts.indexOf(src) === -1 ) {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = src;
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+      _jsLoader.loaded_scripts.push(src);
+    }
     if (typeof(callback) === "function") { callback(); }
 });
 
