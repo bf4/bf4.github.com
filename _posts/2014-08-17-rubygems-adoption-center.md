@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A RubyGems Adoption Center"
-description: "How can we enable community maintenance of unmaintained/abandoned RubyGems?""
+description: "How can we enable community maintenance of unmaintained/abandoned RubyGems?"
 categories: [ 'ruby' ]
 tags: [ 'ruby' , 'calltoaction', 'rubygems' ]
 published: true
@@ -103,7 +103,7 @@ I've helped revive or take over a number of gems. Here's the results, thus far (
 
 - Rails-ERD: is totally abandoned with no one interested in picking it up [https://github.com/gemhome/rails-erd/issues/30](https://github.com/gemhome/rails-erd/issues/30) so I made an issue I just point people to
 
-- Fnordmetric: was abandoned but maintainer says he is now backhttps://github.com/paulasmuth/fnordmetric/issues/177 [https://github.com/paulasmuth/fnordmetric/pull/178](https://github.com/paulasmuth/fnordmetric/pull/178)
+- Fnordmetric: was abandoned but maintainer says he is now back [https://github.com/paulasmuth/fnordmetric/issues/177 [https://github.com/paulasmuth/fnordmetric/pull/178](https://github.com/paulasmuth/fnordmetric/pull/178)
 
 - Saikuro: was abandoned and got buy-in from the original author but am slightly hamstringed by a gem of the same name, but lowercased, also being pushed to rubygems, and a non-responsive author of that fork [https://github.com/metricfu/Saikuro/issues/2](https://github.com/metricfu/Saikuro/issues/2)
 
