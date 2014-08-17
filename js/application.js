@@ -6,7 +6,11 @@ _jsLoader.initTwitter = (function() {
     if (typeof (twttr) != 'undefined') {
       twttr.widgets.load();
     } else {
-      _jsLoader.getScript('http://platform.twitter.com/widgets.js');
+      _jsLoader.getScript('http://platform.twitter.com/widgets.js', function() {
+        setTimeout(function() {
+          _jsLoader.initTwitter();
+        }, _jsLoader.timeout);
+      });
     }
 });
 
@@ -15,7 +19,9 @@ _jsLoader.initFacebook = (function() {
       FB.init({ status: true, cookie: true, xfbml: true });
     } else {
       _jsLoader.getScript("http://connect.facebook.net/en_US/all.js#xfbml=1", function () {
-        FB.init({ status: true, cookie: true, xfbml: true });
+        setTimeout(function() {
+          _jsLoader.initFacebook();
+        }, _jsLoader.timeout);
       });
     }
 });
@@ -26,7 +32,11 @@ _jsLoader.initGooglePlusOne = (function() {
         gapi.plusone.render($(this).get(0));
       });
     } else {
-      _jsLoader.getScript('https://apis.google.com/js/plusone.js');
+      _jsLoader.getScript('https://apis.google.com/js/plusone.js', function() {
+        setTimeout(function() {
+          _jsLoader.initGooglePlusOne();
+        }, _jsLoader.timeout);
+      });
     }
 });
 
