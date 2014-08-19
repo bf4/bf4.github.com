@@ -1,0 +1,64 @@
+==================================================================
+https://keybase.io/bf4
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://benjaminfleischer.com
+  * I am bf4 (https://keybase.io/bf4) on keybase.
+  * I have a public key with fingerprint 4B5F 8D75 02A0 8180 CCD5  59D1 3985 4667 DEB1 0286
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "4b5f8d7502a08180ccd559d139854667deb10286",
+            "host": "keybase.io",
+            "key_id": "39854667deb10286",
+            "uid": "bae9c3af5393789fe2709b2778ef2900",
+            "username": "bf4"
+        },
+        "service": {
+            "hostname": "benjaminfleischer.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1408421988,
+    "expire_in": 157680000,
+    "prev": "5e7c4b22c975ca5b9f32423d55f216ae9d48dfa4704e7640bf1d428ada9f7929",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFtUV1IFFEYHTeNkqyQJCIpHOqh3JaZ2fm7axAZKdRT2oMkyzYz987uuDqzzq6r
+m1kKWoqC+6CwL5E/WW6RaQS5PpSZaGlERkihbCTiQz8UaulL0R3Jt+7L5Z7vnPN9
+537RjC2ELQU0FXiTQ7ZrKdOjv2SiePmNv5aUDRghXbWkH21cqqZ7kRkwNT1EukhW
+5lQRChzFSJRIi5SiQI4DkHYCkWN5XoBIpilG5Ek76TOClgLbyFIQOTQDY/jh0SBG
+/8Ov2ijIEgKKU1I5J3AKIlARI1BAZgRBRCoDKMoiBpGpSxXIYqssWWcnMRDWFGSN
+a3XdLCK9TKrQdLUcaUHFh0yHYlRgfcA0QoZilGOKLxQKuCyHUCRgSaqR7Pln5pE1
+HeLsWBBGZlAzdNJFY6YS0ix3mqVElqGBKNpJVBPQTOTRLAYn8CKFj9UGhbElhwSF
+lRlGAQKnSJwMVCfDMk78bSpD8zgtZEWoSqxAsUjgWUpWacgyogQloAqAAaQVr1I3
+SBeLx5S82DKoeXUpVGUisi69JSU7lUixEVvTbNb6iPTtuzeXWvpjGzH35NJAUfP3
+HjAw8wJOREcaY735z3v2jX7Ngpnh+P1Z2J79KNE8cWJHzH4ktnwm5+3l1I753qbz
+nK9kPPrh1vV8z/LwzOrYwlpG/+yKu7/7XXPctZ55+jecm1oS2orCByJFr88Wd+V1
+uvoOtma2EOn802Rj8tXD4dutGfZj7d6OSG7sqvbTccd2wbbITJ7MPTU++uz4Un1y
+1d93ZefF9u4pg+4tI9xjzseFewobPt4c5A87ju5adCey86tNTRD2lsQqO79FXn6q
+ga1NNQXx9UN/lkon2+B7993oSFdBfYIfrLuxtn8+LzrdkPbZf2/lS45/KCvOzCfO
+AXPhwV8=
+=xCEu
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bf4
+
+==================================================================
