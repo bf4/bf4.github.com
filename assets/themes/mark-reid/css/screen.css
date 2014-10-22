@@ -557,3 +557,16 @@ img.maruku-png { }
 	color:#FFF;
 }
 
+@media screen, {
+  a#pdf-ribbon > span {
+    position: absolute; top:1; left:0; border:0;
+    font-variant: small-caps;
+    text-shadow : 5px 5px 2px #999999;
+    transform: rotate(-45deg)
+  }
+}
+@media print {
+  a#pdf-ribbon {
+    display:none;
+  }
+}
