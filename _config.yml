@@ -26,6 +26,8 @@ author :
 
 resume_link: /resume.html
 resume_link_text: resume
+pair_link: /pair.html
+pair_link_text: pair
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
