@@ -23,7 +23,7 @@ similar_pages:
 
 ## Professional experience:
 
-### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-Current
+### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-July 2014
 
 #### Poll an audience; get instant feedback via web, mobile, text, or tweet.
 
