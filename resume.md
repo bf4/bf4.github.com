@@ -16,7 +16,7 @@ similar_pages:
 ## Summary:
 
 *   Active ([top 1% for Ruby on GitHub](http://osrc.dfm.io/bf4)) open-source software maintainer and contributor.
-    - Maintains nine projects, including MetricFu, ActsAsTaggableOn, CodeNotes, and CodeMetrics.
+    - Maintains or collaborates on tens of projects, including MetricFu, Mail, SimpleCov, RMagick, ActsAsTaggableOn, CodeNotes, and CodeMetrics.
     - Has contributed to tens of others, including Rails, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
 *   Created the [RubyGems guides security page](http://guides.rubygems.org/security/)
 *   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/).
@@ -68,6 +68,10 @@ similar_pages:
 ### Maintainer:
 
 *   [Metric-Fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
+*   [SimpleCov](https://github.com/colszowka/simplecov/commits?author=bf4)
+*   [Mail](https://github.com/mikel/mail/commits?author=bf4)
+*   [RMagick](https://github.com/gemhome/rmagick/commits?author=bf4)
+*   [Rails ERD](https://github.com/voormedia/rails-erd/commits?author=bf4)
 *   [Acts-As-Taggable-On](https://github.com/mbleigh/acts-as-taggable-on/commits?author=bf4)
 *   [YUI-Rails](https://github.com/nextmat/yui-rails/commits?author=bf4)
 *   [Ruby Friends](https://github.com/rubyrogues/rubyfriends/commits?author=bf4)
@@ -84,7 +88,6 @@ similar_pages:
 *   [Rails](https://github.com/rails/rails/issues/created_by/bf4)
 *   [Gems gem](https://github.com/rubygems/gems/pull/11)
 *   [Code Climate Test Reporter](https://github.com/codeclimate/ruby-test-reporter)
-*   [SimpleCov](https://github.com/colszowka/simplecov/pull/245)
 *   [Passenger](https://github.com/phusion/passenger/pull/78)
 *   [Rails Best Practices](https://github.com/railsbp/rails_best_practices/commits?author=bf4), [Code Analyzer](https://github.com/flyerhzm/code_analyzer/issues/created_by/bf4)
 *   [Bcrypt-ruby](https://github.com/codahale/bcrypt-ruby/commits?author=bf4)
