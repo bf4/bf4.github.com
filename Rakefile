@@ -39,9 +39,8 @@ module JB
 
   end #Path
 end #JB
-
-# Usage: rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]
-desc "Begin a new post in #{CONFIG['posts']}"
+# Begin a new post in #{CONFIG['posts']}.
+desc %{rake post title="A Title" [date="2012-02-09"] [tags=[tag1, tag2]]}
 task :post do
   abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
   title = ENV["title"] || "new-post"
@@ -71,10 +70,12 @@ task :post do
   end
 end # task :post
 
-# Usage: rake page name="about.html"
-# You can also specify a sub-directory path.
-# If you don't specify a file extention we create an index.html at the path specified
-desc "Create a new page."
+# Create a new page
+desc <<EOS
+rake page name="path/to/about.ext"
+You can also specify a sub-directory path.
+If you don't specify a file extention we create an index.html at the path specified
+EOS
 task :page do
   name = ENV["name"] || "new-page.md"
   filename = File.join(SOURCE, "#{name}")
@@ -98,7 +99,7 @@ end # task :page
 
 desc "Launch preview environment"
 task :preview do
-  system "jekyll --auto --server"
+  system "jekyll serve"
 end # task :preview
 
 # Public: Alias - Maintains backwards compatability for theme switching.
