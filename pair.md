@@ -31,68 +31,24 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
 
 {% endraw %}
 <script>
-var printPairs = (function($) {
-    var config = {
-        'key' : "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE",
-        'fields' : [
-                'appointments',
-                 'link',
-                 'pair',
-                 'description'
-        ],
-        'target' : '#pairing'
-    };
-
-    config.url = "https://spreadsheets.google.com/feeds/list/" + config.key + "/od6/public/values?alt=json";
-
-    config.source   = $("#pairing-template").html();
-    config.view = {};
-
-    var parse_entry = function(entry, fields) {
-      that = this;
-      that.row = {};
-      $.each(fields, function(index, field) {
-        this.field_name = "gsx$" + field;
-        this.cell = entry[this.field_name]["$t"];
-        that.row[field] = this.cell;
-      });
-      return that.row;
-    };
-
-    var parse_entries = function(entries, fields) {
-      that = this;
-      that.rows = [];
-      $.each(entries, function(index, entry) {
-        that.rows.push(parse_entry(entry, fields));
-      });
-      return that.rows;
-    }
-
-    var build_rows = function(fields, entries) {
-      this.rows = parse_entries(entries, fields);
-      return this.rows;
-    };
-
-    var display_html = function(config, entries) {
-      config.view.rows = build_rows(config.fields, entries);
-      this.html    = Mustache.render(config.source, config.view);
-      this.target = $(config.target);
-      $(this.target).html(this.html);
-    }
-
-    var fetch_data = function(config, callback) {
-      $.getJSON( config.url, function( json ) {
-        this.entries = json.feed.entry;
-        callback(config, this.entries);
-      });
-    };
-
-    fetch_data(config, display_html);
-
-});
-_jsLoader.initMustache(function() {
-    printPairs(jQuery);
-});
-
+(function() {
+  _jsLoader.initMustache(function() {
+    _jsLoader.getScript('/js/GoogleSpreadsheetPrinter.js', function() {
+      setTimeout(function() {
+        window.doc = GoogleSpreadsheetPrinter({
+          'key' : "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE0AqHUOZcVEj_XdHV2dkl0bzNpSlcxOUZ0Sm1aSk5kZkE/ocq",
+          'fields' : [
+                  'appointments',
+                  'link',
+                  'pair',
+                  'description'
+          ],
+          'target' : '#pairing',
+          'template' : '#pairing-template'
+        }, jQuery).print();
+      }, _jsLoader.timeout);
+   });
+  });
+})();
 </script>
 </section>
