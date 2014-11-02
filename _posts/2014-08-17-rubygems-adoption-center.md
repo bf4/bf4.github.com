@@ -12,6 +12,10 @@ published: true
 
 There is an [ongoing discussion on the RubyGems.org mailing list about the creation of a RubyGems Adoption Center](https://groups.google.com/d/msg/rubygems-org/niS5ZO9DNgk/5Fhg9Q3QR7YJ).
 
+### Update 2014-10-24
+
+I created a [GitHub issue to spec out the MVP](https://github.com/rubygems/rubygems.org/issues/725)
+
 ## Background
 
 (you can skip to the call to action if this background doesn't interest you :)
