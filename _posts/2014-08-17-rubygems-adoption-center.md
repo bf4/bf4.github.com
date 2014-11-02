@@ -88,6 +88,7 @@ Nice to haves:
 - [Nathaniel Talbott: Maintaining Sanity, RubyConf 2013](http://confreaks.com/videos/2901-rubyconf2013-maintaining-sanity)
 - [Daniel Doubrovkine: Taking over Someone Else's Open-Source Projects,  GoGaRucCo 2014](https://www.youtube.com/watch?v=8ijzefV-B7U)
 - Justin Searls: ["The Social Coding Contract"](https://gist.github.com/searls/eaf8dcdd4b3a10a97694), [Level Up Con 2014](http://levelupcon.com/), [RailsConf 2015](http://rubyconf.org/program)
+- [Comic: The truth behind Open Source apps](http://www.commitstrip.com/en/2014/05/07/the-truth-behind-open-source-apps/)
 
 
 ## Experiences as unscientific case-studies
