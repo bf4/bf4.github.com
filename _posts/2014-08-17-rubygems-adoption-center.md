@@ -85,6 +85,9 @@ Nice to haves:
 - Taking over and/or giving back Gems [https://github.com/rubygems/rubygems.org/issues/429](https://github.com/rubygems/rubygems.org/issues/429)
 - Ernie Miller put some of his gems up for adoption at a new github org [http://erniemiller.org/2013/11/17/anyone-interested-in-activerecord-hackery](http://erniemiller.org/2013/11/17/anyone-interested-in-activerecord-hackery)/ [https://github.com/activerecord-hackery/squeel](https://github.com/activerecord-hackery/squeel)
 - [https://speakerdeck.com/bf4/the-open-source-junkyard](https://speakerdeck.com/bf4/the-open-source-junkyard)
+- [Nathaniel Talbott: Maintaining Sanity, RubyConf 2013](http://confreaks.com/videos/2901-rubyconf2013-maintaining-sanity)
+- [Daniel Doubrovkine: Taking over Someone Else's Open-Source Projects,  GoGaRucCo 2014](https://www.youtube.com/watch?v=8ijzefV-B7U)
+- Justin Searls: ["The Social Coding Contract"](https://gist.github.com/searls/eaf8dcdd4b3a10a97694), [Level Up Con 2014](http://levelupcon.com/), [RailsConf 2015](http://rubyconf.org/program)
 
 
 ## Experiences as unscientific case-studies
