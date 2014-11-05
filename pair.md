@@ -36,7 +36,7 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
     _jsLoader.getScript('/js/GoogleSpreadsheetPrinter.js', function() {
       setTimeout(function() {
         window.doc = GoogleSpreadsheetPrinter({
-          'key' : "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE0AqHUOZcVEj_XdHV2dkl0bzNpSlcxOUZ0Sm1aSk5kZkE/ocq",
+          'key' : "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6",
           'fields' : [
                   'appointments',
                   'link',
