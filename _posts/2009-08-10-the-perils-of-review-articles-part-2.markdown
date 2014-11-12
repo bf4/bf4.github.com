@@ -5,6 +5,7 @@ layout: post
 slug: the-perils-of-review-articles-part-2
 title: The Perils of Review Articles, Part 2
 wordpress_id: 216
+categories: [ "top" ]
 tags:
 - badscience
 - review

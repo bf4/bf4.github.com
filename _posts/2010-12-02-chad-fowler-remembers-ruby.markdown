@@ -8,6 +8,7 @@ wordpress_id: 458
 categories:
 - Code
 - Ruby
+- top
 tags:
 - chad fowler
 - pragprog

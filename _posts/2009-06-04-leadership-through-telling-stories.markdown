@@ -5,6 +5,7 @@ layout: post
 slug: leadership-through-telling-stories
 title: Leadership through telling stories
 wordpress_id: 31
+categories: [ 'top' ]
 tags:
 - leadership
 ---

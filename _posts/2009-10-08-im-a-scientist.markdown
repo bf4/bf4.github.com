@@ -5,6 +5,7 @@ layout: post
 slug: im-a-scientist
 title: I'm A Scientist
 wordpress_id: 254
+categories: [ 'top' ]
 tags:
 - comic
 - scientist

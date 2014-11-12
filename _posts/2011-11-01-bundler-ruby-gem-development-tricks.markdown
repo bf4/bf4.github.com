@@ -8,6 +8,7 @@ wordpress_id: 586
 categories:
 - Code
 - Ruby
+- top
 ---
 
 Developing your own gem for your own application can be a pain-- after you think you're done with the gem, push it, and load it into your application, and there's a defect, you need to go back to the gem, fix it, push it, and repeat. Or do you?

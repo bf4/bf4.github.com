@@ -5,6 +5,7 @@ layout: post
 slug: computer-troubleshooting
 title: Computer Troubleshooting
 wordpress_id: 218
+categories: [ 'top' ]
 tags:
 - compuer
 - support

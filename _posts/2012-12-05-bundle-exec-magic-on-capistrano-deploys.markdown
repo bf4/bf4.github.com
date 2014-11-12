@@ -7,6 +7,7 @@ title: Bundle exec magic on Capistrano deploys
 wordpress_id: 665
 categories:
 - Code
+- top
 tags:
 - bundler
 - capistrano

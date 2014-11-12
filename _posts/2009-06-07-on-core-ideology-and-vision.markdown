@@ -5,6 +5,7 @@ layout: post
 slug: on-core-ideology-and-vision
 title: On Core Ideology and Vision
 wordpress_id: 45
+categories: [ 'top' ]
 tags:
 - bhag
 - leadership

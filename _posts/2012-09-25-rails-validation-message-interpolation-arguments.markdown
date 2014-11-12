@@ -8,6 +8,7 @@ wordpress_id: 650
 categories:
 - Code
 - Ruby
+- top
 tags:
 - callbacks
 - rails

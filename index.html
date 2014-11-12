@@ -1,0 +1,29 @@
+---
+layout: page
+title: "Benjamin Fleischer"
+tagline: "Benjamin Fleischer"
+header: Headlines
+---
+{% include JB/setup %}
+
+<section class="content">
+
+<ul class="listing">
+{% for post in site.posts limit:10 %}
+  <li>
+    <span>{{ post.date | date_to_string }}</span> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+{% for category in site.categories %}
+  {% if category[0] == 'top' %}
+    {% assign posts = category[1] %}
+    {% for post in posts %}
+      <li>
+        <span>{{ post.date | date_to_string }}</span> <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+</ul>
+
+</section>

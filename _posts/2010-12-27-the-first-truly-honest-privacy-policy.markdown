@@ -12,6 +12,7 @@ categories:
 - IT
 - Security
 - tech
+- top
 tags:
 - privacy
 - schneier

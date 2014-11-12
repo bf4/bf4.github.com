@@ -5,6 +5,7 @@ layout: post
 slug: anaphylactic-allergies-more-than-peanuts
 title: 'Anaphylactic Allergies:  More Than Peanuts'
 wordpress_id: 198
+categories: [ "top" ]
 tags:
 - allergies
 - newscientist

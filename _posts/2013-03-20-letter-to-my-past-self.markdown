@@ -4,6 +4,7 @@ date: 2013-03-20 00:00:00Z
 layout: post
 slug: letter-to-my-past-self
 title: Letter to my past self
+categories: [ 'top' ]
 ---
 
 I really enjoyed reading John Barker's [Letter to myself as as junior developer](http://pivotallabs.com/letter-to-myself-as-a-junior-developer/), and had some followup thoughts I'd like to share-- some important advices not specific to reading/writing/understanding/reviewing code. (or as Dave Copeland put it ["Be kind to future you"](https://github.com/davetron5000/awesome-cli-ruby/blob/master/intro/01_intro.md) [slides](https://speakerdeck.com/davetron5000/build-awesome-command-line-applications-with-ruby) )

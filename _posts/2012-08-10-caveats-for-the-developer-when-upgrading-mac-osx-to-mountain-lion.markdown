@@ -8,6 +8,7 @@ wordpress_id: 640
 categories:
 - IT
 - tech
+- top
 tags:
 - mountain lion
 - osx

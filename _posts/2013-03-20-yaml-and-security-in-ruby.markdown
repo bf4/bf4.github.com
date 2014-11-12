@@ -6,6 +6,7 @@ slug: yaml-and-security-in-ruby
 title: YAML and security in Ruby
 categories:
 - Code
+- top
 tags:
 - yaml
 ---

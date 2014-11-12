@@ -8,6 +8,7 @@ wordpress_id: 605
 categories:
 - Code
 - tech
+- top
 tags:
 - hadoop
 - hive

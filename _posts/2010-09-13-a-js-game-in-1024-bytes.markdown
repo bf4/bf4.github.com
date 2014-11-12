@@ -7,6 +7,7 @@ title: A JS game in 1024 bytes
 wordpress_id: 420
 categories:
 - Code
+- top
 ---
 
 A JS game in 1024 bytes

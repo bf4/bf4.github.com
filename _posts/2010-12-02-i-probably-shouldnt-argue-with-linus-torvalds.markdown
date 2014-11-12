@@ -7,6 +7,7 @@ title: I probably shouldn't argue with Linus Torvalds
 wordpress_id: 492
 categories:
 - Code
+- top
 tags:
 - git
 - linus

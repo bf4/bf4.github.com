@@ -5,6 +5,7 @@ layout: post
 slug: another-reason-office-2007-is-a-pain
 title: Another Reason Office 2007 Is A Pain
 wordpress_id: 221
+categories: [ 'top' ]
 tags:
 - computer
 - excel

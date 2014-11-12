@@ -8,6 +8,7 @@ wordpress_id: 571
 categories:
 - Current Events
 - Musings
+- top
 tags:
 - advice
 - colbert
