@@ -6,6 +6,7 @@ slug: blogging-from-jekyll
 title: Now Blogging From Jekyll
 categories:
 - Code
+- top
 tags:
 - jekyll
 - imagemagick
