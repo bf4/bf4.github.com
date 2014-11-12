@@ -12,9 +12,9 @@ tags:
 - science
 ---
 
-> Using the interlocking web of citations you can see how this happened. A small number of review papers funneled large amounts of traffic through the network, with 63% of all citation paths flowing through one review paper, and 95% of all citation paths flowed through just 4 review papers by the same research group. These papers acted like a lens, collecting and focusing citations on the papers supporting the hypothesis, in testament to the power of a well received review paper.
-
-But Greenberg goes beyond just documenting bias in what research was referenced in each review paper. By studying the network, in which review papers are themselves cited by future research papers, he showed how these reviews exerted influence beyond their own individual readerships, and distorted the subsequent discourse, by setting a frame around only some papers.
+> > Using the interlocking web of citations you can see how this happened. A small number of review papers funneled large amounts of traffic through the network, with 63% of all citation paths flowing through one review paper, and 95% of all citation paths flowed through just 4 review papers by the same research group. These papers acted like a lens, collecting and focusing citations on the papers supporting the hypothesis, in testament to the power of a well received review paper.
+>
+> But Greenberg goes beyond just documenting bias in what research was referenced in each review paper. By studying the network, in which review papers are themselves cited by future research papers, he showed how these reviews exerted influence beyond their own individual readerships, and distorted the subsequent discourse, by setting a frame around only some papers.
 
 
 via [How myths are made – Bad Science](http://www.badscience.net/2009/08/how-myths-are-made/).
