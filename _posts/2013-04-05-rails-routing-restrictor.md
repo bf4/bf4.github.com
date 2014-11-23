@@ -3,7 +3,7 @@ comments: false
 layout: post
 title: Rails Routing Restrictor
 description: "How I set up a restricted access subdomain"
-categories: [Code]
+categories: ['Code' , 'top']
 tags: [rails, subdomain, routes]
 ---
 {% include JB/setup %}
