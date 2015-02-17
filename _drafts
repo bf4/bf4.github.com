@@ -2,13 +2,119 @@
 layout: post
 title: "Where does external encoding come from in Ruby?"
 description: "Or, how can I just get my Encoding.default_external to be UTF-8?"
-tags: ["ruby"]
-categories: [ 'ruby' ]
+tags: ["ruby", "encoding"]
+categories: ["ruby"]
 published: false
 ---
 {% include JB/setup %}
 
-Ruby derives `Encoding.default_external`
+Ruby derives [`Encoding.default_external`](https://github.com/ruby/ruby/blob/ca24e581ba/encoding.c#L1398)
+
+> * The default external encoding is initialized by the locale or -E option.
+
+
+
+
+     # see https://github.com/rubyspec/rubyspec/blob/91ce9f6549/core/encoding/find_spec.rb#L57
+      describe 'Ensure tests are running with utf-8 encoding' do
+
+        it 'default_internal' do
+          if Encoding.default_external == Encoding.find('locale')
+            expected_encoding = ''
+          else
+            expected_encoding = utf8_encoding
+          end
+          expect(Encoding.default_internal.to_s).to eq(expected_encoding)
+        end
+
+        it 'default_external' do
+          expect(Encoding.default_external.to_s).to eq(utf8_encoding)
+        end
+
+        it 'locale' do
+          skip "Not sure how to determine locale (#{Encoding.find('locale')})"\
+            "from LC_ALL or on windows"
+        end
+
+        it 'filesystem' do
+          encoding = Encoding.find('filesystem').to_s
+          if OS.windows?
+            skip "Not sure how to tell filesystem encoding is #{encoding}"
+            expect(encoding).to eq(utf8_encoding)
+          end
+        end
+
+        it 'current script (file)' do
+          expect(__ENCODING__.to_s).to eq(utf8_encoding)
+        end
+      end
+
+> * encoding may not be valid.  Be sure to check String#valid_encoding?.
+
+ 0xAE.chr.unpack('U*')
+ArgumentError: malformed UTF-8 character
+
+export LANG=en_US.UTF-8 
+export LC_ALL=en_US.UTF-8
+https://github.com/bf4/rspec-support/commit/db2c3a43e1cdb0fc1491394328f78c712aa9ed19
+https://github.com/bf4/rspec-support/commit/8894d0cec3b5b7ee88d2cc72f0ab50afc19abb71
+export JRUBY_OPTS='--server -Xcompile.invokedynamic=false'
+export JRUBY_OPTS='--server -Xcompile.invokedynamic=false -Xcompat.version=2.0'
+jruby --properties
+
+http://stackoverflow.com/questions/5908774/set-global-default-encoding-for-ruby-1-9
+LC_ALL= LANG= ruby -e 'p Encoding.default_external'
+#<Encoding:US-ASCII>
+Either is set : that value is used
+$ LC_ALL=en_US.UTF-8 LANG= ruby -e 'p Encoding.default_external'
+#<Encoding:UTF-8>
+
+$ LC_ALL= LANG=en_US.UTF-8 ruby -e 'p Encoding.default_external'
+#<Encoding:UTF-8>
+Both are set : LC_ALL takes precedence
+$ LC_ALL=C LANG=en_US.UTF-8 ruby -e 'p Encoding.default_external'
+#<Encoding:US-ASCII>
+
+$ LC_ALL=en_US.UTF-8 LANG=C ruby -e 'p Encoding.default_external'
+
+http://blog.pixelastic.com/2014/09/06/compass-utf-8-encoding-on-windows/
+
+ on windows, the default encoding is usually CP1252. And in the end, you end up with every UTF-8 char encoded as three separate CP1252 chars.
+ 
+ Encoding.default_external = 'utf-8'
+ You have to set 'Lucida Console' as console font in window properties.
+You may change console code page by 'chcp' command:
+
+C:\XP\system32>chcp
+Active code page: 1251
+
+C:\XP\system32>chcp 65001
+Active code page: 65001 <------- UTF-8
+
+I use this:
+
+# encoding: utf-8
+
+#Kernel::system('chcp 1251>nul')
+
+Encoding.default_external = Encoding.find(Encoding.locale_charmap)
+Encoding.default_internal = __ENCODING__
+
+[STDIN, STDOUT, STDERR].each do |io|
+  io.set_encoding(Encoding.default_external, Encoding.default_internal)
+end
+
+puts
+"[#{Encoding.locale_charmap}::#{Encoding.default_external}|#{Encoding.default_internal}]"
+
+puts 'ÐŸÑ€ÐµÐ²ÐµÐ´!'
+But my code crashes whenever Ruby faces a string that contains a
+non-CP866 character (like em dash "—"):
+
+in `write': U+2014 from UTF-8 to IBM866
+(Encoding::UndefinedConversionError)
+
+
 
 
 https://github.com/rspec/rspec-support/compare/19e967a834e5cc9bb9d727ef59c5f580c1a74423%5E...master#diff-6f77530d5756f8c02ca078ddecaa891cR63
@@ -120,77 +226,6 @@ LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 \
 
 
 export RUBYOPT="-E utf-8" # illegal switch on 1.8.7
-https://github.com/ruby/ruby/blob/ca24e581ba/encoding.c#L1398
-
- * The default external encoding is initialized by the locale or -E option.
-
-
- * encoding may not be valid.  Be sure to check String#valid_encoding?.
-
- 0xAE.chr.unpack('U*')
-ArgumentError: malformed UTF-8 character
-
-export LANG=en_US.UTF-8 
-export LC_ALL=en_US.UTF-8
-https://github.com/bf4/rspec-support/commit/db2c3a43e1cdb0fc1491394328f78c712aa9ed19
-https://github.com/bf4/rspec-support/commit/8894d0cec3b5b7ee88d2cc72f0ab50afc19abb71
-export JRUBY_OPTS='--server -Xcompile.invokedynamic=false'
-export JRUBY_OPTS='--server -Xcompile.invokedynamic=false -Xcompat.version=2.0'
-jruby --properties
-
-http://stackoverflow.com/questions/5908774/set-global-default-encoding-for-ruby-1-9
-LC_ALL= LANG= ruby -e 'p Encoding.default_external'
-#<Encoding:US-ASCII>
-Either is set : that value is used
-$ LC_ALL=en_US.UTF-8 LANG= ruby -e 'p Encoding.default_external'
-#<Encoding:UTF-8>
-
-$ LC_ALL= LANG=en_US.UTF-8 ruby -e 'p Encoding.default_external'
-#<Encoding:UTF-8>
-Both are set : LC_ALL takes precedence
-$ LC_ALL=C LANG=en_US.UTF-8 ruby -e 'p Encoding.default_external'
-#<Encoding:US-ASCII>
-
-$ LC_ALL=en_US.UTF-8 LANG=C ruby -e 'p Encoding.default_external'
-
-http://blog.pixelastic.com/2014/09/06/compass-utf-8-encoding-on-windows/
-
- on windows, the default encoding is usually CP1252. And in the end, you end up with every UTF-8 char encoded as three separate CP1252 chars.
- 
- Encoding.default_external = 'utf-8'
- You have to set 'Lucida Console' as console font in window properties.
-You may change console code page by 'chcp' command:
-
-C:\XP\system32>chcp
-Active code page: 1251
-
-C:\XP\system32>chcp 65001
-Active code page: 65001 <------- UTF-8
-
-I use this:
-
-# encoding: utf-8
-
-#Kernel::system('chcp 1251>nul')
-
-Encoding.default_external = Encoding.find(Encoding.locale_charmap)
-Encoding.default_internal = __ENCODING__
-
-[STDIN, STDOUT, STDERR].each do |io|
-  io.set_encoding(Encoding.default_external, Encoding.default_internal)
-end
-
-puts
-"[#{Encoding.locale_charmap}::#{Encoding.default_external}|#{Encoding.default_internal}]"
-
-puts 'ÐŸÑ€ÐµÐ²ÐµÐ´!'
-But my code crashes whenever Ruby faces a string that contains a
-non-CP866 character (like em dash "—"):
-
-in `write': U+2014 from UTF-8 to IBM866
-(Encoding::UndefinedConversionError)
-
-
 
 
 -----
@@ -359,41 +394,6 @@ Rescuing the ArgumentError in safe_codepoints is if the string has an invalid by
 
 ---------
 
-
-
-     # see https://github.com/rubyspec/rubyspec/blob/91ce9f6549/core/encoding/find_spec.rb#L57
-      describe 'Ensure tests are running with utf-8 encoding' do
-
-        it 'default_internal' do
-          if Encoding.default_external == Encoding.find('locale')
-            expected_encoding = ''
-          else
-            expected_encoding = utf8_encoding
-          end
-          expect(Encoding.default_internal.to_s).to eq(expected_encoding)
-        end
-
-        it 'default_external' do
-          expect(Encoding.default_external.to_s).to eq(utf8_encoding)
-        end
-
-        it 'locale' do
-          skip "Not sure how to determine locale (#{Encoding.find('locale')})"\
-            "from LC_ALL or on windows"
-        end
-
-        it 'filesystem' do
-          encoding = Encoding.find('filesystem').to_s
-          if OS.windows?
-            skip "Not sure how to tell filesystem encoding is #{encoding}"
-            expect(encoding).to eq(utf8_encoding)
-          end
-        end
-
-        it 'current script (file)' do
-          expect(__ENCODING__.to_s).to eq(utf8_encoding)
-        end
-      end
 
 
 ----
