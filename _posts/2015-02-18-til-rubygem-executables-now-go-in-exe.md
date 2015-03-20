@@ -8,6 +8,8 @@ published: true
 ---
 {% include JB/setup %}
 
+**Update 2015-03-20**: [Now cross-posted at http://bundler.io/blog/2015/03/20/moving-bins-to-exe.html](http://bundler.io/blog/2015/03/20/moving-bins-to-exe.html).
+
 [Bundler diff: move gem bins to exe](https://github.com/bundler/bundler/commit/ab3e21784c6c18702869c771fbe7ae23c82cc7c0)
 
 ```diff
