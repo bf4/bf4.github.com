@@ -3,7 +3,7 @@ layout: post
 title: "Gem templates with Thor"
 description: ""
 categories: [ 'ruby' ]
-tags: [ 'ruby' , 'rubygems' , 'bundler', 'thor' ]
+tags: [ 'ruby' , 'rubygems' , 'bundler', 'thor', 'rails']
 published: true
 ---
 {% include JB/setup %}
@@ -18,13 +18,15 @@ Both Rails and Bundler use Thor for generating app/gems from a template.
 
 `bundle exec rake rails:template LOCATION=$HOME/rails_templates/mine.rb`
 
-ref: [http://technology.stitchfix.com/blog/2014/01/06/rails-app-templates](http://technology.stitchfix.com/blog/2014/01/06/rails-app-templates)/
+ref: [http://technology.stitchfix.com/blog/2014/01/06/rails-app-templates](http://technology.stitchfix.com/blog/2014/01/06/rails-app-templates)
 
 ## Bundler
 
 `bundle gem NAME`
 
-uses `Thor` to apply the [`new_gem` template](https://github.com/bundler/bundler/tree/master/lib/bundler/templates) just like rails templates do, which suspenders uses.  I've been meaning to generalize that code... right now I have something like the following... behaves similarly to a rails template.
+uses `Thor` to apply the [`new_gem` template](https://github.com/bundler/bundler/tree/13f44d1241ca7a7ce435bd43790a26a0a140126b/lib/bundler/templates/newgem)
+just like Rails templates do, which [Thoughtbot's Suspenders](https://github.com/thoughtbot/suspenders/blob/74cb056ac32938e48ccb003792f341615f1cd4a0/lib/suspenders/app_builder.rb)
+app builder uses.
 
 ## Configuring
 
@@ -67,7 +69,7 @@ require 'thor'
 require 'thor/group'
 class Gemnerator < Thor::Group
   include Thor::Actions
-add_runtime_options!
+  add_runtime_options!
   class_option :verbose, default: false
 
   # expect one argument upon invocation,
@@ -77,7 +79,7 @@ add_runtime_options!
   def initialize(args = [], options = {}, config = {})
     @template_file = config.fetch(:template_file)
     super
-    # Will apply template in File.join(destination_root, name)
+    # Will apply template in target_dir
     self.destination_root = config[:projects_root]
   end
 
@@ -88,6 +90,10 @@ FOO
 
  def self.source_root
     File.expand_path("../templates/new_gem",__FILE__)
+  end
+
+  def target_dir
+    File.join(destination_root, name)
   end
 
   def app_name
