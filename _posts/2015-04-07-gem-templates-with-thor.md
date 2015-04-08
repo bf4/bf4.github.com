@@ -31,6 +31,7 @@ app builder uses.
 ## Configuring
 
 Only the Rails template is configurable (via the `LOCATION` variable).
+[Bundler doesn't support templates](https://github.com/bundler/bundler/issues/3494).
 
 So, if you want to customize building gems, you either have to
 copy and paste or roll your own gem template generator.
@@ -129,7 +130,9 @@ config = {
 }
 Gemnerator.start(args, config)
 ```
+
 refs:
+
 - [https://github.com/erikhuda/thor/wiki/Generators](https://github.com/erikhuda/thor/wiki/Generators)
 - [http://blog.tamouse.org/swaac/2014/03/08/playing-around-with-thor-generators](http://blog.tamouse.org/swaac/2014/03/08/playing-around-with-thor-generators)/
 - [https://github.com/bundler/bundler/blob/91633430cb/lib/bundler/cli.rb#L339-L352](https://github.com/bundler/bundler/blob/91633430cb/lib/bundler/cli.rb#L339-L352)
