@@ -15,7 +15,7 @@ similar_pages:
 
 ## Summary:
 
-*   Active ([top 1% for Ruby on GitHub](http://osrc.dfm.io/bf4)) open-source software maintainer and contributor.
+*   Active ([top 1% for Ruby on GitHub](http://wayback.archive.org/web/20140325133855/http://osrc.dfm.io/bf4)) open-source software maintainer and contributor.
     - Maintains or collaborates on tens of projects, including MetricFu, Mail, SimpleCov, RMagick, ActsAsTaggableOn, CodeNotes, and CodeMetrics.
     - Has contributed to tens of others, including Rails, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
 *   Created the [RubyGems guides security page](http://guides.rubygems.org/security/)
