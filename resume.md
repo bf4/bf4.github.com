@@ -23,6 +23,19 @@ similar_pages:
 
 ## Professional experience:
 
+### Web Development Software Engineer -- Springleaf Financial Services -- Chicago, IL, November 2014-May 2015
+
+* Created tooling for coding standards automation:
+    - Common Rails template, API controller base, API client base, worker configuration (including ActiveJob).
+    - Code coverage, security, and style via git hooks. (Essential before we had staging or CI).
+* Improved team communication:
+    - Set up first chat server, wrote up onboarding documents, created employee directory.
+    - Set up repository for discussing API design, team process, and sharing learnings.
+    - Saved front end devs time by writing scripts for updating all services and populating with dummy data.
+* Created and shared diskimage (dmg) of a self-contained wine emulation of APRWin, a critical
+  Windows-only tool.
+* Demonstrated leadership in promoting code reviews, encouraging code readability, and openness to extension.
+
 ### Web Development Software Engineer -- Contracting at Poll Everywhere Inc. -- San Francisco, CA, January 2014-July 2014
 
 #### Poll an audience; get instant feedback via web, mobile, text, or tweet.
