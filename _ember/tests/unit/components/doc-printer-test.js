@@ -3,17 +3,14 @@ import { moduleForComponent, test } from 'ember-qunit';
 moduleForComponent('doc-printer', 'Unit | Component | doc printer', {
   // Specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar'],
-  unit: true
+  integration: true
 });
 
 test('it renders', function(assert) {
-  assert.expect(2);
+  assert.expect(1);
 
   // Creates the component instance
-  var component = this.subject();
-  assert.equal(component._state, 'preRender');
+  var component = this.render("{{doc-printer}}");
 
-  // Renders the component to the page
-  this.render();
-  assert.equal(component._state, 'inDOM');
+  assert.equal(this.$('div:contains("Hello!")').length, 1, "says hello");
 });

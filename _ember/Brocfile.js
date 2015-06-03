@@ -6,10 +6,6 @@ var app = new EmberApp({
     storeConfigInMeta: false
 });
 
-if (EmberApp.env() !== 'production') {
-  app.import('bower_components/ember/ember-template-compiler.js');
-}
-
 
 // Use `app.import` to add additional libraries to the generated
 // output files.
@@ -23,5 +19,11 @@ if (EmberApp.env() !== 'production') {
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
+
+// see https://github.com/ember-cli/ember-cli/issues/3497
+// consider ember-test-helpers
+if (EmberApp.env() !== 'production') {
+  app.import('bower_components/ember/ember-template-compiler.js');
+}
 
 module.exports = app.toTree();
