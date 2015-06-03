@@ -19,6 +19,12 @@ The [#pairwithme hashtag](https://twitter.com/search?q=%23pairwithme) and [PairP
 I have have experience pairing with vim, tmux, ssh, and skype/google voice.
 I've found good luck pairing with [this script](https://gist.github.com/bf4/8324117).
 
+## Viewtastic Doc-Printer
+
+<script src="js/vendor.js"></script>
+<script src="js/viewtastic.js"></script>
+<div data-component="doc-printer"></div>
+
 ## Pair and tell
 
 <!--
