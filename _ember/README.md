@@ -1,7 +1,30 @@
 # Viewtastic
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## An ember-cli app for rendering components outside of Ember
+
+1. mkdir _ember; cd _ember
+1. ember init --name=viewtastic
+2. ember install ember-islands
+3. ember g component doc-printer // name must have a hyphen
+4. Config Brocfile as needed/desired
+5. edit app/index.html to add a data component, e.g. `<div data-component="doc-printer"></div>`
+6. ember build -e production
+7  cp dist/assets/*.js ../js // or wherever
+8. edit the page(s) you want the component on to load the js and include the data-component
+
+```html
+<script src="js/vendor.js"></script>
+<script src="js/viewtastic.js"></script>
+<div data-component="doc-printer"></div>
+```
+
+8. profit
+
+Gotchas, things to make it work
+- Brocfile.js
+- meta
+
+Boiler-plate follows
 
 ## Prerequisites
 
