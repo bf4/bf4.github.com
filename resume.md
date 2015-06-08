@@ -124,7 +124,9 @@ similar_pages:
     [Code](https://github.com/bf4/gemnerator/tree/d9f6e27911).
 *   Meetup: [Maintaining Open Source Projects](https://speakerdeck.com/bf4/maintaining-open-source-projects-1),
     at [Dev Bootcamp Chicago Speaker Series (DBCx) 2014-11-06](http://www.meetup.com/Chicago-DevBootcamp-Chicago-Speakers-and-Workshop-Series/events/198358382/).
-*   Lightning Talk: [Maintaining Open Source Projects](https://vimeo.com/107470399), at Windy City Rails 2014, [Slides](https://speakerdeck.com/bf4/maintaining-open-source-projects), [Clip source](http://www.windycityrails.org/videos/2014/#19), [Related: RubyGemsAdoption Center Proposal](http://www.benjaminfleischer.com/2014/08/17/rubygems-adoption-center/).
+*   Lightning Talk: [Maintaining Open Source Projects](https://vimeo.com/107470399), at Windy City Rails 2014, [Slides](https://speakerdeck.com/bf4/maintaining-open-source-projects), [Clip source](http://www.windycityrails.org/videos/2014/#19),
+    Related: [RubyGems Adoption Center Proposal](http://www.benjaminfleischer.com/2014/08/17/rubygems-adoption-center/),
+    [Rails Girls Summer of Code 2015](https://teams.railsgirlssummerofcode.org/teams/62).
 *   Lightning Talk: [The Open Source Junkyard](https://speakerdeck.com/bf4/the-open-source-junkyard), at Railsconf 2014, not delivered due to time constraints.
 *   Speaking: [YAML, what is it good for? at RailsIsrael in October, 2013](http://railsisrael2013.events.co.il/presentations/868-yaml-what-is-it-good-for) [Slides](https://speakerdeck.com/bf4/yaml-what-is-it-good-for), Video TBA, [Source code](https://github.com/bf4/yaml_resources)
 *   Lightning Talk: [All your OSS code are belong to us](http://www.benjaminfleischer.com/2013/07/30/all-your-open-source-code-are-belong-to-us/), [Video](https://vimeo.com/104355182#t=5m33s) at RubyNation 2013.
