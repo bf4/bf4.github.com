@@ -118,6 +118,10 @@ similar_pages:
 
 ## Public speaking:
 
+*   Lightning Talk: [Gem templates with Thor](https://vimeo.com/126953819#21m46s),
+    at [Geekfest 2015-04-07](http://www.meetup.com/Geekfest/events/220578914/),
+    [Post](http://www.benjaminfleischer.com/2015/04/07/gem-templates-with-thor/),
+    [Code](https://github.com/bf4/gemnerator/tree/d9f6e27911).
 *   Meetup: [Maintaining Open Source Projects](https://speakerdeck.com/bf4/maintaining-open-source-projects-1),
     at [Dev Bootcamp Chicago Speaker Series (DBCx) 2014-11-06](http://www.meetup.com/Chicago-DevBootcamp-Chicago-Speakers-and-Workshop-Series/events/198358382/).
 *   Lightning Talk: [Maintaining Open Source Projects](https://vimeo.com/107470399), at Windy City Rails 2014, [Slides](https://speakerdeck.com/bf4/maintaining-open-source-projects), [Clip source](http://www.windycityrails.org/videos/2014/#19), [Related: RubyGemsAdoption Center Proposal](http://www.benjaminfleischer.com/2014/08/17/rubygems-adoption-center/).
