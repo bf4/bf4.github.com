@@ -19,7 +19,7 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
 
 <div id="pairing"></div>
 {% raw %}
-<script id="pairing-template" type="text/x-mustache-template">
+<script id="pairing-template" type="text/x-handlebars-template">
 <ul>
   {{#rows}}
     <li>
@@ -32,7 +32,7 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
 {% endraw %}
 <script>
 (function() {
-  _jsLoader.initMustache(function() {
+  _jsLoader.initApp(function() {
     _jsLoader.getScript('/js/GoogleSpreadsheetPrinter.js', function() {
       setTimeout(function() {
         window.doc = GoogleSpreadsheetPrinter({

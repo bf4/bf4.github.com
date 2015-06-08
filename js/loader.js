@@ -13,6 +13,7 @@ _jsLoader.getScript =  (function(src, callback) {
 
 _jsLoader.timeout = 100;
 
+// <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 _jsLoader.initJQuery = (function(callback) {
     if (typeof(jQuery) === "undefined") {
           _jsLoader.getScript('/js/jquery.min.js', function() {
@@ -30,17 +31,47 @@ _jsLoader.initJQuery(function() {
   _jsLoader.getScript('/js/application.js');
 });
 
-_jsLoader.initMustache = (function(render) {
-    _jsLoader.initJQuery(function() {
-        if (typeof (Mustache) === 'undefined') {
-            _jsLoader.getScript('/js/mustache.js', function() {
-                setTimeout(function() {
-                    _jsLoader.initMustache(render)
-                }, _jsLoader.timeout);
-            });
-        }
-        else {
-            render();
-        }
-    });
+// <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v2.0.0.js"></script>
+_jsLoader.initHandlebars = (function(callback) {
+  _jsLoader.initJQuery(function() {
+    if (typeof (Handlebars) === 'undefined') {
+      _jsLoader.getScript('/js/handlebars-v2.0.0.js', function() {
+        setTimeout(function() {
+          _jsLoader.initHandlebars(callback)
+        }, _jsLoader.timeout);
+      });
+    }
+    else {
+      callback();
+    }
+  });
+});
+
+// <script src="http://builds.emberjs.com/canary/ember-template-compiler.js"></script>
+// <script src="http://builds.emberjs.com/canary/ember.debug.js"></script>
+_jsLoader.initEmber = (function(callback) {
+  _jsLoader.initHandlebars( function() {
+    if (typeof (Ember) === 'undefined') {
+      _jsLoader.getScript('/js/ember-template-compiler.js', function() {
+        setTimeout(function() {
+          _jsLoader.initEmber(callback);
+        }, _jsLoader.timeout);
+      });
+    }
+    else {
+      if (typeof (Ember.Application) === 'undefined') {
+        _jsLoader.getScript('/js/ember.debug.js', function() {
+          setTimeout(function() {
+            _jsLoader.initEmber(callback);
+          }, _jsLoader.timeout);
+        });
+      } else {
+        if (typeof(callback) === "function") { callback(); }
+      }
+    }
+  });
+});
+
+_jsLoader.initApp = (function(callback) {
+    _jsLoader.initEmber(callback);
 });

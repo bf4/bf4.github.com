@@ -37,8 +37,8 @@ var GoogleSpreadsheetPrinter = function (config, helper) {
   doc.target = function() {
     return doc.helper(doc.getConfig('target'));
   };
-  doc.renderHtml = function(data) {
-    return Mustache.render(doc.template(), data);
+  doc.renderHtml = function(context) {
+    return Handlebars.compile(doc.template())(context);
   };
   doc.displayHtml = function(entries) {
     var data = {
