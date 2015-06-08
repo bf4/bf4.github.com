@@ -19,7 +19,10 @@ similar_pages:
     - Maintains or collaborates on tens of projects, including MetricFu, Mail, SimpleCov, RMagick, ActsAsTaggableOn, CodeNotes, and CodeMetrics.
     - Has contributed to tens of others, including Rails, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
 *   Created the [RubyGems guides security page](http://guides.rubygems.org/security/)
-*   Prototyped and built, in less than a week, [a pair-programming matcher](http://www.pairprogramwith.me/match/) for [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/).
+*   Prototyped and built, in less than a week,
+    [a pair-programming matcher](http://www.pairprogramwith.me/match/) for
+    [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](https://vimeo.com/103704529)
+    ([ref](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/)).
 
 ## Professional experience:
 
