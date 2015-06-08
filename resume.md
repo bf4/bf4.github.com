@@ -128,13 +128,12 @@ similar_pages:
 *   Lightning Talk: [It's About Time](http://vimeo.com/51707399), at WindyCityRails 2012.
 *   Q&A: [Ask Matz about RubySpec (at 42:57)](http://www.youtube.com/watch?v=B7vCuNaqT7k&hd=1&t=42m57s) at RubyConf 2012. Not public speaking per se, but I think I prompted an interesting discussion of RubySpec; these things are hard to find without direct links.
 
-
 ## Other online presence:
 
 *   GitHub: [bf4](https://github.com/bf4).
 *   StackOverflow: [user879854/bf4](http://stackoverflow.com/users/879854/bf4).
 *   Twitter: [@hazula](https://twitter.com/#!/hazula).
-*   [Open Source Report Card](http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on GitHub.
+*   [Open Source Report Card](http://wayback.archive.org/web/20140325133855/http://osrc.dfm.io/bf4) - Top 1% most active of Ruby users on GitHub.
 *   [Blog: benjaminfleischer.com](http://benjaminfleischer.com).
 
 ## Education:
