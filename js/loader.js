@@ -28,50 +28,5 @@ _jsLoader.initJQuery = (function(callback) {
 });
 
 _jsLoader.initJQuery(function() {
-  _jsLoader.getScript('/js/application.js');
-});
-
-// <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v2.0.0.js"></script>
-_jsLoader.initHandlebars = (function(callback) {
-  _jsLoader.initJQuery(function() {
-    if (typeof (Handlebars) === 'undefined') {
-      _jsLoader.getScript('/js/handlebars-v2.0.0.js', function() {
-        setTimeout(function() {
-          _jsLoader.initHandlebars(callback)
-        }, _jsLoader.timeout);
-      });
-    }
-    else {
-      callback();
-    }
-  });
-});
-
-// <script src="http://builds.emberjs.com/canary/ember-template-compiler.js"></script>
-// <script src="http://builds.emberjs.com/canary/ember.debug.js"></script>
-_jsLoader.initEmber = (function(callback) {
-  _jsLoader.initHandlebars( function() {
-    if (typeof (Ember) === 'undefined') {
-      _jsLoader.getScript('/js/ember-template-compiler.js', function() {
-        setTimeout(function() {
-          _jsLoader.initEmber(callback);
-        }, _jsLoader.timeout);
-      });
-    }
-    else {
-      if (typeof (Ember.Application) === 'undefined') {
-        _jsLoader.getScript('/js/ember.debug.js', function() {
-          setTimeout(function() {
-            _jsLoader.initEmber(callback);
-          }, _jsLoader.timeout);
-        });
-      } else {
-        if (typeof(callback) === "function") { callback(); }
-      }
-    }
-  });
-});
-
-_jsLoader.initApp = (function(callback) {
-    _jsLoader.initEmber(callback);
+  _jsLoader.getScript('js/application.js');
 });
