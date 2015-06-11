@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_with_ember
 comments: false
 date: 2013-06-19 01:07:00
 slug: pair
@@ -28,9 +28,6 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
 <!-- 1: create a placeholder div for your component -->
 <div data-component='print-pair-data' data-attrs='{"config": { "key": "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6", "fields": ["appointments","link","pair","description"] } }'></div>
 <!-- 2: Link to source files -->
-<script src="/js/jquery.min.js"></script>
-<script src="/js/ember.prod.js"></script>
-<script src="/js/ember-template-compiler.js"></script>
 <!-- 2a: init Ember App -->
 <script src="/js/app.js"></script>
 
