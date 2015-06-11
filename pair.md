@@ -85,6 +85,14 @@ App.PrintPairDataComponent = Ember.Component.extend({
       var rows = doc.parseEntries(entries);
       component.set('rows', rows);
     });
+    // fallback to local pair data if ajax failed
+    if (! component.rows ) {
+      doc.helper.getJSON('/assets/pair.json', function( json ) {
+        entries = json.feed.entry;
+        rows = doc.parseEntries(entries);
+        component.set('rows', rows);
+      });
+    }
   }
 
 });
