@@ -13,6 +13,7 @@ _jsLoader.getScript =  (function(src, callback) {
 
 _jsLoader.timeout = 100;
 
+// <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 _jsLoader.initJQuery = (function(callback) {
     if (typeof(jQuery) === "undefined") {
           _jsLoader.getScript('/js/jquery.min.js', function() {
@@ -27,20 +28,5 @@ _jsLoader.initJQuery = (function(callback) {
 });
 
 _jsLoader.initJQuery(function() {
-  _jsLoader.getScript('/js/application.js');
-});
-
-_jsLoader.initMustache = (function(render) {
-    _jsLoader.initJQuery(function() {
-        if (typeof (Mustache) === 'undefined') {
-            _jsLoader.getScript('/js/mustache.js', function() {
-                setTimeout(function() {
-                    _jsLoader.initMustache(render)
-                }, _jsLoader.timeout);
-            });
-        }
-        else {
-            render();
-        }
-    });
+  _jsLoader.getScript('js/application.js');
 });
