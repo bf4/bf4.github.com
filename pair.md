@@ -33,9 +33,9 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
   jQuery dependency is loaded in the head by the loader
   <script src="/js/jquery.min.js"></script>
 -->
-<script src="http://builds.emberjs.com/release/ember.prod.js"></script>
-<script src="http://builds.emberjs.com/release/ember-template-compiler.js"></script>
-<script src="js/GoogleSpreadsheetPrinter.js"></script>
+<script src="/js/ember.prod.js"></script>
+<script src="/js/ember-template-compiler.js"></script>
+<script src="/js/GoogleSpreadsheetPrinter.js"></script>
 
 <!-- 2a: init Ember App -->
 <script>
