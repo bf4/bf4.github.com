@@ -35,12 +35,8 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
 -->
 <script src="/js/ember.prod.js"></script>
 <script src="/js/ember-template-compiler.js"></script>
-<script src="/js/GoogleSpreadsheetPrinter.js"></script>
-
 <!-- 2a: init Ember App -->
-<script>
-App = Ember.Application.create();
-</script>
+<script src="/js/app.js"></script>
 
 <!-- 3. Create an Ember Component -->
 
@@ -59,79 +55,7 @@ App = Ember.Application.create();
 
 
 <!-- 3b: Component JS -->
-<script>
-App.PrintPairDataComponent = Ember.Component.extend({
-  // 4. Make sure you specify the layoutName to match the data-template-name of your handlebars template
-  layoutName: "components/print-pair-data",
-  tagName: '',
-  rows: null,
-   // hook into component initialization
-  init: function init() {
-    var component = this;
-    component._super.apply(component, arguments);
-    // Get the existing input value
-    var doc = GoogleSpreadsheetPrinter({
-      'key' : "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6",
-      'fields' : [
-        'appointments',
-        'link',
-        'pair',
-        'description'
-      ]
-    }, jQuery);
-    doc.fetchData( function( entries ) {
-      var rows = doc.parseEntries(entries);
-      component.set('rows', rows);
-    });
-    // fallback to local pair data if ajax failed
-    if (! component.rows ) {
-      $.getJSON('/assets/pair.json', function( json ) {
-        entries = json.feed.entry;
-        rows = doc.parseEntries(entries);
-        component.set('rows', rows);
-      });
-    }
-  }
+<script src="/js/GoogleSpreadSheetPrinter.js"></script>
+<script src="/js/components/print-pair-data.js"></script>
 
-});
-</script>
-
-<script>
-// 5. Use jQuery to replace your html div with your Ember component.
-$(document).ready(function(){
-  // Find the data-component container divs
-  // This is basically what Ember-Islands by @too_mitch does
-  // https://github.com/mitchlloyd/ember-islands/blob/3197b544c3c8fd4b632022a406fe565ca687810a/addon/render-components.js
-  $("[data-component]").each(function(){
-    // Get the data-component name e.g. 'fs-gif-url-input'
-    var element = this;
-    var name = element.getAttribute('data-component');
-    var attributes;
-    var attrsJSON = element.getAttribute('data-attrs');
-
-    if (attrsJSON) {
-      attributes = JSON.parse(attrsJSON);
-    } else {
-      attributes = {};
-    }
-    attributes.innerContent = element.innerHTML;
-
-    // Build the component & stuff in any pre-existing value
-    // Gut out the container div & replace with the component
-
-   var container = App.__container__;
-   var componentLookup = container.lookup('component-lookup:main');
-   var component = componentLookup.lookupFactory(name,  container);
-
-   // Temporary fix for bug in `replaceIn`
-   $(element).empty();
-   component.create(attributes).appendTo(element);
-
-  });
-  // Additional thanks to @runspired for the inspiration to start
-  // down the component-only path
-  // and to @locks @jordan-hawker @rwjblue
-  // and many others in the embercommunity slack
-});
-</script>
 </section>
