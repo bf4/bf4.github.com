@@ -37,7 +37,7 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
 <script type="text/x-handlebars" data-template-name="components/print-pair-data">
 {% raw %}
 <ul>
-{{#each rows key="@guid" as |row|}}
+{{#each rows key="@index" as |row|}}
     <li>
       <a href="{{row.link}}">{{row.appointments}} with {{row.pair}} on {{row.description}}</a>
       </li>
