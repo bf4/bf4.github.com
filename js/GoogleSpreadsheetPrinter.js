@@ -31,10 +31,12 @@ var GoogleSpreadsheetPrinter = function (config, helper) {
       });
       return rows;
   };
-  doc.fetchData = function(callback) {
-    this.helper.getJSON( this.jsonURL, function( json ) {
-        callback(json.feed.entry);
-    });
+  doc.fetchData = function(success, failure) {
+    this.helper.getJSON( this.jsonURL )
+      .done( function( json ) {
+        success(json.feed.entry);
+      })
+      .fail( failure );
   };
   return doc;
 };
