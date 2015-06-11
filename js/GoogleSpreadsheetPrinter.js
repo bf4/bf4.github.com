@@ -31,30 +31,10 @@ var GoogleSpreadsheetPrinter = function (config, helper) {
       });
       return rows;
   };
-  doc.template = function() {
-    return doc.helper(doc.getConfig('template')).html();
-  };
-  doc.target = function() {
-    return doc.helper(doc.getConfig('target'));
-  };
-  doc.renderHtml = function(context) {
-    return Handlebars.compile(doc.template())(context);
-  };
-  doc.displayHtml = function(entries) {
-    var data = {
-      'rows' : doc.parseEntries(entries)
-    };
-    var html = doc.renderHtml(data);
-    doc.target().html(html);
-  };
   doc.fetchData = function(callback) {
     this.helper.getJSON( this.jsonURL, function( json ) {
         callback(json.feed.entry);
     });
-  };
-  doc.print = function() {
-    this.fetchData(this.displayHtml);
-    return doc;
   };
   return doc;
 };

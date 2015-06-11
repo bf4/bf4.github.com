@@ -72,14 +72,12 @@ App.PrintPairDataComponent = Ember.Component.extend({
     // Get the existing input value
     var doc = GoogleSpreadsheetPrinter({
       'key' : "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6",
-        'fields' : [
-      'appointments',
+      'fields' : [
+        'appointments',
         'link',
         'pair',
         'description'
-      ],
-        'target' : '#pairing',
-        'template' : '#pairing-template'
+      ]
     }, jQuery);
     doc.fetchData( function( entries ) {
       var rows = doc.parseEntries(entries);
@@ -87,7 +85,7 @@ App.PrintPairDataComponent = Ember.Component.extend({
     });
     // fallback to local pair data if ajax failed
     if (! component.rows ) {
-      doc.helper.getJSON('/assets/pair.json', function( json ) {
+      $.getJSON('/assets/pair.json', function( json ) {
         entries = json.feed.entry;
         rows = doc.parseEntries(entries);
         component.set('rows', rows);
