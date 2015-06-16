@@ -28,5 +28,5 @@ _jsLoader.initJQuery = (function(callback) {
 });
 
 _jsLoader.initJQuery(function() {
-  _jsLoader.getScript('js/application.js');
+  _jsLoader.getScript('/js/application.js');
 });
