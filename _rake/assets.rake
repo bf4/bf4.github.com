@@ -26,7 +26,7 @@ namespace :assets do
 curl '#{url}' \
   -H 'Accept: application/json, text/javascript, */*; q=0.01' \
   -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36' \
-  --compressed
+  --compressed \
   -o #{output.to_s}
     CURL
     puts "Running #{cmd}"
