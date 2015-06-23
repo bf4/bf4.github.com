@@ -20,7 +20,7 @@ Let's see how I 'sprinkled Ember Components' into this [site, a static Jekyll bl
 I'd like to thank @runspired for the inspiration to start down the component-only path,
 for @too_mitch for pairing with me to set up my first ember-cli app with [ember-islands](https://github.com/mitchlloyd/ember-islands/) (next post!),
 to @tehviking for providing some guidance via the <a href="http://frontside.io/blog/2014/03/06/a-sprinkling-of-ember.html">
-'A Sprinkling of Ember' blog post</a> and his is 2014 RailsConf talk <a href="https://speakerdeck.com/tehviking/bring-fun-back-to-js-refactoring-toward-ember">
+'A Sprinkling of Ember' blog post</a> and in his is 2014 RailsConf talk <a href="https://speakerdeck.com/tehviking/bring-fun-back-to-js-refactoring-toward-ember">
 'Bring fun back to JS: Refactoring Toward Ember</a>, and to @locks [@JordanHawker](http://www.jordanhawker.com/) @rwjblue and
 many others in the embercommunity slack for their assistance.
 
