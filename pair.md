@@ -1,9 +1,13 @@
 ---
-layout: page_with_ember
+layout: page
 comments: false
 date: 2013-06-19 01:07:00
 slug: pair
 title: Pair
+javascripts:
+- "/js/jquery.min.js"
+- "/js/ember.prod.js"
+- "/js/ember-template-compiler.js"
 ---
 
 <section class="content">
