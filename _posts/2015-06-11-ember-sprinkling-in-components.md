@@ -28,7 +28,7 @@ many others in the [embercommunity slack](https://ember-community-slackin.heroku
 
 First off, the easiest way to spike this kind of code and get feedback is by using the [Ember JS Bin http://emberjs.jsbin.com](http://emberjs.jsbin.com/).
 
-Here's an example of [my first spike: http://emberjs.jsbin.com/zunedenono/3/edit?html,css,js,output](http://emberjs.jsbin.com/zunedenono/3/edit?html,css,js,output)
+Here's an example of [my first spike](http://emberjs.jsbin.com/zunedenono/3/edit?html,css,js,output)
 and [my update of @tehviking's giffy code](http://jsbin.com/zikupe/edit?html,js,output) in the blog post,
 including extracting some of the logic from @mitch-lloyd's Ember-Islands and getting it ready for Ember 2.0.
 
@@ -48,7 +48,7 @@ Giffy
 ## Code
 
 Let's break down of the steps via [http://frontside.io/blog/2014/03/06/a-sprinkling-of-ember.html](http://frontside.io/blog/2014/03/06/a-sprinkling-of-ember.html)
-by @tehviking and work done in [http://emberjs.jsbin.com/zikupe/10/edit?html,js,output](http://emberjs.jsbin.com/zikupe/10/edit?html,js,output)
+by @tehviking and work done in [my JS Bin](http://emberjs.jsbin.com/zikupe/10/edit?html,js,output)
 
 For either of the JS Bins, you can walk through the snapshots to see my progress.
 
