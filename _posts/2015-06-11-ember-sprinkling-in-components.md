@@ -97,7 +97,7 @@ To work on the edge, you may want to develop on the latest release or canary, e.
 App = Ember.Application.create({});
 {% endhighlight %}
 
-If you want to get fancy and making debugging your JS Bin a big easier, instead:
+If you want to get fancy and making debugging your JS Bin a bit easier, instead:
 
 {% highlight javascript %}
 App = Ember.Application.create({
