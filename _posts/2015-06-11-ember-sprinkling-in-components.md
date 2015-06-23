@@ -22,7 +22,7 @@ for @too_mitch for pairing with me to set up my first ember-cli app with [ember-
 to @tehviking for providing some guidance via the <a href="http://frontside.io/blog/2014/03/06/a-sprinkling-of-ember.html">
 'A Sprinkling of Ember' blog post</a> and in his is 2014 RailsConf talk <a href="https://speakerdeck.com/tehviking/bring-fun-back-to-js-refactoring-toward-ember">
 'Bring fun back to JS: Refactoring Toward Ember</a>, and to @locks [@JordanHawker](http://www.jordanhawker.com/) @rwjblue and
-many others in the embercommunity slack for their assistance.
+many others in the [embercommunity slack](https://ember-community-slackin.herokuapp.com) for their assistance.
 
 ## Getting Started
 
