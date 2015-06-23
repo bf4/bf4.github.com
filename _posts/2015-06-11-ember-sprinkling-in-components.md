@@ -228,7 +228,7 @@ That wasn't so terrible, right?  Now, there's a bunch of boiler-plate in there.
 Let's see if we can do it again for a different component, the one @tehviking
 builds in [http://frontside.io/blog/2014/03/06/a-sprinkling-of-ember.html](http://frontside.io/blog/2014/03/06/a-sprinkling-of-ember.html).
 
-First, let's make the placeholder. We're just a class attribute here to identify it.
+First, let's make the placeholder. We're just using a class attribute here to identify it.
 
 {% highlight html %}
 <body>
