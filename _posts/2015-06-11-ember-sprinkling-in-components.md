@@ -17,12 +17,12 @@ Let's see how I 'sprinkled Ember Components' into this [site, a static Jekyll bl
 
 ## Acknowledgements
 
-I'd like to thank @runspired for the inspiration to start down the component-only path,
-for @too_mitch for pairing with me to set up my first ember-cli app with [ember-islands](https://github.com/mitchlloyd/ember-islands/) (next post!),
-to @tehviking for providing some guidance via the <a href="http://frontside.io/blog/2014/03/06/a-sprinkling-of-ember.html">
+I'd like to thank [@runspired](http://runspired.com/) for the inspiration to start down the component-only path,
+for [@too_mitch](https://twitter.com/too_mitch) for pairing with me to set up my first ember-cli app with [ember-islands](https://github.com/mitchlloyd/ember-islands/) (next post!),
+to [@tehviking](https://twitter.com/tehviking) for providing some guidance via the <a href="http://frontside.io/blog/2014/03/06/a-sprinkling-of-ember.html">
 'A Sprinkling of Ember' blog post</a> and in his is 2014 RailsConf talk <a href="https://speakerdeck.com/tehviking/bring-fun-back-to-js-refactoring-toward-ember">
-'Bring fun back to JS: Refactoring Toward Ember</a>, and to @locks [@JordanHawker](http://www.jordanhawker.com/) @rwjblue and
-many others in the [embercommunity slack](https://ember-community-slackin.herokuapp.com) for their assistance.
+'Bring fun back to JS: Refactoring Toward Ember</a>, and to [@locks](https://twitter.com/locks), [@JordanHawker](http://www.jordanhawker.com/),
+[@rwjblue](https://github.com/rwjblue) and many others in the [embercommunity slack](https://ember-community-slackin.herokuapp.com) for their assistance.
 
 ## Getting Started
 
@@ -30,7 +30,7 @@ First off, the easiest way to spike this kind of code and get feedback is by usi
 
 Here's an example of [my first spike](http://emberjs.jsbin.com/zunedenono/3/edit?html,css,js,output)
 and [my update of @tehviking's giffy code](http://jsbin.com/zikupe/edit?html,js,output) in the blog post,
-including extracting some of the logic from @mitch-lloyd's Ember-Islands and getting it ready for Ember 2.0.
+including extracting some of the logic from [Mitch Lloyd's](https://twitter.com/too_mitch) Ember-Islands and getting it ready for Ember 2.0.
 
 ## TL;DR
 
