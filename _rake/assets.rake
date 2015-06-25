@@ -3,14 +3,16 @@ namespace :assets do
   desc "Vendor app assets"
   task :vendor do
     root = Pathname File.expand_path("../..", __FILE__)
+    jquery_version = "1.11.1"
+    ember_version = "release" # canary
+    spreadsheet_key = "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6"
 
-    pair_data_url = "http://spreadsheets.google.com/feeds/list/0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6/public/values?alt=json"
+    pair_data_url = "http://spreadsheets.google.com/feeds/list/#{spreadsheet_key}/public/values?alt=json"
     download(pair_data_url, root.join("assets/pair.json"))
 
-    jquery_url = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    jquery_url = "http://ajax.googleapis.com/ajax/libs/jquery/#{jquery_version}/jquery.min.js"
     download(jquery_url, root.join("js/jquery.min.js"))
 
-    ember_version = "release" # canary
     [
       "ember-template-compiler.js",
       "ember.prod.js",
