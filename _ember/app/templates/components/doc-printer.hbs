@@ -1,7 +1,12 @@
-<ul>
-  {{#rows}}
-    <li>
-      <a href="{{link}}">{{appointments}} with {{pair}} on {{description}}</a>
+<ul class="doc-printer">
+{{innerContent}}
+{{#each rows key="@index" as |row|}}
+    <li class="doc-item">
+      {{#if hasBlock}}
+        {{yield row}}
+      {{else}}
+        Without a block, I don't know what to do with {{row}}
+      {{/if}}
     </li>
-  {{/rows}}
+{{/each}}
 </ul>

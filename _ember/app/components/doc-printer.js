@@ -1,13 +1,19 @@
 import Ember from 'ember';
-import request from 'ic-ajax';
+import googleSpreadsheet from 'viewtastic/utils/google-spreadsheet';
 
 export default Ember.Component.extend({
+  tagName: '',
+  config: {},
+  rows: null,
+   // hook into component initialization
   init() {
     this._super(...arguments);
-    request('https://spreadsheets.google.com/feeds/list/0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6/public/values?alt=json').then((data) => {
-      // do nothing with the data, for now
-      // debugger;
-      console.log(data, "Using the data so jshint is happy.");
-    });
+    var component = this;
+    var doc = googleSpreadsheet.create(this.config);
+    if (doc.isValid()) {
+      doc.getRows( function(rows) {
+        component.set('rows', rows);
+      });
+    }
   }
 });
