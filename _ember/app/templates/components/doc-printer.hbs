@@ -1,7 +1,11 @@
-<ul>
-  {{#rows}}
-    <li>
-      <a href="{{link}}">{{appointments}} with {{pair}} on {{description}}</a>
+<ul class="doc-printer">
+{{#each rows key="@index" as |row|}}
+    <li class="doc-item">
+      <a href="{{row.link}}" class="doc-link">
+        <span class="doc-data">
+          {{row.appointments}} with {{row.pair}} on {{row.description}}
+        </span>
+      </a>
     </li>
-  {{/rows}}
+{{/each}}
 </ul>
