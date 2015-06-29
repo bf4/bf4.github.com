@@ -25,12 +25,34 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    // CORS configuration for development environment
+    ENV.contentSecurityPolicy = {
+      'script-src':  "'self' 'unsafe-eval' http://*:35729",
+      'font-src':    "'self'",
+      'connect-src': "'self' *",
+      'style-src':   "'self' 'unsafe-inline'",
+      'object-src':  "'self' data:",
+      'img-src':     "'self' data:"
+    };
+
   }
 
   if (environment === 'test') {
     // Testem prefers this...
     ENV.baseURL = '/';
     ENV.locationType = 'none';
+
+    // CORS configuration for test environment
+    ENV.contentSecurityPolicy = {
+      'script-src':  "'self' 'unsafe-eval' http://*:35729",
+      'font-src':    "'self'",
+      'connect-src': "'self' *",
+      'style-src':   "'self' 'unsafe-inline'",
+      'object-src':  "'self' data:",
+      'img-src':     "'self' data:"
+    };
+
 
     // keep test console output quieter
     ENV.APP.LOG_ACTIVE_GENERATION = false;

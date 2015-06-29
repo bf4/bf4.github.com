@@ -37,6 +37,7 @@
     "ember-islands": "0.5.1"
   },
   "dependencies": {
+    "ember-cli-content-security-policy": "^0.4.0",
     "ember-islands": "mitchlloyd/ember-islands"
   }
 }
