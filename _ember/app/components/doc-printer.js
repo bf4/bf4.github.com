@@ -2,8 +2,6 @@ import Ember from 'ember';
 // import request from 'ic-ajax';
 
 export default Ember.Component.extend({
-  // 4. Make sure you specify the layoutName to match the data-template-name of your handlebars template
-  layoutName: "components/print-pair-data",
   tagName: '',
   config: {},
   rows: null,
