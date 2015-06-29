@@ -63,6 +63,15 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
 
+    // CORS configuration for test environment
+    ENV.contentSecurityPolicy = {
+      'script-src':  "'self' 'unsafe-eval' http",
+      'font-src':    "'self'",
+      'connect-src': "'self' *",
+      'style-src':   "'self' 'unsafe-inline'",
+      'object-src':  "'self' data:",
+      'img-src':     "'self' data:"
+    };
   }
 
   return ENV;

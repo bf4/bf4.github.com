@@ -45,12 +45,14 @@ export default Ember.Component.extend({
         return config;
       }
     });
+    // TODO: ensure key is set, else fail
     doc.getKey = (function() { return config.key; });
     doc.jsonURL = (function() {
       return "https://spreadsheets.google.com/feeds/list/" +
       doc.getKey() +
       "/public/values?alt=json";
     })();
+    // TODO: handle undefined entry
     doc.parseEntry = function(entry, fields) {
         var row = {};
         this.helper.each(fields, function(index, field) {
