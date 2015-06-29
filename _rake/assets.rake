@@ -23,6 +23,22 @@ namespace :assets do
     end
   end
 
+  task :build do
+    root = Pathname File.expand_path("../..", __FILE__)
+    ember_dir = root.join("_ember")
+    Dir.chdir(ember_dir) do
+      build_cmd = "ember build -e production"
+      puts "Building ember javascripts"
+      if system(build_cmd)
+        cp_cmd = "cp dist/assets/*.js ../assets/"
+        puts "Copying ember javascripts"
+        system(cp_cmd) or abort "copy command failed with #{$?.inspect}"
+      else
+        abort "build command failed with #{$?.inspect}"
+      end
+    end
+  end
+
   def download(url, output)
     cmd = <<-CURL
 curl '#{url}' \
