@@ -21,18 +21,10 @@ export default Ember.Component.extend({
   // private
   getRows(callback) {
     var doc = this.GoogleSpreadsheetPrinter(this.config, Ember.$);
-    var success = function( entries ) {
-      var rows = doc.parseEntries(entries);
-      callback(rows);
-    };
-    var failure = function () {
-      // fallback to local pair data if ajax failed
-      Ember.$.getJSON('/assets/pair.json', function( json ) {
-        var entries = json.feed.entry;
-        callback( doc.parseEntries(entries) );
-      });
-    };
-    doc.fetchData(  success, failure );
+    doc.fetchData( function(json) {
+      var entries = json.feed.entry;
+      callback( doc.parseEntries(entries) );
+    });
   },
   GoogleSpreadsheetPrinter(config, helper) {
     "use strict";
@@ -47,6 +39,10 @@ export default Ember.Component.extend({
     });
     // TODO: ensure key is set, else fail
     doc.getKey = (function() { return config.key; });
+    // doc.fallbackURL = ((function() { return config.fallbackURL; })();
+    doc.fallbackURL = (function() {
+      return config.fallbackURL;
+    })();
     doc.jsonURL = (function() {
       return "https://spreadsheets.google.com/feeds/list/" +
       doc.getKey() +
@@ -69,13 +65,30 @@ export default Ember.Component.extend({
         });
         return rows;
     };
-    doc.fetchData = function(success, failure) {
-      this.helper.getJSON( this.jsonURL )
-        .done( function( json ) {
-          success(json.feed.entry);
-        })
+    doc.fetchData = function(callback) {
+      doc.fetchJSON( this.jsonURL, callback, function() {
+        doc.fetchJSON( this.fallbackURL, callback, function() {});
+      });
+    };
+    doc.fetchJSON = function(url, success, failure) {
+      this.helper.getJSON( url )
+        .done( success )
         .fail( failure );
     };
+    doc.parseEntries = function(entries) {
+        var rows = [];
+        this.helper.each(entries, function(index, entry) {
+          rows.push(doc.parseEntry(entry, doc.getConfig('fields')));
+        });
+        return rows;
+    };
+    doc.isValid = function() {
+      return (!!this.getKey());
+    };
+    if (!doc.isValid()) {
+      doc.jsonURL = doc.fallbackURL;
+      doc.fallbackURL = null;
+    }
     return doc;
   }
 });
