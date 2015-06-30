@@ -1,10 +1,5 @@
 import Ember from 'ember';
-// import request from 'ic-ajax';
-// request('https://spreadsheets.google.com/feeds/list/0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6/public/values?alt=json').then((data) => {
-//   // do nothing with the data, for now
-//   // debugger;
-//   console.log(data, "Using the data so jshint is happy.");
-// });
+import request from 'ic-ajax';
 
 export default Ember.Object.extend({
   init() {
@@ -13,7 +8,6 @@ export default Ember.Object.extend({
     this.jsonURL = "https://spreadsheets.google.com/feeds/list/" +
     this.key +
     "/public/values?alt=json";
-    this.fetcher = this.helper.getJSON;
     if (!this.isValid()) {
       this.jsonURL = this.fallbackURL;
       this.fallbackURL = null;
@@ -35,11 +29,15 @@ export default Ember.Object.extend({
       var entries = json.feed.entry;
       callback(entries);
     };
-    this.fetcher( url )
-      .done( success )
-    .fail(
-        this.fetcher(fallbackURL, success)
-        );
+    var failure = function(reason, url) {
+      console.log(reason, "Failed to get data from " + url);
+    };
+    request(url).then(success,
+      (reason) => {
+        failure(reason, url);
+        request(fallbackURL).then(success, (reason) => { failure(reason, fallbackURL); });
+      }
+    );
   },
   parseEntries(entries) {
     var rows = [];
