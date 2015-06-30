@@ -1,7 +1,11 @@
-import { test } from 'ember-qunit';
+import { moduleFor, test } from 'ember-qunit';
 import Ember from 'ember';
 import GoogleSpreadsheet from 'viewtastic/models/google-spreadsheet';
 // import { defineFixture, lookupFixture } from 'ic-ajax';
+
+moduleFor('google-spreadsheet', 'unit - google-spreadsheet',{
+});
+
 
 test('it works as expected', function(assert) {
   assert.expect(7);
