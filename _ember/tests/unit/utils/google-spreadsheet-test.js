@@ -6,8 +6,7 @@ import Db from 'ember-cli-mirage/db';
 
 module('Unit | Utility | google spreadsheet');
 
-// Replace this with your real tests.
-test('it works', function(assert) {
+test('it works as expected', function(assert) {
   assert.expect(11);
   var config = {
     "key": "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6",
