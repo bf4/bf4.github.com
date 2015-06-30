@@ -1,5 +1,10 @@
 import Ember from 'ember';
 // import request from 'ic-ajax';
+// request('https://spreadsheets.google.com/feeds/list/0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6/public/values?alt=json').then((data) => {
+//   // do nothing with the data, for now
+//   // debugger;
+//   console.log(data, "Using the data so jshint is happy.");
+// });
 
 export default Ember.Component.extend({
   tagName: '',
@@ -8,11 +13,6 @@ export default Ember.Component.extend({
    // hook into component initialization
   init() {
     this._super(...arguments);
-    // request('https://spreadsheets.google.com/feeds/list/0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6/public/values?alt=json').then((data) => {
-    //   // do nothing with the data, for now
-    //   // debugger;
-    //   console.log(data, "Using the data so jshint is happy.");
-    // });
     var component = this;
     this.getRows( function(rows) {
       component.set('rows', rows);
@@ -20,13 +20,13 @@ export default Ember.Component.extend({
   },
   // private
   getRows(callback) {
-    var doc = this.GoogleSpreadsheetPrinter(this.config, Ember.$);
+    var doc = this.newGoogleSpreadsheetPrinter(this.config, Ember.$);
     doc.fetchData( function(json) {
       var entries = json.feed.entry;
       callback( doc.parseEntries(entries) );
     });
   },
-  GoogleSpreadsheetPrinter(config, helper) {
+  newGoogleSpreadsheetPrinter(config, helper) {
     "use strict";
     var doc = {};
     doc.helper = helper;
@@ -37,9 +37,7 @@ export default Ember.Component.extend({
         return config;
       }
     });
-    // TODO: ensure key is set, else fail
     doc.getKey = (function() { return config.key; });
-    // doc.fallbackURL = ((function() { return config.fallbackURL; })();
     doc.fallbackURL = (function() {
       return config.fallbackURL;
     })();
@@ -48,15 +46,17 @@ export default Ember.Component.extend({
       doc.getKey() +
       "/public/values?alt=json";
     })();
-    // TODO: handle undefined entry
     doc.parseEntry = function(entry, fields) {
-        var row = {};
-        this.helper.each(fields, function(index, field) {
-          var field_name = "gsx$" + field;
-          var cell = entry[field_name].$t;
-          row[field] = cell;
-        });
+      var row = {};
+      if (!entry) {
         return row;
+      }
+      this.helper.each(fields, function(index, field) {
+        var field_name = "gsx$" + field;
+        var cell = entry[field_name].$t;
+        row[field] = cell;
+      });
+      return row;
     };
     doc.parseEntries = function(entries) {
         var rows = [];
@@ -65,15 +65,18 @@ export default Ember.Component.extend({
         });
         return rows;
     };
+    doc.fetcher = doc.helper.getJSON;
     doc.fetchData = function(callback) {
-      doc.fetchJSON( this.jsonURL, callback, function() {
-        doc.fetchJSON( this.fallbackURL, callback, function() {});
-      });
-    };
-    doc.fetchJSON = function(url, success, failure) {
-      this.helper.getJSON( url )
+      var url = this.jsonURL;
+      var fallbackURL = this.fallbackURL;
+      var success = function(json) {
+        callback(json.feed.entry);
+      };
+      doc.fetcher( url )
         .done( success )
-        .fail( failure );
+      .fail(
+          doc.fetcher(fallbackURL, success)
+          );
     };
     doc.parseEntries = function(entries) {
         var rows = [];
@@ -88,6 +91,10 @@ export default Ember.Component.extend({
     if (!doc.isValid()) {
       doc.jsonURL = doc.fallbackURL;
       doc.fallbackURL = null;
+    }
+    if (!doc.isValid()) {
+      // no valid urls, disable fetchData
+      doc.fetchData = function() { };
     }
     return doc;
   }
