@@ -2,7 +2,6 @@ import googleSpreadsheet from '../../../utils/google-spreadsheet';
 import { module, test } from 'qunit';
 import Ember from 'ember';
 import Db from 'ember-cli-mirage/db';
-// import { defineFixture, lookupFixture } from 'ic-ajax';
 
 module('Unit | Utility | google spreadsheet');
 
@@ -39,17 +38,6 @@ test('it works as expected', function(assert) {
   assert.equal(JSON.stringify(actualRows), JSON.stringify(expectedRows));
 
   var doc2 = googleSpreadsheet.create(config);
-  // doc2.log = (function() {
-  //   var logMessages = [];
-  //   return (function()  {
-  //     if (arguments) {
-  //       for (var arg in arguments) {
-  //         logMessages.push(arguments[arg]);
-  //       }
-  //     }
-  //     return logMessages;
-  //   });
-  // })();
   var db = new Db();
 
   var data = {
@@ -59,45 +47,16 @@ test('it works as expected', function(assert) {
   var goodJsonJURL = "/assets/pair.json";
   var badJsonURL = "/assets/nopair.json";
 
-  // doc2.log("yo", "dude");
   doc2.jsonURL = goodJsonJURL;
   doc2.fallbackURL = badJsonURL;
   assert.deepEqual(doc2.fetchData(), data.pairs.entry, "jsonURL succeeds");
-  // var called = false;
-  // doc2.fetchData(function(entries) {
-  //   called = true;
-  //   assert.deepEqual(entries, data.pairs.entry, "jsonURL succeeds");
-  // });
-  // assert.equal(called, true, "jsonURL callback succeeds");
 
   doc2.jsonURL = badJsonURL;
   doc2.fallbackURL = goodJsonJURL;
-  // doc2.fetchData(function(entries) {
-  //   assert.deepEqual(entries, data.pairs.entry, "jsonURL fails, fallbackURL succeeds");
-  // });
   assert.deepEqual(doc2.fetchData(), data.pairs.entry, "jsonURL fails, fallbackURL succeeds");
 
   doc2.jsonURL = badJsonURL;
   doc2.fallbackURL = badJsonURL;
-  // var called = false;
-  // doc2.fetchData(function(entries) {
-  //   called = true;
-  // });
-  // assert.equal(JSON.stringify(doc2.log()), "hi");
-  // assert.equal(called, false, "jsonURL fails, fallbackURL fails");
   assert.equal(doc.fetchData(), undefined, "jsonURL fails, fallbackURL fails");
   db.emptyData();
-  // defineFixture("/bananaboat", {
-  //       response: json,
-  //       textStatus: 'success',
-  //       jqXHR: {}
-  // });
-  //
-  // doc.fetchData(function(entries) {
-  //   var expectedResponse = lookupFixture("/bananaboat").response;
-  //   assert.equal(JSON.stringify(json), JSON.stringify(expectedResponse));
-  //   var expectedEntries = expectedResponse.entry;
-  //   assert.deepEqual(entries, expectedEntries);
-  // });
-  // //
 });

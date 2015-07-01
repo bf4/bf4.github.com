@@ -1,7 +1,6 @@
 import Ember from 'ember';
 import request from 'ic-ajax';
 
-// export default function GoogleSpreadsheet() {
 export default Ember.Object.extend({
   init() {
     this._super(...arguments);
