@@ -74,5 +74,11 @@ module.exports = function(environment) {
     };
   }
 
+  // CONFIG ember-cli-mirage
+  if (environment === 'development') {
+    ENV['ember-cli-mirage'] = {
+        enabled: false
+    };
+  }
   return ENV;
 };

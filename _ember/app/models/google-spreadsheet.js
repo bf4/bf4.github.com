@@ -22,15 +22,23 @@ export default Ember.Object.extend({
       callback( doc.parseEntries(entries) );
     });
   },
+  log() {
+    console.log(arguments);
+  },
   fetchData(callback) {
     var url = this.jsonURL;
     var fallbackURL = this.fallbackURL;
+    var log = this.log;
     var success = function(json) {
       var entries = json.feed.entry;
-      callback(entries);
+      if (callback) {
+        callback(entries);
+      } else {
+        return entries;
+      }
     };
     var failure = function(reason, url) {
-      console.log(reason, "Failed to get data from " + url);
+      log(reason, "Failed to get data from " + url);
     };
     request(url).then(success,
       (reason) => {
