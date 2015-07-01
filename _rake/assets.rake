@@ -4,22 +4,19 @@ namespace :assets do
   task :vendor do
     root = Pathname File.expand_path("../..", __FILE__)
     jquery_version = "1.11.1"
+    ember_jquery = root.join("_ember/bower_components/jquery/dist/jquery.min.js")
     ember_version = "release" # canary
     spreadsheet_key = "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6"
 
     pair_data_url = "http://spreadsheets.google.com/feeds/list/#{spreadsheet_key}/public/values?alt=json"
     download(pair_data_url, root.join("assets/pair.json"))
 
-    jquery_url = "http://ajax.googleapis.com/ajax/libs/jquery/#{jquery_version}/jquery.min.js"
-    download(jquery_url, root.join("js/jquery.min.js"))
-
-    [
-      "ember-template-compiler.js",
-      "ember.prod.js",
-      "ember.debug.js",
-    ].each do |file|
-      url = "http://builds.emberjs.com/#{ember_version}/#{file}"
-      download(url, root.join("js/#{file}"))
+    jquery_destination = root.join("js/jquery.min.js")
+    if ember_jquery.readable?
+      cp ember_jquery.to_s, jquery_destination
+    else
+      jquery_url = "http://ajax.googleapis.com/ajax/libs/jquery/#{jquery_version}/jquery.min.js"
+      download(jquery_url, jquery_destination)
     end
   end
 
@@ -29,10 +26,9 @@ namespace :assets do
     Dir.chdir(ember_dir) do
       build_cmd = "ember build -e production"
       puts "Building ember javascripts"
-      if system(build_cmd)
-        cp_cmd = "cp dist/assets/*.js ../assets/"
+      if sh(build_cmd)
         puts "Copying ember javascripts"
-        system(cp_cmd) or abort "copy command failed with #{$?.inspect}"
+        cp "dist/assets/*.js ../assets/"
       else
         abort "build command failed with #{$?.inspect}"
       end
