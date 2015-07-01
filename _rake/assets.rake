@@ -1,5 +1,6 @@
 require "pathname"
 namespace :assets do
+  task :update => [:build, :vendor]
   desc "Vendor app assets"
   task :vendor do
     root = Pathname File.expand_path("../..", __FILE__)
@@ -26,9 +27,10 @@ namespace :assets do
     Dir.chdir(ember_dir) do
       build_cmd = "ember build -e production"
       puts "Building ember javascripts"
-      if sh(build_cmd)
+      if system(build_cmd)
         puts "Copying ember javascripts"
-        cp "dist/assets/*.js ../assets/"
+        cp_cmd = "cp dist/assets/*.js ../assets/"
+        system(cp_cmd) or abort "copy command failed with #{$?.inspect}"
       else
         abort "build command failed with #{$?.inspect}"
       end
