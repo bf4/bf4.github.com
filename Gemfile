@@ -13,3 +13,10 @@ versions =
 gem 'github-pages', versions['github-pages']
 # gem "jekyll"
 # gem "rdiscount"
+
+group :development, :test do
+  gem "jasmine"
+  gem "guard-jasmine"
+  gem "rb-fsevent"
+  gem "terminal-notifier-guard"
+end
