@@ -6,10 +6,13 @@ namespace :assets do
     root = Pathname File.expand_path("../..", __FILE__)
     jquery_version = "1.11.1"
     ember_jquery = root.join("_ember/bower_components/jquery/dist/jquery.min.js")
-    spreadsheet_key = "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6"
-
-    pair_data_url = "http://spreadsheets.google.com/feeds/list/#{spreadsheet_key}/public/values?alt=json"
-    download(pair_data_url, root.join("assets/pair.json"))
+    {
+      "pair" => "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6",
+      "projects" => "0AqHUOZcVEj_XdHV2dkl0bzNpSlcxOUZ0Sm1aSk5kZkE/ocq",
+    }.each do |asset_name, spreadsheet_key|
+      spreadsheet__data_url = "http://spreadsheets.google.com/feeds/list/#{spreadsheet_key}/public/values?alt=json"
+      download(spreadsheet__data_url, root.join("assets/#{asset_name}.json"))
+    end
 
     jquery_destination = root.join("js/jquery.min.js")
     if ember_jquery.readable?

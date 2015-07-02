@@ -1,0 +1,24 @@
+<table class="doc-printer">
+  {{innerContent}}
+  <caption><em>Projects I work on</em></caption>
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Role</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each rows key="@index" as |row|}}
+    <tr class="doc-item">
+      <td>
+        <a href="{{row.link}}" class="doc-link">
+          {{row.description}}
+        </a>
+      </td>
+      <td>{{row.role}}</td>
+      <td>({{row.mydevstatus}})</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
