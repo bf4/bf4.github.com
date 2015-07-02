@@ -1,0 +1,12 @@
+<ul class="doc-printer">
+{{innerContent}}
+{{#each rows key="@index" as |row|}}
+    <li class="doc-item">
+      {{#if hasBlock}}
+        {{yield row}}
+      {{else}}
+        Without a block, I don't know what to do with {{row}}
+      {{/if}}
+    </li>
+{{/each}}
+</ul>

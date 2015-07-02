@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Viewtastic</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{content-for 'head'}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/viewtastic.css">
+
+    {{content-for 'head-footer'}}
+  </head>
+  <body>
+    {{content-for 'body'}}
+
+    <script src="assets/vendor.js"></script>
+    <script src="assets/viewtastic.js"></script>
+
+    {{content-for 'body-footer'}}
+    <div data-component='doc-printer' data-attrs='{"config": { "key": "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6", "fields": ["appointments","link","pair","description"] } }'>
+      oh boy, inner content
+    </div>
+    <div data-component='print-pair-data' data-attrs='{"config": { "key": "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6", "fields": ["appointments","link","pair","description"] } }'></div>
+  </body>
+</html>
