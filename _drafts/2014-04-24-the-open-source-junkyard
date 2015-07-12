@@ -1,0 +1,52 @@
+---
+layout: post
+title: "The Open Source Junkyard"
+description: "A plea for help"
+category: community
+tags: 
+- open source software
+- github
+published: true
+---
+{% include JB/setup %}
+
+## Where do gems come from?
+
+## How do I pick one?
+
+## How do I use one?
+
+## How do I fix one?
+
+## Who maintains it?
+
+- Depending on altruism: Nathaniel Talbott
+- libyaml
+- metric_fu 
+- acts-as-taggable-on - seuros
+- roodi
+
+- Is it stillmaintained?
+- CodeTriage
+- sferik
+- myron marston / vcr
+- resque / klabnik
+
+- bless a fork!
+
+## Becoming a maintainer
+
+TODO: document this
+
+- get commit bit
+- get gem push access
+
+### Collective Wisdom
+
+- Gem maintainers list.. discuss solving gem-problems. rubygems-style-guide?
+
+- code_notes
+
+## How do I ~~complain about~~ help it?
+
+## Tyler - building a gem crash course
