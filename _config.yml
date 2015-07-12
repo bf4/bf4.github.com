@@ -1,7 +1,7 @@
 highlighter: pygments
 lsi: false
 safe: true
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "_ember", "_thoughts", "_legacy", "_backup", "spec", "node_modules"]
+exclude: ["Gemfile", "Gemfile.lock", "CNAME", "Rakefile", "_rake", "LICENSE", "README.md", "_ember", "_thoughts", "_snippets", "_legacy", "_backup"]
 markdown: rdiscount
 rdiscount:
   extensions: [smart]
