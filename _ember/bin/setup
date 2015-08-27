@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# http://www.ember-cli.com/user-guide/
+# Install nvm and node https://github.com/creationix/nvm
+set -e
+
+install() {
+ brew install "$@" || echo "$!"
+}
+configure_nvm() {
+  # BEGIN add to ~/.bash_profile
+  nvm_sh=$(brew --prefix nvm)/nvm.sh
+  if [ -f $nvm_sh ]; then
+    export NVM_DIR=~/.nvm
+    source $nvm_sh
+  fi
+  # END add to ~/.bash_profile
+}
+mkdir -p ~/.nvm
+install nvm || echo "$!"
+configure_nvm
+export NODE_VERSION=${NODE_VERSION:-0.12.4}
+nvm install $NODE_VERSION || echo "$!"
+nvm use $NODE_VERSION --default
+
+nvm --version  # 0.24.1
+npm --version  # 2.10.1
+node --version # v0.12.4
+
+# Once you’ve installed Node, you’ll need to install the Ember CLI globally with:
+npm install -g ember-cli
+ember  --version # 0.2.7
+
+# You’ll need to install Bower, a package manager that keeps your front-end dependencies (including JQuery, Ember, and QUnit) up to date. This is as easy as running:
+npm install -g bower
+bower --version # 1.4.7
+
+# If you want to use PhantomJS to run your integration tests, it needs to be installed globally.
+npm install -g phantomjs
+phantomjs --version # 1.9.8
+
+# If you want less-error-prone file change watching
+install watchman
+watchman --version # 3.1.0
