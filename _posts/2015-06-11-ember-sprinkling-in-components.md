@@ -362,7 +362,8 @@ App.instanceInitializer({
 I hope that helps you get started with just dropping Ember in your static site.
 
 One drawback of this approach, is that we don't get the benefits of all the conventions
-and tooling of `ember-cli`.  Well, we'll migrate this code to `ember-cli` in the next post :)
+and tooling of `ember-cli`.  Well, we'll migrate this code to `ember-cli` in the
+[next post: Ember: Moving from Ember sprinkles to Ember CLI. Part 2](/ember-cli-components) :)
 
 ## References:
 

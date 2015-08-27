@@ -9,9 +9,9 @@ published: true
 ---
 {% include JB/setup %}
 
-Following [ember-sprinkling-in-components](ember-sprinkling-in-components)
+Following [ember-sprinkling-in-components](/ember-sprinkling-in-components)
 
-Note, this was written using Ember 1.13.0
+Note, this was written using Ember 1.13.0.
 
 ## Why?
 
@@ -95,7 +95,7 @@ An Ember CLI app for rendering Ember Components outside of an Ember app.
 3. Generate a Component. Its name must have a hyphen.  e.g. `ember g component doc-printer`.
 
 4. Config `Brocfile.js` (or [ember-cli-build.js](https://github.com/ember-cli/ember-cli/blob/master/TRANSITION.md#how)
-  as needed/desired. See 'Gotchas' below.
+  as needed/desired). See `Gotchas` below.
 
 5. Edit `app/index.html` to add a data component, e.g. `<div data-component="doc-printer"></div>`.
 
@@ -191,7 +191,7 @@ tests](http://alisdair.mcdiarmid.org/2015/06/20/ember-component-integration-test
     npm install --save-dev ember-cli-htmlbars-inline-precompile@0.1.1
 {% endhighlight %}
 
-## Code
+### Other changes from `ember init`
 
 package.json
 {% highlight json %}
@@ -255,6 +255,9 @@ bower.json
 
 ## References and further reading:
 
+- [Original PR where I merged in this code to the blog](https://github.com/bf4/bf4.github.com/pull/3)
+- [State of the Ember app as of this
+    writing](https://github.com/bf4/bf4.github.com/tree/3e6d7eef84648b3e2d5075a210427761f183c5d3/_ember)
 - [Integration tests for components](http://emberup.co/integration-tests-for-components/)
 
 (This area will be updated)
