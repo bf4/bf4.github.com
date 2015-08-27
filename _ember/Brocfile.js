@@ -6,7 +6,22 @@ var app = new EmberApp({
     storeConfigInMeta: false,
     fingerprint: {
       enabled: false
-    }
+    },
+    sourcemaps: {
+      "enabled": false,
+      "extensions": ["js"]
+    },
+    outputPaths: {
+      app: {
+        html: 'index.html',
+        css: { 'app': '/viewtastic.css'},
+        js: "/assets/viewtastic.js"
+      },
+      vendor: {
+        css: '/vendor.css',
+        js: "/assets/vendor.js"
+     }
+   }
 });
 
 

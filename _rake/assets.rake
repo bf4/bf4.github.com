@@ -24,7 +24,7 @@ namespace :assets do
     root = Pathname File.expand_path("../..", __FILE__)
     ember_dir = root.join("_ember")
     Dir.chdir(ember_dir) do
-      build_cmd = "ember build -e production"
+      build_cmd = "ember build -prod"
       puts "Building ember javascripts"
       if system(build_cmd)
         puts "Copying ember javascripts"
