@@ -58,16 +58,18 @@ task :post do
   end
 
   puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts 'description: ""'
-    post.puts "category: "
-    post.puts "tags: []"
-    post.puts "---"
-    post.puts "{% include JB/setup %}"
-  end
+  File.write(filename, <<-META)
+---
+layout: post
+title: "#{title.gsub(/-/,' ')}"
+description: ""
+# permalink: ""
+categories: [ ]
+tags: [ ]
+# published: true
+{% include JB/setup %}
+---
+    META
 end # task :post
 
 # Create a new page
