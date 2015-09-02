@@ -6,6 +6,7 @@ description: "Be a good ruby citizen, put a license in your gemspec"
 categories:
   - Code
   - Ruby
+  - top
 tags:
   - ruby
   - rubygems

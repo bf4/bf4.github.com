@@ -2,7 +2,7 @@
 layout: post
 title: "A RubyGems Adoption Center"
 description: "How can we enable community maintenance of unmaintained/abandoned RubyGems?"
-categories: [ 'ruby' ]
+categories: [ 'ruby', 'top' ]
 tags: [ 'ruby' , 'calltoaction', 'rubygems' ]
 published: true
 ---

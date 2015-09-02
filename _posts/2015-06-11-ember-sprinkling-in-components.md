@@ -3,7 +3,7 @@ layout: post
 title: "Ember: Sprinkling in Components. Part 1"
 permalink: "ember-sprinkling-in-components"
 description: "Part 1: Using Ember Components in a static site"
-categories: [ 'javascript' ]
+categories: [ 'javascript', 'top' ]
 tags: [ 'ember' ]
 published: true
 ---

@@ -2,8 +2,8 @@
 layout: post
 title: "Subtleties of upgrading Ruby 1.9 to 2.0"
 description: "Upgrading from Ruby 1.9 to 2.0 mostly painless"
-tags: ["ruby"]
-categories: [ 'ruby' ]
+tags: ['ruby']
+categories: [ 'ruby', 'top' ]
 published: true
 ---
 {% include JB/setup %}

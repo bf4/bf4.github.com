@@ -3,9 +3,7 @@ layout: post
 date: 2013-07-18 10:00:00Z
 title: "Ruby requires confusion"
 description: "How should you load code: require, require_relative, or autoload?"
-categories:
-  - Code
-  - Ruby
+categories: [ 'Code', 'Ruby', 'top' ]
 tags:
   - ruby
   - rubygems

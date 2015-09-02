@@ -3,7 +3,7 @@ layout: post
 title: "Ember: Moving from Ember sprinkles to Ember CLI. Part 2"
 description: "Part 2: Using Ember Components in a static site"
 permalink: "ember-cli-components"
-categories: [ 'javascript' ]
+categories: [ 'javascript', 'top' ]
 tags: [ 'ember' ]
 published: true
 ---

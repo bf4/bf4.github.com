@@ -2,7 +2,7 @@
 layout: post
 title: "Testing against Rubinius on Travis CI"
 description: "Get your rbx tests to pass on Travis"
-categories: [ 'ruby' ]
+categories: [ 'ruby', 'top' ]
 tags: [ 'ruby' , 'docs' , 'hack' ]
 published: true
 ---

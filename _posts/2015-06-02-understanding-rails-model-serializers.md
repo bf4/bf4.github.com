@@ -2,7 +2,7 @@
 layout: post
 title: "Understanding Rails model serializers"
 description: "How Rails serialzers work now (Rails 4.2), and a proposal for how they could be better"
-categories: [ 'ruby' ]
+categories: [ 'ruby', 'top' ]
 tags: [ 'ruby' , 'rails' ]
 published: true
 ---

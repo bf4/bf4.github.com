@@ -2,7 +2,7 @@
 layout: post
 title: "TIL: RubyGem executables now go in exe"
 description: "The RubyGem executable dir convention is now exe, not bin"
-categories: [ 'ruby' ]
+categories: [ 'ruby', 'top' ]
 tags: [ 'ruby' , 'rubygems' , 'til' ]
 published: true
 ---

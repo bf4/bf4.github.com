@@ -3,7 +3,7 @@ layout: post
 title: "Uploading and downloading Slack emoji"
 description: "Uploading and downloading Slack emoji"
 permalink: "uploading-and-downloading-slack-emoji"
-categories: [ ]
+categories: [ 'top' ]
 tags: [ 'slack' ]
 published: true
 {% include JB/setup %}

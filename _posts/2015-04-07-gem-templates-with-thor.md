@@ -2,7 +2,7 @@
 layout: post
 title: "Gem templates with Thor"
 description: ""
-categories: [ 'ruby' ]
+categories: [ 'ruby', 'top' ]
 tags: [ 'ruby' , 'rubygems' , 'bundler', 'thor', 'rails']
 published: true
 ---

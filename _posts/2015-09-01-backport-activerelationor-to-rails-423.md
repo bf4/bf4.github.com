@@ -3,7 +3,7 @@ layout: post
 title: "Backport ActiveRecord::Relation#or to Rails 4.2.3"
 description: "Backport ActiveRecord::Relation#or to Rails 4.2.3"
 permalink: "backport-activerelation-or"
-categories: [ 'rails' ]
+categories: [ 'rails', 'top' ]
 tags: [ 'rails' ]
 published: true
 ---
