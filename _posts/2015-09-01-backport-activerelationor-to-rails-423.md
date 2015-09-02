@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Backport ActiveRelation#or to Rails 4.2.3"
-description: "Backport ActiveRelation#or to ActiveRecord in Rails 4.2.3"
+title: "Backport ActiveRecord::Relation#or to Rails 4.2.3"
+description: "Backport ActiveRecord::Relation#or to Rails 4.2.3"
 permalink: "backport-activerelation-or"
 categories: [ 'rails' ]
 tags: [ 'rails' ]
@@ -9,7 +9,7 @@ published: true
 ---
 {% include JB/setup %}
 
-I've backported `ActiveRelation#or` from Rails master for use in our Rails 4.2.3 app.
+I've backported `ActiveRecord::Relation#or` from Rails master for use in our Rails 4.2.3 app.
 
 It was non-trivial, so I thought I'd share.  Enjoy!
 
