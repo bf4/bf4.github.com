@@ -6,8 +6,8 @@ permalink: "uploading-and-downloading-slack-emoji"
 categories: [ 'top' ]
 tags: [ 'slack' ]
 published: true
-{% include JB/setup %}
 ---
+{% include JB/setup %}
 
 My company recently went to Slack and we didn't have all the fun emoji that I liked from
 one of my other Slack groups.  All I had to do was find a Slack API wrapped to download

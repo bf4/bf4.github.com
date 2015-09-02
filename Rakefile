@@ -63,12 +63,13 @@ task :post do
 layout: post
 title: "#{title.gsub(/-/,' ')}"
 description: ""
-# permalink: ""
+permalink: "#{slug}"
 categories: [ ]
-tags: [ ]
-# published: true
-{% include JB/setup %}
+tags: #{tags}
+date: #{date}
+published: false
 ---
+{% include JB/setup %}
     META
 end # task :post
 
