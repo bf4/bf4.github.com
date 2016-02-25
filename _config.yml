@@ -1,5 +1,17 @@
+# github pages we cannot customize
 lsi: false
 safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+# customize
+kramdown:
+  input: GFM
+  hard_wrap: false
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
 exclude: ["Gemfile", "Gemfile.lock", "CNAME", "Rakefile", "_rake", "LICENSE", "README.md", "_ember", "_thoughts", "_snippets", "_legacy", "_backup"]
 # This is the default format.
 # # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
