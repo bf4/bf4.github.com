@@ -1,3 +1,5 @@
+---
+---
 * [rails activerecord tips](https://gist.github.com/bf4/5594532)
 * [ruby data uri](https://gist.github.com/bf4/5188994)
 * [ruby object model](https://gist.github.com/bf4/5225535) and see [Practical Metaprogramming](http://www.confreaks.com/videos/687-rubyconf2011-practical-metaprogramming-modeling-thought-or-lessons-learned-while-using-ruby-s-mp-system-to-model-a-2-500-year-old-dead-language)

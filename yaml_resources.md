@@ -2,9 +2,6 @@
 layout: page
 title: "YAML Resources"
 ---
-{% include JB/setup %}
-
-<section class="content">
 
 ## YAML, what is it good for?
 
@@ -205,5 +202,3 @@ production:
 * Q&A
   * [Why the difference in behavior of YAML parsers (syck and psych)?](http://stackoverflow.com/questions/8763498/why-the-difference-in-behavior-of-yaml-parsers-syck-and-psych)
   * [rails error, couldn't parse YAML](http://stackoverflow.com/questions/4980877/rails-error-couldnt-parse-yaml)
-
-</section>

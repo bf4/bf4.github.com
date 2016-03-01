@@ -5,11 +5,16 @@ require 'json'
 require 'open-uri'
 versions =
   begin
-    JSON.parse(open('https://pages.github.com/versions.json').read)
+    versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+    unless $skip_print_versions == true
+      require 'pp'
+      STDERR.puts 'Gem versions are:'
+      pp versions
+      $skip_print_versions = true
+    end
+    versions
   rescue SocketError
-    { 'github-pages' => 37 }
+    { 'github-pages' => 52 }
   end
 
 gem 'github-pages', versions['github-pages']
-# gem "jekyll"
-# gem "rdiscount"

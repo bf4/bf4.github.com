@@ -1,17 +1,34 @@
 # github pages we cannot customize
 lsi: false
 safe: true
+whitelist:
+  - jekyll-coffeescript
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-mentions
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jemoji
 incremental: false
 highlighter: rouge
 gist:
   noscript: false
 # customize
+quiet: false
 kramdown:
   input: GFM
   hard_wrap: false
+  template: '' # cannot customize
+  math_engine: mathjax # cannot customize
+  syntax_highligher: rouge # cannot customize
+jailed: false
 gems:
-  - jekyll-coffeescript
+  - jekyll-gist
   - jekyll-paginate
+
 exclude: ["Gemfile", "Gemfile.lock", "CNAME", "Rakefile", "_rake", "LICENSE", "README.md", "_ember", "_thoughts", "_snippets", "_legacy", "_backup"]
 # This is the default format.
 # # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
@@ -39,7 +56,7 @@ pair_link: /pair
 pair_link_text: pair
 about_link: /about
 about_link_text: about
-posts_link: /posts
+posts_link: /
 posts_link_text: posts
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt

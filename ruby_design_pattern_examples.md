@@ -5,9 +5,6 @@ description: "Practical examples of some design patterns in Ruby"
 comments: false
 date: 2013-07-16
 ---
-{% include JB/setup %}
-
-<section class="content">
 
 ## Thoughts on Object-Orientation vs. Ease-of-use
 
@@ -81,5 +78,3 @@ References:
 ## [Notes from An Intervention for ActiveRecord](https://gist.github.com/bf4/5594532)
 
 <script src="https://gist.github.com/bf4/5594532.js"></script>
-
-</section>
