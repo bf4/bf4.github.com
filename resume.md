@@ -26,6 +26,17 @@ similar_pages:
 
 ## Professional experience:
 
+### Web Development Software Engineer -- SwipeSense, Inc. -- Chicago, IL, July 2015-Present
+
+#### Hand-hygiene sensors and analytics to help healthcare institutions eliminate acquired infections.
+
+- Ruby and Rails: Unit and browser testing
+- MySQL: Query optimization
+- Tooling
+- ECMAScript: Ember.js, React.js, Webpack, NPM
+- Deis
+- AWS: ElasticBeanstalk
+
 ### Web Development Software Engineer -- Springleaf Financial Services -- Chicago, IL, November 2014-May 2015
 
 * Created tooling for coding standards automation:
