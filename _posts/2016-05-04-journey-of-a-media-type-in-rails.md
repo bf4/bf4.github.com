@@ -182,3 +182,20 @@ ActionController::Renderers.add :jsonapi do |json, options|
   end
 end
 ```
+
+**References:**
+
+- [JSON API](http://jsonapi.org/format/)
+  - [Content Negotiation](http://jsonapi.org/format/#content-negotiation)
+  - [Query Parameters](http://jsonapi.org/format/#query-parameters)
+  - [CRUD](http://jsonapi.org/format/#crud): [creating](http://jsonapi.org/format/#crud-creating)
+  - [Errors](http://jsonapi.org/format/#errors)
+  - [Resource vs. Entity](https://github.com/json-api/json-api/issues/966)
+- HTTP
+  - [JSON API IANA Registration](https://www.iana.org/assignments/media-types/application/vnd.api+json)
+  - [Accept header](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.1)
+  - [+json suffix](https://tools.ietf.org/html/rfc6839#section-3.1)
+  - [vnd definition](https://tools.ietf.org/html/rfc4288#section-3.2)
+- More
+  - [Choosing a media type](https://github.com/json-api/json-api/issues/1020)
+  - [API Versioning via URLs](https://github.com/json-api/json-api/issues/406#issuecomment-185761293)
