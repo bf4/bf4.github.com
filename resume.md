@@ -30,7 +30,7 @@ similar_pages:
 * Ruby and Rails, Principal Developer:
   - Responsible for API design, implementation, security, testing, and documentation.
   - Improved development UX, such as by added headless Chrome testing. Prior to that, added qtchooser.
-* Databases Management (MySQL/Postgres/Redshift):
+* Databases Management (MySQL/PostgreSQL/Amazon Redshift):
   - Schema design, query optimization, and index optimization.
   - Created regular backups and easy restores that are regularly tested.
   - ETL (Extract Transform Load) management.
