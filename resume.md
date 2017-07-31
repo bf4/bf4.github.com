@@ -15,14 +15,11 @@ similar_pages:
 
 ## Summary:
 
-*   Active ([top 1% for Ruby on GitHub](http://wayback.archive.org/web/20140325133855/http://osrc.dfm.io/bf4)) open-source software maintainer and contributor.
-    - Maintains or collaborates on tens of projects, including MetricFu, Mail, SimpleCov, RMagick, ActsAsTaggableOn, CodeNotes, and CodeMetrics.
-    - Has contributed to tens of others, including Rails, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
+*   Active open-source software maintainer and contributor.
+    - Maintains or collaborates on tens of projects, including ActiveModelSerializers, SimpleCov, RubyGems guide, and RMagick.
+    - Has contributed to tens of others, including Rails, NodeJS, JSON:API, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
+*   Core maintainer of ActiveModelSerializers, one of the most popular Ruby serialization libraries.
 *   Created the [RubyGems guides security page](http://guides.rubygems.org/security/)
-*   Prototyped and built, in less than a week,
-    [a pair-programming matcher](http://www.pairprogramwith.me/match/) for
-    [Avdi Grimm's  2013 RubyNation 'Code to Joy' talk](https://vimeo.com/103704529)
-    ([ref](http://rubyrogues.com/111-rr-book-club-explore-it-with-elisabeth-hendrickson/)).
 
 ## Professional experience:
 
@@ -106,7 +103,7 @@ similar_pages:
 *   [Code Metrics](https://github.com/bf4/code_metrics)
 *   [Code Notes](https://github.com/bf4/code_notes)
 *   [Saikuro](https://github.com/metricfu/Saikuro)
-*   [Roodi (during a period it was not otherwise maintainted)](https://github.com/metricfu/roodi)
+*   [Roodi (during a period it was not otherwise maintained)](https://github.com/metricfu/roodi)
 
 ### Contributor:
 
