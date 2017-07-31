@@ -1,6 +1,8 @@
 source "https://rubygems.org"
+ruby RUBY_VERSION
 
 # http://jekyllrb.com/docs/github-pages/
+# To upgrade, run `bundle update github-pages`.
 require 'json'
 require 'open-uri'
 versions =
@@ -14,7 +16,12 @@ versions =
     end
     versions
   rescue SocketError
-    { 'github-pages' => 52 }
+    { 'github-pages' => 146 }
   end
 
-gem 'github-pages', versions['github-pages']
+group :jekyll_plugins do
+  gem 'github-pages', versions['github-pages'], group: :jekyll_plugins
+end
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

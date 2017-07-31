@@ -17,6 +17,7 @@ highlighter: rouge
 gist:
   noscript: false
 # customize
+markdown: kramdown
 quiet: false
 kramdown:
   input: GFM
@@ -38,16 +39,16 @@ permalink: /:year/:month/:day/:title/
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Benjamin Fleischer
+title: Benjamin Fleischer
 tagline: My space
-author :
-  name : Benjamin Fleischer
-  email : hello@benjaminfleischer.com
-  github : bf4
-  twitter : hazula
-  # feedburner : feedname
-  gravatar_url : https://gravatar.com/userimage/455248/07b6758e7d309cff827fd0b287281639.png
-  linkedin : http://www.linkedin.com/in/benjaminfleischer
+author:
+  name: Benjamin Fleischer
+  email: hello@benjaminfleischer.com
+  github: bf4
+  twitter: hazula
+  # feedburner: feedname
+  gravatar_url: https://gravatar.com/userimage/455248/07b6758e7d309cff827fd0b287281639.png
+  linkedin: http://www.linkedin.com/in/benjaminfleischer
 
 resume_link: /resume
 resume_pdf_link: /resume.pdf

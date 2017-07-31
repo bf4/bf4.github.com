@@ -200,6 +200,10 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 146)
   json
+  tzinfo-data
+
+RUBY VERSION
+   ruby 2.2.3p173
 
 BUNDLED WITH
    1.14.6
