@@ -23,7 +23,7 @@ similar_pages:
 
 ## Professional experience:
 
-### Web Development Software Engineer -- SwipeSense, Inc. -- Chicago, IL, July 2015-Present
+### Web Development Software Engineer -- SwipeSense, Inc. -- Chicago, IL, July 2015-July 2017
 
 #### Hand-hygiene sensors and analytics to help healthcare institutions eliminate acquired infections.
 
