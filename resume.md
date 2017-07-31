@@ -17,7 +17,7 @@ similar_pages:
 
 *   Active open-source software maintainer and contributor.
     - Maintains or collaborates on tens of projects, including ActiveModelSerializers, SimpleCov, RubyGems guide, and RMagick.
-    - Has contributed to tens of others, including Rails, NodeJS, JSON:API, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
+    - Has contributed to tens of others, including Rails, Node.js, JSON:API, Kaminari, Homebrew, bcrypt-ruby, and Passenger.
 *   Core maintainer of ActiveModelSerializers, one of the most popular Ruby serialization libraries.
 *   Created the [RubyGems guides security page](http://guides.rubygems.org/security/)
 
