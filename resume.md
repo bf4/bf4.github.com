@@ -27,12 +27,19 @@ similar_pages:
 
 #### Hand-hygiene sensors and analytics to help healthcare institutions eliminate acquired infections.
 
-- Ruby and Rails: Unit and browser testing
-- MySQL: Query optimization
-- Tooling
-- ECMAScript: Ember.js, React.js, Webpack, NPM
-- Deis
-- AWS: ElasticBeanstalk
+* Ruby and Rails, Principal Developer:
+  - Responsible for API design, implementation, security, testing, and documentation.
+  - Improved development UX, such as by added headless Chrome testing. Prior to that, added qtchooser.
+* Databases Management (MySQL/Postgres/Redshift):
+  - Schema design, query optimization, and index optimization.
+  - Created regular backups and easy restores that are regularly tested.
+  - ETL (Extract Transform Load) management.
+* Created tooling for coding standards automation:
+  - Automated style enforcement, security scan, vulnerability scan, and library upgrades.
+  - Add Docker-backed database images on for continuous testing.
+  - Add datamart/analytics data to test and development environment.
+* ECMAScript: Ember.js, React.js, Webpack.
+* Amazon Web Services (AWS): CLI scripting for ENV versioning, creating resources, deploying resources, and starting/stopping servers by name
 
 ### Web Development Software Engineer -- Springleaf Financial Services -- Chicago, IL, November 2014-May 2015
 
