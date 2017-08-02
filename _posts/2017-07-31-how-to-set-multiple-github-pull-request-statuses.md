@@ -186,7 +186,7 @@ test:
 
 dependencies:
   post:
-  - wget https://github.com/bf4/script_testing/raw/414fca9e31480df9a354fc4f41f45f375c6f39c5/libexec/github_status && chmod +x github_status
+  - wget https://github.com/bf4/script_testing/raw/master/libexec/github_status && chmod +x github_status
 
 machine:
   environment:
