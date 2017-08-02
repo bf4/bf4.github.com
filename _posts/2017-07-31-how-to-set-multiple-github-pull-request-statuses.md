@@ -161,25 +161,15 @@ If you wanted to use it directly, you could:
 test:
   override:
     - |
-      if bin/test; then
-        state="success"
-        desc="Tests passed"
-      else
-        state="failure"
-        desc="Test failures"
-      fi
+      if bin/test; then state="success"; desc="Tests passed"
+      else              state="failure"; desc="Test failures"; fi
       context="tests"
       ./github_status create "$GITHUB_STATUS_PR_NUMBER" -url "$GITHUB_STATUS_TARGET_URL" -context "${context}" -state "${state}" -desc "${desc}"
       if [ "$state" = "failure" ]; then false; else true; fi # 'false' fails the build
   post:
     - |
-      if bin/lint-style; then
-        state="success"
-        description="Such style"
-      else
-        state="failure"
-        description="Style errors"
-      fi
+      if bin/lint-style; then state="success"; description="Such style"
+      else                    state="failure"; description="Style errors"; fi
       context="lint_style"
       ./github_status create "$GITHUB_STATUS_PR_NUMBER" -url "$GITHUB_STATUS_TARGET_URL" -context "${context}" -state "${state}" -desc "${desc}"
       if [ "$state" = "failure" ]; then false; else true; fi # 'false' fails the build
