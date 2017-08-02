@@ -54,7 +54,7 @@ So, I took a look at it, and found profit.
 ### [Prerequisites](#prerequisites)
 
 - Access Token
-  - Go to https://github.com/settings/tokens/new and create a personal access token
+  - Go to [https://github.com/settings/tokens/new](https://github.com/settings/tokens/new) and create a personal access token
   with either 'repo' or 'repo:status' OAuth scope. (You may want to use a 'machine user' for your organization
   so you can have your org-specific gravatar show up in the statuses.)
   - Add the access token to the CI environment as `GITHUB_STATUS_ACCESS_TOKEN`
@@ -63,7 +63,7 @@ So, I took a look at it, and found profit.
 
 For each build step:
 
-1. On success|failure, set state=succes|failure and a status description.
+1. On success/failure, set `state` as success/failure and a status `description` (and `context`).
 1. Post to the Github Status API
 1. Fail the build step when state=failure
 
