@@ -49,7 +49,7 @@ which only allows one status in the payload. For example:
 
 The underlying GitHub API that sets the build status is the [Status API](https://developer.github.com/v3/repos/statuses/).
 
-So, I took a look at, and found success.
+So, I took a look at it, and found profit.
 
 ### [Prerequisites](#prerequisites)
 
