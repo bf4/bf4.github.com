@@ -15,7 +15,7 @@ published: true
 - success: <img src="/images/github-status.png" alt="multiple GitHub statuses" title="multiple GitHub statuses">
 - failure: <img src="/images/github-status-failure.png" alt="multiple GitHub statuses" title="multiple GitHub statuses">
 
-## [I want multiple Github PR Statuses](#i-want-multiple-statuses)
+## [I want multiple Github PR Statuses](#i-want-multiple-github-pr-statuses)
 
 Like many people, my GitHub pull requests (PRs) trigger a continuous integration (CI) server
 to test my build.  When the CI server finishes running, it notifies Github whether the
@@ -59,7 +59,7 @@ So, I took a look at it, and found profit.
   so you can have your org-specific gravatar show up in the statuses.)
   - Add the access token to the CI environment as `GITHUB_STATUS_ACCESS_TOKEN`
 
-### [Steps to set multiple GitHub PR Statuses](#setup-steps)
+### [Steps to set multiple GitHub PR Statuses](#steps-to-set-multiple-github-pr-statuses)
 
 For each build step:
 
@@ -67,7 +67,7 @@ For each build step:
 1. Post to the Github Status API
 1. Fail the build step when state=failure
 
-### [Minimal recipe to set multiple GitHub PR Statuses](#recipe)
+### [Minimal recipe to set multiple GitHub PR Statuses](#minimal-recipe-to-set-multiple-github-pr-statuses)
 
 Assuming you're using CircleCI and your circle.yml is
 
@@ -147,7 +147,7 @@ test:
       "https://api.github.com/repos/${owner}/${repo}/statuses/${sha}"
 ```
 
-### [Status Script](#script)
+### [Status Script](#status-script)
 
 Obviously, there is room to turn this into a script. It turns out, I wrote one!
 
