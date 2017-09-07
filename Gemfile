@@ -16,7 +16,7 @@ versions =
     end
     versions
   rescue SocketError
-    { 'github-pages' => 146 }
+    { 'github-pages' => 158 }
   end
 
 group :jekyll_plugins do
