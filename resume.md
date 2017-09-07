@@ -29,17 +29,18 @@ similar_pages:
 
 * Ruby and Rails, Principal Developer:
   - Responsible for API design, implementation, security, testing, and documentation.
-  - Improved development UX, such as by added headless Chrome testing. Prior to that, added qtchooser.
+  - Improved development UX, such as by adding headless Chrome testing. Prior to that, added qtchooser.
 * Databases Management (MySQL/PostgreSQL/Amazon Redshift):
   - Schema design, query optimization, and index optimization.
   - Created regular backups and easy restores that are regularly tested.
   - ETL (Extract Transform Load) management.
 * Created tooling for coding standards automation:
   - Automated style enforcement, security scan, vulnerability scan, and library upgrades.
-  - Add Docker-backed database images on for continuous testing.
+  - Add Docker-backed database images on CI for continuous testing.
   - Add datamart/analytics data to test and development environment.
-* ECMAScript: Ember.js, React.js, Webpack.
-* Amazon Web Services (AWS): CLI scripting for ENV versioning, creating resources, deploying resources, and starting/stopping servers by name
+* Amazon Web Services (AWS):
+   - Wrote scripts to version changes to OpsWorks ENV variables, create resources,
+     deploy resources, and start/stop servers by name.
 
 ### Web Development Software Engineer -- Springleaf Financial Services -- Chicago, IL, November 2014-May 2015
 
