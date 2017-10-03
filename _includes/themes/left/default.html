@@ -22,33 +22,33 @@
 Set page.javascripts to customize js on a page
 e.g.
 javascripts:
-- "/js/jquery.min.js"
-- "/js/ember.prod.js"
-- "/js/ember-template-compiler.js"
+- "/assets/js/jquery.min.js"
+- "/assets/js/ember.prod.js"
+- "/assets/js/ember-template-compiler.js"
 -->{% endcomment %}
     {% if page.javascripts %}
       {% for javascript in page.javascripts %}
         <script src="{{ javascript }}"></script>
       {% endfor %}
     {% else %}
-      <script type="text/javascript" src="/js/loader.js"></script>
+      <script type="text/javascript" src="{{ BASE_PATH }}/assets/js/loader.js"></script>
     {% endif %}
 
     <!-- Le styles -->
-    <link href="/assets/themes/left/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="/assets/themes/left/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
-    <link media="only print" href="/css/print.css" type="text/css" rel="stylesheet" />
-    <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
-    <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
+    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/base.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygments.css" type="text/css" />
+    <link media="only print" href="{{ ASSET_PATH }}/css/print.css" type="text/css" rel="stylesheet" />
+    <link media="only screen and (max-device-width: 480px)" href="{{ ASSET_PATH }}/css/iphone.css" type="text/css" rel="stylesheet" />
+    <link media="only screen and (device-width: 768px)" href="{{ ASSET_PATH }}/css/iphone.css" type="text/css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
 
     <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="{{ BASE_PATH }}/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ BASE_PATH }}/assets/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ BASE_PATH }}/assets/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ BASE_PATH }}/assets/apple-touch-icon-114x114.png">
 
     <!-- atom & rss feed -->
     <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
@@ -83,9 +83,9 @@ javascripts:
       </section>
 
       <section class="meta">
-        <a href="https://github.com/{{ site.author.github }}" target="_blank"><img src="/images/github.png" /></a>
-        <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><img src="/images/twitter.png"></a>
-        <a href="/atom.xml"><img src="/images/rss.png" /></a>
+        <a href="https://github.com/{{ site.author.github }}" target="_blank"><img src="{{ ASSET_PATH }}/images/github.png" /></a>
+        <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank"><img src="{{ ASSET_PATH }}/images/twitter.png"></a>
+        <a href="/atom.xml"><img src="{{ ASSET_PATH }}/images/rss.png" /></a>
       </section>
 
       <section class="sections">

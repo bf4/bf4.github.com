@@ -12,8 +12,8 @@ published: true
 
 ## How multiple statuses look
 
-- success: <img src="/images/github-status.png" alt="multiple GitHub statuses" title="multiple GitHub statuses">
-- failure: <img src="/images/github-status-failure.png" alt="multiple GitHub statuses" title="multiple GitHub statuses">
+- success: <img src="/assets/images/github-status.png" alt="multiple GitHub statuses" title="multiple GitHub statuses">
+- failure: <img src="/assets/images/github-status-failure.png" alt="multiple GitHub statuses" title="multiple GitHub statuses">
 
 ## [I want multiple Github PR Statuses](#i-want-multiple-github-pr-statuses)
 
