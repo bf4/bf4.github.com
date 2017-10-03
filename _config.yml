@@ -26,7 +26,7 @@ kramdown:
   math_engine: mathjax # cannot customize
   syntax_highligher: rouge # cannot customize
 jailed: false
-gems:
+plugins:
   - jekyll-gist
   - jekyll-paginate
 
