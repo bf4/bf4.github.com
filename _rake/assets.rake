@@ -11,7 +11,7 @@ namespace :assets do
     pair_data_url = "http://spreadsheets.google.com/feeds/list/#{spreadsheet_key}/public/values?alt=json"
     download(pair_data_url, root.join("assets/pair.json"))
 
-    jquery_destination = root.join("js/jquery.min.js")
+    jquery_destination = root.join("assets/js/jquery.min.js")
     if ember_jquery.readable?
       cp ember_jquery.to_s, jquery_destination
     else

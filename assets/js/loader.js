@@ -16,7 +16,7 @@ _jsLoader.timeout = 100;
 // <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 _jsLoader.initJQuery = (function(callback) {
     if (typeof(jQuery) === "undefined") {
-          _jsLoader.getScript('/js/jquery.min.js', function() {
+          _jsLoader.getScript('/assets/js/jquery.min.js', function() {
             if (typeof(callback) === "function") {
                 setTimeout(callback, _jsLoader.timeout);
             }
@@ -28,5 +28,5 @@ _jsLoader.initJQuery = (function(callback) {
 });
 
 _jsLoader.initJQuery(function() {
-  _jsLoader.getScript('/js/application.js');
+  _jsLoader.getScript('/assets/js/application.js');
 });
