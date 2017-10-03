@@ -1,6 +1,6 @@
-{% if site.JB.comments.provider and page.comments != false %}
+{% if site.data.JB.comments.provider and page.comments != false %}
 
-{% case site.JB.comments.provider %}
+{% case site.data.JB.comments.provider %}
 {% when "disqus" %}
   {% include JB/comments-providers/disqus %}
 {% when "livefyre" %}
