@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Git tips"
-group: listed_pages
 ---
 
 # Git
