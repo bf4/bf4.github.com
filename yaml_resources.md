@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "YAML Resources"
+group: listed_pages
 ---
 
 ## YAML, what is it good for?

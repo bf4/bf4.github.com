@@ -5,6 +5,7 @@ date: 2007-10-14 17:20:04
 slug: about
 title: About
 wordpress_id: 5
+group: listed_pages
 ---
 
 # {{ site.author.name }}

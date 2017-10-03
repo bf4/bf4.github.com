@@ -4,6 +4,7 @@ comments: false
 date: 2013-06-19 01:07:00
 slug: pair
 title: Pair
+group: listed_pages
 javascripts:
 - "/assets/vendor.js"
 - "/assets/viewtastic.js"

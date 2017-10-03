@@ -1,6 +1,7 @@
 ---
 layout: mark-reid.page
 top: Benjamin Fleischer's Resume
+group: listed_pages
 title:
 similar_pages:
   - http://careers.stackoverflow.com/benjaminfleischer
