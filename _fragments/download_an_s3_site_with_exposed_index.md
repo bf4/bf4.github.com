@@ -18,7 +18,7 @@ bucket named `flaws.cloud`, then you can visit the S3 bucket at
 
 ```bash
 cat << 'EOF' > run.sh
-#!/usr/bin/env bash
+#!/bin/sh
 
 BUCKET_NAME="flaws.cloud" exec ./download-s3-site.sh
 EOF
@@ -38,7 +38,7 @@ easily reusable for me.
 
 ```bash
 cat << 'EOF' > download-s3-site.sh
-#!/usr/bin/env bash
+#!/bin/bash
 
 set -eou pipefail
 
