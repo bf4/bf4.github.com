@@ -78,8 +78,7 @@ download_index() {
 }
 
 download_files() {
-  ruby -rrexml/document -e 'REXML::Document.new(STDIN.read).root.each_element("//Key") {|elem| puts elem.text }' \
-    < index.xml \
+  ruby -rrexml/document -e 'REXML::Document.new(STDIN.read).root.each_element("//Key") {|elem| puts elem.text }' < index.xml \
     | while read -r remote_filename; do
         download_file "$remote_filename"
       done
