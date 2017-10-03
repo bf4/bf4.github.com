@@ -9,7 +9,7 @@ published: true
 ---
 {% include JB/setup %}
 
-I have a page on this site <a href="{{ site.pair_link }}">where I show who I've pair-programmed
+I have a page on this site <a href="{{ site.data.links.pair_link }}">where I show who I've pair-programmed
 with by pulling down data from a Google spreadsheet</a>.  I've used this page as a place to practice
 my JavaScript and wanted to convert it from custom JavaScript and Mustache to use Ember Components.
 

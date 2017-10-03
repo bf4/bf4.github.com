@@ -17,4 +17,4 @@ He is a software developer website engineer... basically a Ruby writer, though t
 
 Benjamin is married to Erica Fleischer. They live with their offspring in the Lakeview neighborhood of Chicago.
 
-Here's his  <a href="{{ site.resume_link }}" target="_blank">{{ site.resume_link_text }}</a>
+Here's his  <a href="{{ site.data.links.resume_link }}" target="_blank">{{ site.data.links.resume_link_text }}</a>
