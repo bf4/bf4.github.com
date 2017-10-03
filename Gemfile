@@ -5,19 +5,21 @@ ruby RUBY_VERSION
 # To upgrade, run `bundle update github-pages`.
 require 'json'
 require 'open-uri'
-versions =
+
+versions = { 'github-pages' => 161 }
+unless ENV['BUNDLE_DEFAULT'] == 'true'
   begin
     versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+  rescue SocketError
+  else
     unless $skip_print_versions == true
       require 'pp'
       STDERR.puts 'Gem versions are:'
       pp versions
       $skip_print_versions = true
     end
-    versions
-  rescue SocketError
-    { 'github-pages' => 161 }
   end
+end
 
 group :jekyll_plugins do
   gem 'github-pages', versions['github-pages'], group: :jekyll_plugins
