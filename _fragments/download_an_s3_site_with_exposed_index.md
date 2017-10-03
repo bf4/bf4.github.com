@@ -43,7 +43,7 @@ cat << 'EOF' > download-s3-site.sh
 set -eou pipefail
 
 if [ -z "${BUCKET_NAME:-}" ]; then echo "[FATAL] BUCKET_NAME not set" >&2 ; exit 1; fi
-OVERWRITE="false"
+OVERWRITE="${OVERWRITE:-false}"
 DEBUG="${DEBUG:-false}"
 
 info()    { echo "[INFO] $*" >&2 ; }
