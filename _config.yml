@@ -35,9 +35,14 @@ plugins:
 # permalink: /:categories/:year/:month/:day/:title
 permalink: /:year/:month/:day/:title/
 
-# Themes are encouraged to use these universal variables
-# so be sure to set them if your theme uses them.
-#
+# https://jekyllrb.com/docs/collections/
+# Not everything is a post or a page.
+# Collections allow you to define a new type of document that behave like Pages or Posts do normally,
+# but also have their own unique properties and namespace.
+collections:
+  fragments:
+    output: true
+
 title: Benjamin Fleischer
 tagline: My space
 author:
