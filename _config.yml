@@ -30,7 +30,6 @@ gems:
   - jekyll-gist
   - jekyll-paginate
 
-exclude: ["Gemfile", "Gemfile.lock", "CNAME", "Rakefile", "_rake", "LICENSE", "README.md", "_ember", "_thoughts", "_snippets", "_legacy", "_backup"]
 # This is the default format.
 # # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 # permalink: /:categories/:year/:month/:day/:title
@@ -50,15 +49,8 @@ author:
   gravatar_url: https://gravatar.com/userimage/455248/07b6758e7d309cff827fd0b287281639.png
   linkedin: http://www.linkedin.com/in/benjaminfleischer
 
-resume_link: /resume
-resume_pdf_link: /resume.pdf
-resume_link_text: resume
-pair_link: /pair
-pair_link_text: pair
-about_link: /about
-about_link_text: about
-posts_link: /
-posts_link_text: posts
+# Additional configuration is in the _data folder
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
 # Most places will/should use BASE_PATH to make the urls
@@ -166,3 +158,17 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
+
+exclude:
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "LICENSE"
+  - "README.md"
+  - "Rakefile"
+  - "_backup"
+  - "_ember"
+  - "_legacy"
+  - "_rake"
+  - "_snippets"
+  - "_thoughts"
