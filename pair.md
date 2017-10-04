@@ -5,9 +5,7 @@ date: 2013-06-19 01:07:00
 slug: pair
 title: Pair
 group: listed_pages
-javascripts:
-- "/assets/vendor.js"
-- "/assets/viewtastic.js"
+javascripts: []
 ---
 
 ## [![Pair Prograrm With Me](http://www.pairprogramwith.me/badge.png 'Pair Program With Me')](http://www.pairprogramwith.me/)
@@ -20,3 +18,5 @@ I've found good luck pairing with [this script](https://gist.github.com/bf4/8324
 ## Pair and tell
 
 <div data-component='print-pair-data' data-attrs='{"config": { "key": "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6", "fields": ["appointments","link","pair","description"] } }'></div>
+<script type="text/javascript" src="{{ BASE_PATH }}/assets/vendor.js"></script>
+<script async type="text/javascript" src="{{ BASE_PATH }}/assets/viewtastic.js"></script>
