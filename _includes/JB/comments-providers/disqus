@@ -1,6 +1,6 @@
 {% assign disqus_short_name = site.data.JB.comments.disqus.short_name %}
 {% if comments_document_location == 'head' %}
-  <link rel="dns-prefetch" href="https://{{ disqus_short_name }}.disqus.com/">
+  <link rel="dns-prefetch" href="http://{{ disqus_short_name }}.disqus.com/">
 {% else %}
 <div itemprop="comment" id="disqus_thread"></div>
 
