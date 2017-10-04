@@ -10,6 +10,9 @@
     {% comment %} Responsive viewport {% endcomment %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    {% assign analytics_css_position = 'before' %}
+    {% include JB/analytics %}
+
     <!-- Le styles -->
     <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css?body=1" type="text/css" media="all">
@@ -35,6 +38,8 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+    {% assign analytics_css_position = 'after' %}
+    {% include JB/analytics %}
 {% comment %}<!--
 Set page.javascripts to customize js on a page
 e.g.
@@ -103,8 +108,5 @@ javascripts:
       <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
       </p>
     </footer>
-
-
-    {% include JB/analytics %}
   </body>
 </html>
