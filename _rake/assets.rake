@@ -4,18 +4,26 @@ namespace :assets do
   desc "Vendor app assets"
   task :vendor do
     root = Pathname File.expand_path("../..", __FILE__)
-    jquery_version = "1.11.3"
-    ember_jquery = root.join("_ember/bower_components/jquery/dist/jquery.min.js")
-    spreadsheet_key = "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6"
 
+    spreadsheet_key = "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6"
     pair_data_url = "http://spreadsheets.google.com/feeds/list/#{spreadsheet_key}/public/values?alt=json"
     download(pair_data_url, root.join("assets/pair.json"))
 
+    jquery_version = "1.11.3"
     jquery_destination = root.join("assets/js/jquery.min.js")
+    ember_jquery = root.join("_ember/bower_components/jquery/dist/jquery.min.js")
     if ember_jquery.readable?
       cp ember_jquery.to_s, jquery_destination
     else
       jquery_url = "http://ajax.googleapis.com/ajax/libs/jquery/#{jquery_version}/jquery.min.js"
+      download(jquery_url, jquery_destination)
+    end
+    jquery_destination = root.join("assets/js/jquery.min.map")
+    ember_jquery = root.join("_ember/bower_components/jquery/dist/jquery.min.map")
+    if ember_jquery.readable?
+      cp ember_jquery.to_s, jquery_destination
+    else
+      jquery_url = "http://ajax.googleapis.com/ajax/libs/jquery/#{jquery_version}/jquery.min.map"
       download(jquery_url, jquery_destination)
     end
   end
