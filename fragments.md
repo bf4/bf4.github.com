@@ -5,9 +5,14 @@ group: navigation
 ---
 {% include JB/setup %}
 
-<h2>All Fragments</h2>
-
-<ul>
-{% assign pages_list = site.fragments %}
-{% include JB/pages_list %}
-</ul>
+<section class="content">
+  <ul class="listing">
+    {% for item in site.fragments %}
+      {% if item.title != null %}
+        <li>
+          <a href="{{ BASE_PATH }}{{ item.url }}">{{ item.title }}</a>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</section>
