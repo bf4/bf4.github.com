@@ -3,21 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>
-      {% if page.title %}
-        {{ page.title }} &ndash;
-      {% endif %}
-      {{ site.title }}
+      {% if page.title %} {{ page.title }} &ndash; {% endif %} {{ site.title }}
     </title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
-
-    <!-- Enable responsive viewport -->
+    {% comment %} Responsive viewport {% endcomment %}
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/style.css?body=1" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/base.css" type="text/css" media="screen, projection" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/print.css" type="text/css" media="only print" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/iphone.css" type="text/css" media="only screen and (max-device-width: 480px)" />
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/iphone.css" type="text/css" media="only screen and (device-width: 768px)" />
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&text==NATE%20MAKES%20APPS%20FAST" type="text/css">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="{{ BASE_PATH }}/assets/favicon.ico">
+    <link rel="apple-touch-icon" href="{{ BASE_PATH }}/assets/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ BASE_PATH }}/assets/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ BASE_PATH }}/assets/apple-touch-icon-114x114.png">
+
+    <!-- atom & rss feed -->
+    <link rel="alternate" href="{{ BASE_PATH }}{{ site.data.JB.atom_path }}" type="application/atom+xml" title="Sitewide ATOM Feed">
+    <link rel="alternate" href="{{ BASE_PATH }}{{ site.data.JB.rss_path }}" type="application/rss+xml" title="Sitewide RSS Feed">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+
 {% comment %}<!--
 Set page.javascripts to customize js on a page
 e.g.
@@ -33,26 +50,6 @@ javascripts:
     {% else %}
       <script type="text/javascript" src="{{ BASE_PATH }}/assets/js/loader.js"></script>
     {% endif %}
-
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/base.css" type="text/css" media="screen, projection" />
-    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygments.css" type="text/css" />
-    <link media="only print" href="{{ ASSET_PATH }}/css/print.css" type="text/css" rel="stylesheet" />
-    <link media="only screen and (max-device-width: 480px)" href="{{ ASSET_PATH }}/css/iphone.css" type="text/css" rel="stylesheet" />
-    <link media="only screen and (device-width: 768px)" href="{{ ASSET_PATH }}/css/iphone.css" type="text/css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&text==NATE%20MAKES%20APPS%20FAST' rel='stylesheet' type='text/css'>
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="{{ BASE_PATH }}/assets/favicon.ico">
-    <link rel="apple-touch-icon" href="{{ BASE_PATH }}/assets/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ BASE_PATH }}/assets/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ BASE_PATH }}/assets/apple-touch-icon-114x114.png">
-
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.data.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.data.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
 
   </head>
 
