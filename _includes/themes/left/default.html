@@ -12,6 +12,8 @@
 
     {% assign analytics_css_position = 'before' %}
     {% include JB/analytics %}
+    {% assign comments_document_location = 'head' %}
+    {% include JB/comments %}
 
     <!-- Le styles -->
     <link rel="stylesheet" href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.2.2.2.min.css">
