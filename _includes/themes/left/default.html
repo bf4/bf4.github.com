@@ -45,10 +45,10 @@ javascripts:
 -->{% endcomment %}
     {% if page.javascripts %}
       {% for javascript in page.javascripts %}
-        <script src="{{ javascript }}"></script>
+        <script async src="{{ javascript }}"></script>
       {% endfor %}
     {% else %}
-      <script type="text/javascript" src="{{ BASE_PATH }}/assets/js/loader.js"></script>
+      <script async type="text/javascript" src="{{ BASE_PATH }}/assets/js/loader.js"></script>
     {% endif %}
 
   </head>
