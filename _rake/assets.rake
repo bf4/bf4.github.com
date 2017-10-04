@@ -4,7 +4,7 @@ namespace :assets do
   desc "Vendor app assets"
   task :vendor do
     root = Pathname File.expand_path("../..", __FILE__)
-    jquery_version = "1.11.1"
+    jquery_version = "1.11.3"
     ember_jquery = root.join("_ember/bower_components/jquery/dist/jquery.min.js")
     spreadsheet_key = "0AqHUOZcVEj_XdE5SMzBKSWhINjVtTlh2b0JjUFp4OEE/od6"
 
