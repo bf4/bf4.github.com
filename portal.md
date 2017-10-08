@@ -6,6 +6,10 @@ title: Portal
 group: none
 ---
 
+## Learnings
+
+* https://www.rubytapas.com/download-list/
+
 ## GitHub Stuff
 
 * [All Open issues/PRs](https://github.com/search?o=desc&q=involves%3Abf4++state%3Aopen+NOT+%22License+missing+from+gemspec%22+in%3Atitle&ref=searchresults&s=updated&type=Issues)
