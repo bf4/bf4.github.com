@@ -83,10 +83,6 @@ similar_pages:
 *   Wrote a Net::HTTP wrapper for our deals importer to increase timeouts and provide better error-handling.
 *   Often used math to solve complex problems.  A former developer once said "wow, we'd been wanting to do fuzzy matching for a while."
 
-### Ruby on Rails Contractor -- Zavteq -- Chicago, IL, 2011
-
-*   Built jQuery Mobile Ruby on Rails 3 site with RSpec and custom Devise authentication adapter.
-
 ### Volunteer Web Developer -- Chicago Festival of Israeli Cinema, March 2010-2012
 
 *   Updated and overhauled website from static, inconsistent HTML pages to a dynamic CMS (WordPress) featuring online ticket sales, membership purchases, analytics, and social media integration.
