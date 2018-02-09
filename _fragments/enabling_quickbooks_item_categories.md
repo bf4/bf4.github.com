@@ -5,12 +5,13 @@ published: true
 ---
 {% include JB/setup %}
 
-Sharing here since I'm not sure how to post an answer to an unasked question on the Intuit site
+Sharing here since I'm not sure how to post an answer to an unasked question on the Intuit site.
 
 ## tl;dr
 
 To enable item categories in dev, when logged in to a sandbox company,
-go to https://sandbox.qbo.intuit.com/app/categorymigration and click 'Switch to Categories'
+go to [https://sandbox.qbo.intuit.com/app/categorymigration](https://sandbox.qbo.intuit.com/app/categorymigration),
+and click 'Switch to Categories'.
 
 ## Details
 
@@ -24,7 +25,9 @@ and it redirected to `https://sandbox.qbo.intuit.com/app/categorymigration`
 I saw and clicked the link to 'Switch to Categories'.
 I was then able to go to `/app/categories` in the web UI to create categories, as well as create them via the API.
 
-FWIW, It appears the migration posted a CORS request to `https://sandbox.qbo.intuit.com/qbo50/neo/v1/company/193514655268479/companysetup/enableCategories`
+FWIW, It appears the migration posted a CORS request to `https://sandbox.qbo.intuit.com/qbo50/neo/v1/company/12345/companysetup/enableCategories`.
+This is probably using the new, unreleased, API.
+
 e.g.
 
 ```ruby
