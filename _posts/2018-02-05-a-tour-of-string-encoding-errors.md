@@ -39,9 +39,9 @@ pick_encoding(str1, str2) #=> Encoding::UTF_8
 ## Raised by Encoding and String methods
 
 In MRI 2.1 `'invalid: :replace'` changed to also replace an invalid byte sequence
-see https://github.com/ruby/ruby/blob/v2_1_0/NEWS#L176
-https://www.ruby-forum.com/topic/6861247
-https://twitter.com/nalsh/status/553413844685438976
+see [https://github.com/ruby/ruby/blob/v2_1_0/NEWS#L176](https://github.com/ruby/ruby/blob/v2_1_0/NEWS#L176),
+[https://www.ruby-forum.com/topic/6861247](https://www.ruby-forum.com/topic/6861247),
+[https://twitter.com/nalsh/status/553413844685438976](https://twitter.com/nalsh/status/553413844685438976)
 
 For example, given:
 
@@ -359,7 +359,7 @@ colorized_diff = diff_output.lines.map do |line|
     red = 31
     "\e[#{red}m#{line}\e[0m"
   when "@"
-    if line[1].chr == "@" 
+    if line[1].chr == "@"
       blue = 34
       "\e[#{blue}m#{line}\e[0m"
     else
