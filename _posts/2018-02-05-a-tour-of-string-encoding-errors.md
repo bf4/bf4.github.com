@@ -49,10 +49,10 @@ For example, given:
   "\x80".force_encoding("Emacs-Mule").encode(:invalid => :replace).bytes.to_a
 ```
 
-<code>
+```
 On MRI 2.1 or above: 63  `'?'`
 else               : 128 `"\x80"`
-</code>
+```
 
 ```
 Ruby's default replacement string is:
@@ -75,13 +75,13 @@ ENCODE_NO_CONVERTER = {
 
 ### Encoding::UndefinedConversionError
 
-<code>
+```
     when a transcoding operation fails
     if the String contains characters invalid for the target encoding
     e.g. "\x80".encode('UTF-8','ASCII-8BIT')
     vs "\x80".encode('UTF-8','ASCII-8BIT', undef: :replace, replace: '<undef>')
     # => '<undef>'
-</code>
+```
 
 
 ```ruby
@@ -107,11 +107,11 @@ wrapped_string.encode(utf8_encoding)
 
 ### Encoding::CompatibilityError
 
-<code>
+```
     when Encoding.compatibile?(str1, str2) is nil
     e.g. utf_16le_emoji_string.split("\n")
     e.g. valid_unicode_string.encode(utf8_encoding) << ascii_string
-</code>
+```
 
 ```ruby
 ascii_arrow_symbol = "\xAE"
@@ -136,13 +136,13 @@ non_ascii_compatible_string.split("\n")
 
 ### Encoding::InvalidByteSequenceError
 
-<code>
+```
     when the string being transcoded contains a byte invalid for
     either the source or target encoding
     e.g. "\x80".encode('UTF-8','US-ASCII')
     vs "\x80".encode('UTF-8','US-ASCII', invalid: :replace, replace: '<byte>')
     # => '<byte>'
-</code>
+```
 
 
 ```ruby
@@ -162,10 +162,10 @@ string.encode(target_encoding)
 
 ### ArgumentError
 
-<code>
+```
     when operating on a string with invalid bytes
     e.g."\x80".split("\n")
-</code>
+```
 
 
 ```ruby
@@ -177,12 +177,12 @@ message_with_invalid_byte_sequence.split("\n")
 
 ### TypeError
 
-<code>
+```
     when a symbol is passed as an encoding
     Encoding.find(:"UTF-8")
     when calling force_encoding on an object
     that doesn't respond to #to_str
-</code>
+```
 
 
 ```ruby
@@ -193,12 +193,12 @@ Encoding.find(:"UTF-8")
 
 ###  Encoding::ConverterNotFoundError
 
-<code>
+```
     when a named encoding does not correspond with a known converter
     e.g. 'abc'.force_encoding('UTF-8').encode('foo')
     or a converter path cannot be found
     e.g. "\x80".force_encoding('ASCII-8BIT').encode('Emacs-Mule')
-</code>
+```
 
 
 ```ruby
@@ -220,9 +220,9 @@ string.encode(no_converter_encoding)
 
 ###  RangeError: out of char range
 
-<code>
+```
     e.g. the UTF-16LE emoji: 128169.chr
-</code>
+```
 
 
 ```ruby
