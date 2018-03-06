@@ -25,8 +25,12 @@ group: none
 
 *   [ActiveModelSerializers](https://github.com/rails-api/active_model_serializers/commits?author=bf4)
 *   [Metric-Fu](https://github.com/metricfu/metric_fu/commits?author=bf4)
+*   [Api Doc Server](https://github.com/bf4/api_doc_server)
+*   [Safety Dance](https://github.com/bf4/safety_dance)
+*   [Fast Multi JSON](https://github.com/bf4/fast_multi_json)
+*   [Heroku Buildpack FreeTDS](github.com/rails-sqlserver/heroku-buildpack-freetds)
 *   [SimpleCov](https://github.com/colszowka/simplecov/commits?author=bf4)
-*   [RMagick](https://github.com/gemhome/rmagick/commits?author=bf4)
+*   [RMagick](https://github.com/rmagick/rmagick/commits?author=bf4)
 *   [Ruby Friends](https://github.com/rubyrogues/rubyfriends/commits?author=bf4)
 *   [Pair Program With Me](https://github.com/avdi/ppwm), [Ppwm-Matcher](https://github.com/rubyrogues/ppwm-matcher/)
 *   [Code Metrics](https://github.com/bf4/code_metrics)
