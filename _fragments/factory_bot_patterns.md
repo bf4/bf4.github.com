@@ -7,6 +7,24 @@ published: true
 
 I keep looking these up:
 
+## Association references trait
+
+```
+FactoryBot.define do
+  factory :blog do
+
+    association :user, :admin
+  end
+
+  factory :user do
+
+    trait :admin do
+      admin true
+    end
+  end
+end
+```
+
 ## Transient Property
 
 ```ruby
