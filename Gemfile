@@ -6,7 +6,7 @@ ruby RUBY_VERSION
 require 'json'
 require 'open-uri'
 
-versions = { 'github-pages' => 161 }
+versions = { 'github-pages' => 197 }
 unless ENV['BUNDLE_DEFAULT'] == 'true'
   begin
     versions = JSON.parse(open('https://pages.github.com/versions.json').read)
