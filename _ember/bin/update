@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+
+set -e
+
+export EMBER_VERSION="${EMBER_VERSION:-1.13.8}"
+
+# https://github.com/ember-cli/ember-cli/releases
+# http://www.jordanhawker.com/posts/128580938346
+
+# Update ember-cli
+update_cli() {
+  npm uninstall -g ember-cli                  # Remove old global ember-cli
+  npm cache clean                             # Clear NPM cache
+  bower cache clean                           # Clear Bower cache
+  npm install -g "ember-cli@${EMBER_VERSION}" # Install new global ember-cli
+}
+
+# Update project
+update_app() {
+  rm -rf node_modules bower_components dist tmp        # Delete temporary development folders.
+  npm install   --save-dev "ember-cli@${EMBER_VERSION}"  # Update project's package.json to use latest version.
+  npm install                                          # Reinstall NPM dependencies.
+  bower install                                        # Reinstall bower dependencies.
+  ember init                                           # This runs the new project blueprint on your projects directory.
+            # Please follow the prompts, and review all changes
+            # (tip: you can see a diff by pressing d).
+            # The most common source of upgrade pain is missing changes in this step.
+}
+
+# Post install
+post_update_app() {
+  npm uninstall --save ember-data
+  bower install --save ember-qunit
+  npm install --save-dev ember-cli-qunit
+  ember install mitchlloyd/ember-islands
+  ember install ember-cli-mirage
+  npm install
+  bower install
+}
+
+case "$@" in
+
+  cli) update_cli ;;
+  app) update_app ;;
+  post_app) post_update_app ;;
+  *)
+    update_cli
+    update_app
+    post_update_app
+  ;;
+
+esac
