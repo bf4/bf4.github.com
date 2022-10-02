@@ -6,10 +6,10 @@ ruby RUBY_VERSION
 require 'json'
 require 'open-uri'
 
-versions = { 'github-pages' => 197 }
+versions = { 'github-pages' => 227 }
 unless ENV['BUNDLE_DEFAULT'] == 'true'
   begin
-    versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+    versions = JSON.parse(URI('https://pages.github.com/versions.json').read)
   rescue SocketError
   else
     unless $skip_print_versions == true
